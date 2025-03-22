@@ -38,21 +38,15 @@
 }
 
 :root {
-  --color-accent: #1e90ff;
+  --color-accent: #4835B3;
   --color-primary: #3c9fff;
   --color-secondary: #0081ff;
 }
 
-.light-mode {
-  --color-heading: #212324;
-  --color-default: #303233;
-  --color-background: #f3f4f6;
-}
-
-.dark-mode {
+:root {
   --color-heading: #f3f4f6;
   --color-default: #d1dae7;
-  --color-background: #212324;
+  --color-background: #131225;
 }
 
 /*
@@ -155,4 +149,101 @@ li {
 
 button {
   font-family: vazir;
+}
+
+/*
+|------------------------------------------------------|
+|======================|  MENU  |======================|
+|------------------------------------------------------|
+*/
+
+.main header {
+  background-image: linear-gradient(90deg, transparent, #232242, transparent);
+}
+
+.main .menu {
+  height: 60px;
+}
+
+.main .menu img {
+  width: 60px;
+}
+
+.main nav {
+  position: relative;
+}
+
+.main nav a {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.main nav a:hover {
+  color: var(--color-primary);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main nav .line {
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-primary);
+  border-radius: 25px;
+  opacity: 0;
+  -webkit-transform: translateX(70px);
+  transform: translateX(70px);
+  position: absolute;
+  top: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main nav a:nth-child(1):hover ~ .line {
+  width: 50px;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.main nav a:nth-child(2):hover ~ .line {
+  width: 80px;
+  -webkit-transform: translateX(-53px);
+  transform: translateX(-53px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.main nav a:nth-child(3):hover ~ .line {
+  width: 70px;
+  -webkit-transform: translateX(-135px);
+  transform: translateX(-135px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.main nav a:nth-child(4):hover ~ .line {
+  width: 95px;
+  -webkit-transform: translateX(-208px);
+  transform: translateX(-208px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.main .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
 }
