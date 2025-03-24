@@ -14,6 +14,7 @@ function Menu() {
         <Link to="/tournaments">مسابقات</Link>
         <Link to="/winners">برندگان</Link>
         <Link to="/sponsers">اسپانسر ها</Link>
+        <Link to="/learn">آموزش</Link>
         <div className="line"></div>
       </nav>
       <div className="profile">

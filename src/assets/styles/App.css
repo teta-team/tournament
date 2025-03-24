@@ -23,8 +23,13 @@
 }
 
 @font-face {
-  font-family: estedad;
-  src: url("../fonts/Estedad-FD-Regular.ttf");
+  font-family: estedad-thin;
+  src: url("../fonts/Estedad-Regular.woff2");
+}
+
+@font-face {
+  font-family: estedad-bold;
+  src: url("../fonts/Estedad-Black.woff2");
 }
 
 @font-face {
@@ -33,14 +38,14 @@
 }
 
 :root {
-  --font-header: estedad;
+  --font-header: estedad-thin;
   --font-default: vazir;
 }
 
 :root {
-  --color-accent: #4835B3;
-  --color-primary: #3c9fff;
-  --color-secondary: #0081ff;
+  --color-accent: #6742e0;
+  --color-primary: #6f4be1;
+  --color-secondary: #6039e0;
 }
 
 :root {
@@ -234,6 +239,15 @@ button {
   opacity: 1;
 }
 
+.main nav a:nth-child(5):hover ~ .line {
+  width: 65px;
+  -webkit-transform: translateX(-306px);
+  transform: translateX(-306px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
 .main .profile {
   display: flex;
   flex-direction: row;
@@ -246,4 +260,97 @@ button {
   height: 40px;
   object-fit: cover;
   object-position: center;
+}
+
+/*
+|------------------------------------------------------|
+|====================|  WELCOME  |=====================|
+|------------------------------------------------------|
+*/
+
+.main .welcome {
+  height: 450px;
+}
+
+.main .welcome .container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public/assets/images/pattern1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-position-y: -330px;
+}
+
+.main .welcome .right {
+  width: 40%;
+}
+
+.main .welcome .right h1 {
+  width: 0;
+  font-size: 2rem;
+  font-size: estedad-thin;
+  overflow: hidden;
+  white-space: nowrap;
+  border-left: 5px solid transparent;
+  animation: typing 3s steps(32) forwards, blink 6.2s step-end;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-color: var(--color-secondary);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.main .welcome .right p {
+  text-align: justify;
+  line-height: 2;
+}
+
+.main .welcome .left {
+  width: 60%;
+  height: 100%;
+}
+
+.main .welcome .left .box {
+  width: 180px;
+  height: 80%;
+  outline: 3px solid var(--color-primary);
+  outline-offset: 5px;
+  border-radius: 10px;
+  transform: rotate(10deg);
+  background-size: cover;
+}
+
+.main .welcome .left .box:nth-child(1) {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/600/75/598/pubg-lite-pubg-mobile-gambling-8k-gaming-pubg-hd-wallpaper-preview.jpg");
+  background-position-x: -50px;
+}
+
+.main .welcome .left .box:nth-child(2) {
+  background-image: url("https://wallpapercave.com/wp/wp13739852.png");
+  background-position-x: -190px;
+}
+
+.main .welcome .left .box:nth-child(3) {
+  background-image: url("https://w0.peakpx.com/wallpaper/435/918/HD-wallpaper-call-of-duty-warzone.jpg");
+  background-position-x: -220px;
+}
+
+@keyframes wave {
 }
