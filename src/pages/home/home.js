@@ -1,3 +1,5 @@
+import LastWinners from "../../components/winnerBox";
+
 function Home() {
   return (
     <>
@@ -13,7 +15,26 @@ function Home() {
           <div className="left d-flex row justify-content-evenly align-items-center">
             <div className="box"></div>
             <div className="box"></div>
-            <div className="box"></div>
+          </div>
+        </div>
+      </div>
+
+      <div className="last-winners">
+        <div className="container d-flex column">
+          <div className="title">
+            <h2>آخرین پرداختی های جوایز</h2>
+            <div className="under-line"></div>
+          </div>
+          <div className="d-flex row justify-content-between align-items-center p-3">
+            <LastWinners
+              
+            />
+            <LastWinners
+              
+            />
+            <LastWinners
+              
+            />
           </div>
         </div>
       </div>
