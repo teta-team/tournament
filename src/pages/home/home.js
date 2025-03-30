@@ -26,15 +26,21 @@ function Home() {
             <div className="under-line"></div>
           </div>
           <div className="d-flex row justify-content-between align-items-center p-3">
-            <LastWinners
-              
-            />
-            <LastWinners
-              
-            />
-            <LastWinners
-              
-            />
+            <LastWinners />
+            <LastWinners />
+            <LastWinners />
+          </div>
+        </div>
+      </div>
+
+      <div className="battel-rooms">
+        <div className="container d-flex column">
+          <div className="title">
+            <h2>آخرین پرداختی های جوایز</h2>
+            <div className="under-line"></div>
+          </div>
+          <div className="d-flex row justify-content-between align-items-center p-3">
+            <div className=""></div>
           </div>
         </div>
       </div>
