@@ -1,4 +1,4 @@
-import LastWinners from "../../components/winnerBox";
+import LastPays from "../../components/lastPays";
 
 function Home() {
   return (
@@ -19,21 +19,30 @@ function Home() {
         </div>
       </div>
 
-      <div className="last-winners">
+      <div className="last-pays">
         <div className="container d-flex column">
           <div className="title">
             <h2>آخرین پرداختی های جوایز</h2>
             <div className="under-line"></div>
           </div>
           <div className="d-flex row justify-content-between align-items-center p-3">
-            <LastWinners
-              
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
             />
-            <LastWinners
-              
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
             />
-            <LastWinners
-              
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
             />
           </div>
         </div>
