@@ -388,13 +388,13 @@ button {
   border: 1px solid var(--color-primary);
   padding: 20px;
   border-radius: 10px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .main .last-pays .pays-box:hover {
   box-shadow: 0 0 10px var(--color-primary);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .main .last-pays .pays-box img {
@@ -437,14 +437,201 @@ button {
   width: 15%;
   height: 97vh;
   background-color: #201e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px 30px 0;
+  border-radius: 10px;
 }
 
 .panel header .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.panel header .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  margin-bottom: 10px;
+}
+
+.panel header nav {
+  width: 100%;
+}
+
+.panel header nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.panel header nav a.active {
+  background-color: #131225;
+  border-radius: 0 10px 10px 0;
+}
+
+.panel header nav a.active .top {
+  width: 10px;
+  height: 10px;
+  background-color: #131225;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+
+.panel header nav a.active .top div {
+  background-color: #201e3e;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 10px;
+  position: absolute;
+}
+
+.panel header nav a.active .bot {
+  width: 10px;
+  height: 10px;
+  background-color: #131225;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.panel header nav a.active .bot div {
+  background-color: #201e3e;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 0;
+  position: absolute;
+}
+
+.panel header nav a i {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.panel header nav a i:nth-child(1) {
+  display: unset;
+}
+.panel header nav a i:nth-child(2) {
+  display: none;
+}
+
+.panel header nav a.active i:nth-child(1) {
+  display: none;
+}
+.panel header nav a.active i:nth-child(2) {
+  display: unset;
+}
+
+.panel header nav a p {
+  font-size: 18px;
 }
 
 .panel .content {
   width: 83%;
   height: 97vh;
   background-color: #201e3e;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .panel {
+    flex-direction: column-reverse;
+    padding-top: 8px;
+    padding-bottom: 65px;
+  }
+
+  .panel header {
+    height: 8%;
+    width: 96%;
+    padding: 0;
+    position: fixed;
+    bottom: 1%;
+  }
+
+  .panel header .profile {
+    position: absolute;
+    top: -30px;
+    margin: 0;
+  }
+
+  .panel header .profile::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-color: #131225;
+    position: absolute;
+    top: -10px;
+    z-index: -100;
+    border-radius: 100px 100px;
+  }
+
+  .panel header .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .panel header .profile h1 {
+    display: none;
+  }
+
+  .panel header nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  .panel header nav a {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .panel header nav a:nth-child(3) {
+    margin-left: 60px;
+  }
+
+  .panel header nav a:nth-child(4) {
+    margin: 0 10px;
+  }
+
+  .panel header nav a:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .panel header nav a.active {
+    border-radius: 10px;
+  }
+
+  .panel header nav a .top,
+  .panel header nav a .bot {
+    display: none;
+  }
+
+  .panel header nav a i {
+    margin: 0;
+  }
+
+  .panel header nav a p {
+    display: none;
+  }
+
+  .panel .content {
+    width: 96%;
+    padding-bottom: 35px;
+  }
 }
