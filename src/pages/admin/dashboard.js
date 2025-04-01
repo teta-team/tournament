@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import NotifBox from "../../components/notifBox";
 
 function Dashboard() {
   return (
@@ -28,19 +29,17 @@ function Dashboard() {
           <h2>اعلان ها</h2>
         </div>
         <ul>
-          <li>
-            <h3>نیم ساعت دیگه روم هر کیل 5000 تومن استارت میشه</h3>
-            <p>1404/01/12 21:30</p>
-          </li>
-          <li>
-            <h3>Ali از شما درخواست میکند به تیم klds بپیوندید!</h3>
-            <div className="buttons">
-              <button>قبول درخواست</button>
-              <button>رد درخواست</button>
-              <button>مشاهده تیم</button>
-            </div>
-            <p>1404/01/12 21:30</p>
-          </li>
+          <NotifBox
+            status={0}
+            title="روم هر کیل 5000 تومن نیم ساعت دیگه شروع میشه"
+            time="1404/01/12 21:30"
+          />
+          <NotifBox
+            status={1}
+            user="Ali"
+            team="jdfdsf"
+            time="1404/01/11 18:16"
+          />
         </ul>
       </div>
 
@@ -48,6 +47,14 @@ function Dashboard() {
         <div className="header">
           <i class="bi bi-trophy"></i>
           <h2>رنک من</h2>
+        </div>
+        <div className="box">
+          <img src="/assets/images/ranks/1.png" alt="" />
+          <h3>Elite</h3>
+          <p>130/250</p>
+          <div className="fill-box">
+            <div className="fill"></div>
+          </div>
         </div>
       </div>
 
@@ -62,6 +69,31 @@ function Dashboard() {
         <div className="header">
           <i class="bi bi-calendar"></i>
           <h2>روم های شرکت کرده</h2>
+        </div>
+      </div>
+
+      <div className="status">
+        <div className="header">
+          <i class="bi bi-bar-chart"></i>
+          <h2>آمار من</h2>
+        </div>
+        <div className="line">
+          <div className="box">
+            <h5>برد بتل</h5>
+            <p>1</p>
+          </div>
+          <div className="box">
+            <h5>برد مولتی</h5>
+            <p>0</p>
+          </div>
+          <div className="box">
+            <h5>کل برد ها</h5>
+            <p>1</p>
+          </div>
+          <div className="box">
+            <h5>کل روم ها</h5>
+            <p>10</p>
+          </div>
         </div>
       </div>
     </div>
