@@ -580,12 +580,14 @@ button {
 
 .panel .content .dashboard .header h2 {
   font-size: 15px;
+  opacity: 0.8;
 }
 
 .panel .content .dashboard .header i {
   font-size: 15px;
   margin-left: 5px;
   margin-top: 5px;
+  opacity: 0.8;
 }
 
 .panel .content .dashboard .wallet .amount {
@@ -657,6 +659,72 @@ button {
   right: calc(350px + 2%);
 }
 
+.panel .content .dashboard .notif ul {
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .notif ul li {
+  background-color: #232242;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.panel .content .dashboard .notif ul li h3 {
+  font-size: 16px;
+}
+
+.panel .content .dashboard .notif ul li .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.panel .content .dashboard .notif ul li .buttons button {
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:hover {
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(1) {
+  background-color: #41db8e;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(2) {
+  background-color: #db4b41;
+  color: var(--color-heading);
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(3) {
+  background-color: #e0b342;
+}
+
+.panel .content .dashboard .notif ul li p {
+  direction: ltr;
+  font-family: estedad-thin;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-right: auto;
+}
+
 .panel .content .dashboard .rank {
   width: 350px;
   height: 400px;
@@ -692,7 +760,7 @@ button {
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
   position: absolute;
-  top: 60.4%;
+  top: 60.3%;
   right: calc(350px + 2%);
 }
 

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Dashboard() {
   return (
     <div className="dashboard d-flex row f-wrap">
@@ -25,6 +27,21 @@ function Dashboard() {
           <i class="bi bi-bell"></i>
           <h2>اعلان ها</h2>
         </div>
+        <ul>
+          <li>
+            <h3>نیم ساعت دیگه روم هر کیل 5000 تومن استارت میشه</h3>
+            <p>1404/01/12 21:30</p>
+          </li>
+          <li>
+            <h3>Ali از شما درخواست میکند به تیم klds بپیوندید!</h3>
+            <div className="buttons">
+              <button>قبول درخواست</button>
+              <button>رد درخواست</button>
+              <button>مشاهده تیم</button>
+            </div>
+            <p>1404/01/12 21:30</p>
+          </li>
+        </ul>
       </div>
 
       <div className="rank">
