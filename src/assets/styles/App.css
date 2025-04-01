@@ -761,7 +761,7 @@ button {
 .panel .content .dashboard .rank .box p {
   font-family: estedad-thin;
   font-size: 15px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .panel .content .dashboard .rank .box .fill-box {
@@ -832,6 +832,62 @@ button {
   right: calc(350px + 2%);
 }
 
+.panel .content .dashboard .joined-room ul {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .joined-room ul .room {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .joined-room ul .room div {
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.panel .content .dashboard .joined-room ul .room div h5 {
+  width: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .dashboard .joined-room ul .room div p {
+  font-family: estedad-thin;
+  font-size: 15px;
+  align-self: flex-end;
+}
+
+.panel .content .dashboard .joined-room ul .room a {
+  width: 80px;
+  background-color: #302e5a;
+  border-radius: 8px;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .joined-room ul .room a:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
 .panel .content .dashboard .status {
   width: 350px;
   height: 150px;
@@ -863,7 +919,7 @@ button {
 
 .panel .content .dashboard .status .line .box h5 {
   margin-bottom: 5px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .panel .content .dashboard .status .line .box p {

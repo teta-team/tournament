@@ -1,3 +1,4 @@
+import DashboardRoom from "../../components/dashboardRoom";
 import NotifBox from "../../components/notifBox";
 
 function Dashboard() {
@@ -28,6 +29,11 @@ function Dashboard() {
           <h2>اعلان ها</h2>
         </div>
         <ul>
+          <NotifBox
+            status={0}
+            title="روم هر کیل 5000 تومن نیم ساعت دیگه شروع میشه"
+            time="1404/01/12 21:30"
+          />
           <NotifBox
             status={0}
             title="روم هر کیل 5000 تومن نیم ساعت دیگه شروع میشه"
@@ -89,6 +95,11 @@ function Dashboard() {
           <i class="bi bi-calendar"></i>
           <h2>روم های شرکت کرده</h2>
         </div>
+        <ul>
+          <DashboardRoom />
+          <DashboardRoom />
+          <DashboardRoom />
+        </ul>
       </div>
 
       <div className="status">
