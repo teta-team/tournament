@@ -420,7 +420,7 @@ button {
 
 /*
 |------------------------------------------------------|
-|=====================|  PANEL  |======================|
+|===================|  PANEL MENU  |===================|
 |------------------------------------------------------|
 */
 
@@ -541,7 +541,166 @@ button {
   height: 97vh;
   background-color: #201e3e;
   border-radius: 10px;
+  overflow: hidden;
 }
+
+.panel .content .dashboard {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
+}
+
+/*
+|------------------------------------------------------|
+|=================|  PANEL DASHBOARD  |================|
+|------------------------------------------------------|
+*/
+
+.panel .content .dashboard .wallet {
+  width: 350px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+
+.panel .content .dashboard .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .header h2 {
+  font-size: 15px;
+}
+
+.panel .content .dashboard .header i {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.panel .content .dashboard .wallet .amount {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel .content .dashboard .wallet .amount p:first-child {
+  font-family: estedad-bold;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.panel .content .dashboard .wallet .amount p:last-child {
+  font-size: 18px;
+}
+
+.panel .content .dashboard .wallet .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.panel .content .dashboard .wallet .buttons button {
+  width: 145px;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .wallet .buttons button:first-child {
+  background-color: #41db8e;
+  box-shadow: 0 0 10px #41db8e;
+}
+
+.panel .content .dashboard .wallet .buttons button:last-child {
+  background-color: #e0b342;
+  box-shadow: 0 0 10px #e0b342;
+}
+
+.panel .content .dashboard .wallet .buttons button:hover {
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif {
+  width: 525px;
+  height: 400px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 2%;
+  right: calc(350px + 2%);
+}
+
+.panel .content .dashboard .rank {
+  width: 350px;
+  height: 400px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 2%;
+  left: 1%;
+}
+
+.panel .content .dashboard .frends {
+  width: 350px;
+  height: 400px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 32%;
+  right: 1%;
+}
+
+.panel .content .dashboard .joined-room {
+  width: 525px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 60.4%;
+  right: calc(350px + 2%);
+}
+
+/*
+|------------------------------------------------------|
+|================|  PANEL RESPONSIVE  |================|
+|------------------------------------------------------|
+*/
 
 @media screen and (max-width: 480px) {
   .panel {
@@ -633,5 +792,9 @@ button {
   .panel .content {
     width: 96%;
     padding-bottom: 35px;
+  }
+
+  .panel .content .wallet .buttons button {
+    width: 135px;
   }
 }
