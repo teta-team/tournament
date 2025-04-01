@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import NotifBox from "../../components/notifBox";
 
 function Dashboard() {
@@ -58,10 +57,30 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="frends">
+      <div className="teammates">
         <div className="header">
           <i class="bi bi-people"></i>
           <h2>افراد تیم من</h2>
+        </div>
+        <div className="line">
+          <div className="player">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              alt=""
+            />
+          </div>
+          <div className="player">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              alt=""
+            />
+          </div>
+          <div className="player">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              alt=""
+            />
+          </div>
         </div>
       </div>
 
@@ -94,6 +113,13 @@ function Dashboard() {
             <h5>کل روم ها</h5>
             <p>10</p>
           </div>
+        </div>
+      </div>
+
+      <div className="last-transactions">
+        <div className="header">
+          <i class="bi bi-cash-coin"></i>
+          <h2>آخرین تراکنش ها</h2>
         </div>
       </div>
     </div>
