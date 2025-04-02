@@ -801,14 +801,11 @@ button {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .panel .content .dashboard .teammates .line .player {
   width: 80px;
-  height: 80px;
-  border: 3px solid var(--color-secondary);
-  border-radius: 10px;
   padding: 3px;
   cursor: pointer;
   display: flex;
@@ -817,8 +814,10 @@ button {
 }
 
 .panel .content .dashboard .teammates .line .player img {
-  width: 100%;
-  height: 100%;
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--color-secondary);
+  border-radius: 10px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -883,8 +882,9 @@ button {
 
 .panel .content .dashboard .joined-room ul .room div p {
   font-family: estedad-thin;
-  font-size: 15px;
+  font-size: 14px;
   align-self: flex-end;
+  opacity: .8;
 }
 
 .panel .content .dashboard .joined-room ul .room a {
@@ -984,6 +984,7 @@ button {
 .panel .content .dashboard .last-transactions ul .transactions p {
   font-family: estedad-thin;
   font-size: 13px;
+  opacity: .8;
 }
 
 /*
@@ -992,7 +993,7 @@ button {
 |------------------------------------------------------|
 */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
   .panel {
     flex-direction: column-reverse;
     padding-top: 8px;
@@ -1086,5 +1087,100 @@ button {
 
   .panel .content .wallet .buttons button {
     width: 135px;
+  }
+
+  /*=========================================*/
+
+  .panel .content .dashboard {
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+
+  .panel .content .dashboard * {
+    scrollbar-width: none;
+  }
+
+  .panel .content .dashboard .wallet {
+    right: 1.5%;
+    width: 97%;
+  }
+  .panel .content .dashboard .notif {
+    top: 151.5%;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .notif ul li h3 {
+    font-size: 14px;
+  }
+
+  .panel .content .dashboard .notif ul li p {
+    font-size: 12px;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons button {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons button:last-child {
+    margin-top: 10px;
+  }
+
+  .panel .content .dashboard .rank {
+    top: 40%;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .teammates {
+    top: 225%;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .teammates .line .player img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .panel .content .dashboard .teammates .line .player h5 {
+    overflow: hidden;
+  }
+
+  .panel .content .dashboard .joined-room {
+    top: 260%;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .joined-room ul .room div h5 {
+    font-size: 14px;
+  }
+
+  .panel .content .dashboard .joined-room ul .room div p {
+    font-size: 12px;
+    opacity: .8;
+  }
+
+  .panel .content .dashboard .joined-room ul .room a {
+    font-size: 13px;
+  }
+
+  .panel .content .dashboard .status {
+    top: 123%;
+    right: 1.5%;
+    width: 97%;
+  }
+  
+  .panel .content .dashboard .last-transactions {
+    top: 307%;
+    right: 1.5%;
+    width: 97%;
   }
 }
