@@ -1,3 +1,4 @@
+import DashboardPays from "../../components/dashboardPays";
 import DashboardRoom from "../../components/dashboardRoom";
 import NotifBox from "../../components/notifBox";
 
@@ -96,9 +97,9 @@ function Dashboard() {
           <h2>روم های شرکت کرده</h2>
         </div>
         <ul>
-          <DashboardRoom />
-          <DashboardRoom />
-          <DashboardRoom />
+          <DashboardRoom name="روم هر کیل 5000 تومان" time="22:00" />
+          <DashboardRoom name="روم هر کیل 5000 تومان" time="22:00" />
+          <DashboardRoom name="روم هر کیل 5000 تومان" time="22:00" />
         </ul>
       </div>
 
@@ -132,6 +133,11 @@ function Dashboard() {
           <i class="bi bi-cash-coin"></i>
           <h2>آخرین تراکنش ها</h2>
         </div>
+        <ul>
+          <DashboardPays status={0} />
+          <DashboardPays status={1} />
+          <DashboardPays status={2} />
+        </ul>
       </div>
     </div>
   );

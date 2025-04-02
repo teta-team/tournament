@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
 
-function DashboardRoom({image, name, }) {
+function DashboardRoom({ name, time }) {
   return (
     <div className="room">
       <div>
-        <h5>روم هر کیل 5000 تومان</h5>
-        <p>22:00</p>
+        <h5>{name}</h5>
+        <p>{time}</p>
       </div>
       <Link to="">مشاهده</Link>
     </div>

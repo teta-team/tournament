@@ -862,7 +862,7 @@ button {
 
 .panel .content .dashboard .joined-room ul .room div h5 {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -938,6 +938,39 @@ button {
   position: absolute;
   top: 60.3%;
   right: 1%;
+}
+
+.panel .content .dashboard .last-transactions ul {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions h5 {
+  font-size: 15px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions p {
+  font-family: estedad-thin;
+  font-size: 13px;
 }
 
 /*
