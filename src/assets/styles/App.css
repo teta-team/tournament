@@ -388,13 +388,13 @@ button {
   border: 1px solid var(--color-primary);
   padding: 20px;
   border-radius: 10px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .main .last-pays .pays-box:hover {
   box-shadow: 0 0 10px var(--color-primary);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .main .last-pays .pays-box img {
@@ -420,7 +420,7 @@ button {
 
 /*
 |------------------------------------------------------|
-|=====================|  PANEL  |======================|
+|===================|  PANEL MENU  |===================|
 |------------------------------------------------------|
 */
 
@@ -437,14 +437,641 @@ button {
   width: 15%;
   height: 97vh;
   background-color: #201e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px 30px 0;
+  border-radius: 10px;
 }
 
 .panel header .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.panel header .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  margin-bottom: 10px;
+}
+
+.panel header nav {
+  width: 100%;
+}
+
+.panel header nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.panel header nav a.active {
+  background-color: #131225;
+  border-radius: 0 10px 10px 0;
+}
+
+.panel header nav a.active .top {
+  width: 10px;
+  height: 10px;
+  background-color: #131225;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+
+.panel header nav a.active .top div {
+  background-color: #201e3e;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 10px;
+  position: absolute;
+}
+
+.panel header nav a.active .bot {
+  width: 10px;
+  height: 10px;
+  background-color: #131225;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.panel header nav a.active .bot div {
+  background-color: #201e3e;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 0;
+  position: absolute;
+}
+
+.panel header nav a i {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.panel header nav a i:nth-child(1) {
+  display: unset;
+}
+.panel header nav a i:nth-child(2) {
+  display: none;
+}
+
+.panel header nav a.active i:nth-child(1) {
+  display: none;
+}
+.panel header nav a.active i:nth-child(2) {
+  display: unset;
+}
+
+.panel header nav a p {
+  font-size: 18px;
 }
 
 .panel .content {
   width: 83%;
   height: 97vh;
   background-color: #201e3e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.panel .content .dashboard {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
+}
+
+/*
+|------------------------------------------------------|
+|=================|  PANEL DASHBOARD  |================|
+|------------------------------------------------------|
+*/
+
+.panel .content .dashboard .wallet {
+  width: 350px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 2%;
+  right: 1%;
+}
+
+.panel .content .dashboard .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .header h2 {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .header i {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .wallet .amount {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel .content .dashboard .wallet .amount p:first-child {
+  font-family: estedad-bold;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.panel .content .dashboard .wallet .amount p:last-child {
+  font-size: 18px;
+}
+
+.panel .content .dashboard .wallet .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.panel .content .dashboard .wallet .buttons button {
+  width: 145px;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .wallet .buttons button:first-child {
+  background-color: #41db8e;
+  box-shadow: 0 0 10px #41db8e;
+}
+
+.panel .content .dashboard .wallet .buttons button:last-child {
+  background-color: #e0b342;
+  box-shadow: 0 0 10px #e0b342;
+}
+
+.panel .content .dashboard .wallet .buttons button:hover {
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif {
+  width: 525px;
+  height: 400px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 2%;
+  right: calc(350px + 2%);
+}
+
+.panel .content .dashboard .notif ul {
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .notif ul li {
+  background-color: #232242;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.panel .content .dashboard .notif ul li h3 {
+  font-size: 16px;
+}
+
+.panel .content .dashboard .notif ul li .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.panel .content .dashboard .notif ul li .buttons button {
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:hover {
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(1) {
+  background-color: #41db8e;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(2) {
+  background-color: #db4b41;
+  color: var(--color-heading);
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(3) {
+  background-color: #e0b342;
+}
+
+.panel .content .dashboard .notif ul li p {
+  direction: ltr;
+  font-family: estedad-thin;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-right: auto;
+}
+
+.panel .content .dashboard .rank {
+  width: 350px;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 2%;
+  left: 1%;
+}
+
+.panel .content .dashboard .rank .box {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel .content .dashboard .rank .box img {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.panel .content .dashboard .rank .box h3 {
+  font-family: estedad-bold;
+  font-size: 25px;
+}
+
+.panel .content .dashboard .rank .box p {
+  font-family: estedad-thin;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .rank .box .fill-box {
+  width: 100%;
+  height: 8px;
+  background-color: #302e5a;
+  border-radius: 5px;
+  overflow: hidden;
+  direction: ltr;
+}
+
+.panel .content .dashboard .rank .box .fill-box .fill {
+  width: 50%;
+  height: 100%;
+  background-color: #e0b342;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #e0b342;
+}
+
+.panel .content .dashboard .teammates {
+  width: 350px;
+  height: 185px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 32%;
+  right: 1%;
+}
+
+.panel .content .dashboard .teammates .line {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.panel .content .dashboard .teammates .line .player {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.panel .content .dashboard .teammates .line .player img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.panel .content .dashboard .joined-room {
+  width: 525px;
+  height: 250px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 60.3%;
+  right: calc(350px + 2%);
+}
+
+.panel .content .dashboard .joined-room ul {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .joined-room ul .room {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .joined-room ul .room div {
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.panel .content .dashboard .joined-room ul .room div h5 {
+  width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .dashboard .joined-room ul .room div p {
+  font-family: estedad-thin;
+  font-size: 15px;
+  align-self: flex-end;
+}
+
+.panel .content .dashboard .joined-room ul .room a {
+  width: 80px;
+  background-color: #302e5a;
+  border-radius: 8px;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .joined-room ul .room a:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .status {
+  width: 350px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 67.2%;
+  left: 1%;
+}
+
+.panel .content .dashboard .status .line {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.panel .content .dashboard .status .line .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .dashboard .status .line .box h5 {
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .status .line .box p {
+  font-family: estedad-bold;
+  font-size: 20px;
+}
+
+.panel .content .dashboard .last-transactions {
+  width: 350px;
+  height: 250px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 60.3%;
+  right: 1%;
+}
+
+.panel .content .dashboard .last-transactions ul {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions h5 {
+  font-size: 15px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions p {
+  font-family: estedad-thin;
+  font-size: 13px;
+}
+
+/*
+|------------------------------------------------------|
+|================|  PANEL RESPONSIVE  |================|
+|------------------------------------------------------|
+*/
+
+@media screen and (max-width: 480px) {
+  .panel {
+    flex-direction: column-reverse;
+    padding-top: 8px;
+    padding-bottom: 65px;
+  }
+
+  .panel header {
+    height: 8%;
+    width: 96%;
+    padding: 0;
+    position: fixed;
+    bottom: 1%;
+  }
+
+  .panel header .profile {
+    position: absolute;
+    top: -30px;
+    margin: 0;
+  }
+
+  .panel header .profile::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-color: #131225;
+    position: absolute;
+    top: -10px;
+    z-index: -100;
+    border-radius: 100px 100px;
+  }
+
+  .panel header .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .panel header .profile h1 {
+    display: none;
+  }
+
+  .panel header nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  .panel header nav a {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .panel header nav a:nth-child(3) {
+    margin-left: 60px;
+  }
+
+  .panel header nav a:nth-child(4) {
+    margin: 0 10px;
+  }
+
+  .panel header nav a:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .panel header nav a.active {
+    border-radius: 10px;
+  }
+
+  .panel header nav a .top,
+  .panel header nav a .bot {
+    display: none;
+  }
+
+  .panel header nav a i {
+    margin: 0;
+  }
+
+  .panel header nav a p {
+    display: none;
+  }
+
+  .panel .content {
+    width: 96%;
+    padding-bottom: 35px;
+  }
+
+  .panel .content .wallet .buttons button {
+    width: 135px;
+  }
 }
