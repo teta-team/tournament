@@ -177,7 +177,7 @@ button {
 }
 
 .main .menu img {
-  width: 60px;
+  width: 100px;
 }
 
 .main nav {
@@ -1327,7 +1327,6 @@ button {
   justify-content: center;
   align-items: center;
   margin: 0;
-  /* background-color: transparent; */
 }
 
 .panel
@@ -1395,7 +1394,7 @@ button {
   }
 
   .panel header {
-    height: 8%;
+    height: 50px;
     width: 96%;
     padding: 0;
     position: fixed;
@@ -1404,6 +1403,7 @@ button {
   }
 
   .panel header .profile {
+    width: 70px;
     position: absolute;
     top: -30px;
     margin: 0;
@@ -1622,6 +1622,14 @@ button {
   .panel .content .team .my-team .team-history {
     width: 100%;
     margin-bottom: 10px;
+  }
+
+  .panel .content .team .my-team .invite .notic {
+    font-size: 12px;
+  }
+
+  .panel .content .team .my-team .players .header {
+    padding: 10px 10px 0;
   }
 
   .panel .content .team .my-team .players {

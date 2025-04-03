@@ -1,3 +1,4 @@
+import TeamHistory from "../../components/teamHistory";
 import TeamPlayer from "../../components/teamPlayer";
 
 function Teams() {
@@ -86,7 +87,11 @@ function Teams() {
             <i style={{ paddingTop: "5px" }} class="bi bi-clock-history"></i>
             <h2>تاریخچه بازی های تیم</h2>
           </div>
-          <ul></ul>
+          <ul>
+            <TeamHistory />
+            <TeamHistory />
+            <TeamHistory />
+          </ul>
         </div>
       </div>
     </div>
