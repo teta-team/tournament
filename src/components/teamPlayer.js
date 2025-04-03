@@ -5,9 +5,7 @@ function TeamPlayer() {
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
         alt=""
       />
-      <h4>امیرحسین شریفی</h4>
-      <h5>Amir342</h5>
-      <p>09038834741</p>
+      <h4>Amir_1234</h4>
       <div className="buttons">
         <button>
           <i className="bi bi-eye"></i>

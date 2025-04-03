@@ -18,13 +18,16 @@ function Teams() {
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
             alt=""
           />
-          <h3>fdsfs</h3>
+          <div className="text">
+            <h3>fdsfs</h3>
+            <p>id: STRK-8655</p>
+          </div>
         </div>
 
         <div className="status">
           <div className="header">
-            <i className="bi bi-trophy"></i>
-            <h2>رنک تیم من</h2>
+            <i className="bi bi-bar-chart"></i>
+            <h2>آمار تیم من</h2>
           </div>
           <div className="boxs">
             <div className="box">
@@ -46,28 +49,44 @@ function Teams() {
           </div>
         </div>
 
-        <div className="rank">
+        <div className="invite">
           <div className="header">
-            <i className="bi bi-trophy"></i>
-            <h2>رنک تیم من</h2>
+            <i
+              style={{ fontSize: "20px", paddingTop: "5px" }}
+              className="bi bi-link-45deg"
+            ></i>
+            <h2>کد دعوت تیم</h2>
           </div>
           <div className="box">
-            <img src="/assets/images/ranks/1.png" alt="" />
-            <h3>Elite</h3>
-            <p>130/250</p>
-            <div className="fill-box">
-              <div className="fill"></div>
+            <div className="link">
+              <p>https://irtournament.com/teams/STRK-8655</p>
             </div>
+            <button className="icon">
+              <i className="bi bi-copy"></i>
+            </button>
           </div>
+          <p className="notic">برای دعوت دوستانتان به تیم خود این لینک را برای آنها ارسال کنید.</p>
         </div>
 
         <div className="players">
+          <div className="header">
+            <i className="bi bi-people"></i>
+            <h2>افراد تیم</h2>
+          </div>
           <ul>
             <TeamPlayer />
             <TeamPlayer />
             <TeamPlayer />
             <TeamPlayer />
           </ul>
+        </div>
+
+        <div className="team-history">
+          <div className="header">
+            <i style={{ paddingTop: "5px" }} class="bi bi-clock-history"></i>
+            <h2>تاریخچه بازی های تیم</h2>
+          </div>
+          <ul></ul>
         </div>
       </div>
     </div>

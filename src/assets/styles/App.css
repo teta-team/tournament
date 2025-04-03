@@ -445,6 +445,7 @@ button {
 }
 
 .panel header .profile {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -461,6 +462,21 @@ button {
   outline: 3px solid var(--color-accent);
   outline-offset: 3px;
   margin-bottom: 10px;
+}
+
+.panel header .profile h1 {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26px;
+}
+
+.panel header .profile p {
+  font-size: 14px;
+  opacity: 0.8;
+  direction: ltr;
 }
 
 .panel header nav {
@@ -1006,7 +1022,6 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 200px;
 }
 
 .panel .content .team .buttons {
@@ -1034,12 +1049,12 @@ button {
   transition: all 0.3s ease;
 }
 
-.panel .content .team .buttons button:nth-child(1) {
+.panel .content .team > .buttons button:nth-child(1) {
   margin-left: 10px;
   background-color: #e0b342;
 }
 
-.panel .content .team .buttons button:nth-child(2) {
+.panel .content .team > .buttons button:nth-child(2) {
   background-color: #41db8e;
 }
 
@@ -1069,7 +1084,6 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
-  position: relative;
 }
 
 .panel .content .team .my-team .info {
@@ -1084,6 +1098,7 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .panel .content .team .my-team .info .team-logo {
@@ -1094,13 +1109,24 @@ button {
   border: 3px solid var(--color-accent);
 }
 
-.panel .content .team .my-team .info h3 {
+.panel .content .team .my-team .info .text {
   width: calc(100% - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.panel .content .team .my-team .info .text h3 {
+  width: 100%;
   font-size: 30px;
   direction: ltr;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.panel .content .team .my-team .info .text p {
+  font-size: 13px;
 }
 
 .panel .content .team .my-team .status {
@@ -1115,22 +1141,23 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-.panel .content .team .my-team .status .header {
+.panel .content .team .my-team .header {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.panel .content .team .my-team .status .header i {
+.panel .content .team .my-team .header i {
   font-size: 15px;
   opacity: 0.8;
   margin-left: 5px;
 }
 
-.panel .content .team .my-team .status .header h2 {
+.panel .content .team .my-team .header h2 {
   font-size: 15px;
   opacity: 0.8;
 }
@@ -1160,87 +1187,90 @@ button {
   font-family: estedad-bold;
 }
 
-.panel .content .team .my-team .rank {
-  width: 350px;
-  height: 450px;
+.panel .content .team .my-team .invite {
+  width: 390px;
+  height: 150px;
   background-color: transparent;
   border: 1px solid var(--color-primary);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
+  margin-bottom: 10px;
 }
 
-.panel .content .team .my-team .rank .header {
-  width: 100%;
+.panel .content .team .my-team .invite .box {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.panel .content .team .my-team .rank .header i {
-  font-size: 15px;
-  margin-left: 5px;
-  opacity: 0.8;
-}
-
-.panel .content .team .my-team .rank .header h2 {
-  font-size: 15px;
-  opacity: 0.8;
-}
-
-.panel .content .team .my-team .rank .box {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  height: 90%;
+  margin-top: 10px;
 }
 
-.panel .content .team .my-team .rank .box img {
-  width: 80%;
-  margin-top: 20px;
-}
-
-.panel .content .team .my-team .rank .box h3 {
-  font-size: 25px;
-}
-
-.panel .content .team .my-team .rank .box p {
-  font-family: estedad-thin;
-}
-
-.panel .content .team .my-team .rank .box .fill-box {
-  width: 100%;
-  height: 10px;
+.panel .content .team .my-team .invite .box .link {
+  width: calc(100% - 40px);
+  height: 35px;
   background-color: #302e5a;
-  border-radius: 10px;
-  direction: ltr;
-  overflow: hidden;
+  border-radius: 8px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.panel .content .team .my-team .rank .box .fill-box .fill {
-  width: 40%;
-  height: 100%;
-  background-color: #e0b342;
-  border-radius: 10px;
+.panel .content .team .my-team .invite .box .link p {
+  width: 100%;
+  direction: ltr;
+  font-size: 15px;
+  overflow: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.panel .content .team .my-team .invite .box .icon {
+  width: 35px;
+  height: 35px;
+  background-color: #302e5a;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-default);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .my-team .invite .box .icon:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .my-team .invite .box .icon i {
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.panel .content .team .my-team .invite .notic {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.8;
 }
 
 .panel .content .team .my-team .players {
-  width: 832px;
+  width: 49.5%;
   height: 450px;
   background-color: transparent;
   border: 1px solid var(--color-primary);
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
-  position: absolute;
-  top: 180px;
 }
 
 .panel .content .team .my-team .players ul {
-  height: 100%;
+  height: 90%;
   padding: 10px;
   overflow-y: auto;
+  margin-top: 10px;
 }
 
 .panel .content .team .my-team .players ul .player {
@@ -1263,26 +1293,11 @@ button {
 }
 
 .panel .content .team .my-team .players ul .player h4 {
-  width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 16px;
-}
-
-.panel .content .team .my-team .players ul .player h5 {
   width: 150px;
-  direction: ltr;
-  font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.panel .content .team .my-team .players ul .player p {
-  width: 120px;
-  text-align: center;
-  font-family: estedad-thin;
+  font-size: 18px;
 }
 
 .panel .content .team .my-team .players ul .player .buttons {
@@ -1291,21 +1306,64 @@ button {
 }
 
 .panel .content .team .my-team .players ul .player .buttons button {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 5px;
+  margin: 0;
+  /* background-color: transparent; */
 }
 
-.panel .content .team .my-team .players ul .player .buttons button:last-child {
-  background-color: #db4b41;
+.panel
+  .content
+  .team
+  .my-team
+  .players
+  ul
+  .player
+  .buttons
+  button:nth-child(1) {
+  color: #e0b342;
+}
+
+.panel
+  .content
+  .team
+  .my-team
+  .players
+  ul
+  .player
+  .buttons
+  button:nth-child(2) {
+  color: #41db8e;
+}
+
+.panel
+  .content
+  .team
+  .my-team
+  .players
+  ul
+  .player
+  .buttons
+  button:nth-child(3) {
+  color: #db4b41;
 }
 
 .panel .content .team .my-team .players ul .player .buttons button i {
-  font-size: 18px;
+  font-size: 20px;
   margin-top: 4px;
+}
+
+.panel .content .team .my-team .team-history {
+  width: 49.5%;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
 }
 
 /*
@@ -1356,6 +1414,10 @@ button {
     display: none;
   }
 
+  .panel header .profile p {
+    display: none;
+  }
+
   .panel header nav {
     height: 100%;
     display: flex;
@@ -1371,6 +1433,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    z-index: 200;
   }
 
   .panel header nav a:nth-child(3) {
@@ -1514,14 +1577,14 @@ button {
 |------------------------------------------------------|
 */
 
-.panel .content .team {
-  scrollbar-width: none;
-  overflow-x: hidden;
-  padding: 10px;
-  align-items: center;
-}
+  .panel .content .team {
+    scrollbar-width: none;
+    overflow-x: hidden;
+    padding: 10px;
+    align-items: center;
+  }
 
-  .panel .content .team *{
+  .panel .content .team * {
     scrollbar-width: none;
   }
 
@@ -1537,16 +1600,16 @@ button {
     width: 100%;
   }
 
-  .panel .content .team .my-team .info, 
+  .panel .content .team .my-team .info,
   .panel .content .team .my-team .status,
-  .panel .content .team .my-team .rank {
+  .panel .content .team .my-team .invite,
+  .panel .content .team .my-team .players,
+  .panel .content .team .my-team .team-history {
     width: 100%;
     margin-bottom: 10px;
   }
 
   .panel .content .team .my-team .players {
-    top: 790px;
-    width: 94%;
     padding: 5px;
     overflow: auto;
   }
@@ -1562,7 +1625,6 @@ button {
   .panel .content .team .my-team .players ul .player p {
     width: 130px;
   }
-  
 }
 /*
 |------------------------------------------------------|
