@@ -545,19 +545,22 @@ button {
   overflow: hidden;
 }
 
+/*
+|------------------------------------------------------|
+|=================|  PANEL DASHBOARD  |================|
+|------------------------------------------------------|
+*/
+
 .panel .content .dashboard {
   width: 100%;
   height: 100%;
   overflow-y: auto;
   padding: 20px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-
-/*
-|------------------------------------------------------|
-|=================|  PANEL DASHBOARD  |================|
-|------------------------------------------------------|
-*/
 
 .panel .content .dashboard .wallet {
   width: 350px;
@@ -830,6 +833,7 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  direction: ltr;
 }
 
 .panel .content .dashboard .joined-room {
@@ -885,7 +889,7 @@ button {
   font-family: estedad-thin;
   font-size: 14px;
   align-self: flex-end;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .panel .content .dashboard .joined-room ul .room a {
@@ -985,7 +989,323 @@ button {
 .panel .content .dashboard .last-transactions ul .transactions p {
   font-family: estedad-thin;
   font-size: 13px;
+  opacity: 0.8;
+}
+
+/*
+|------------------------------------------------------|
+|===================|  PANEL TEAM  |===================|
+|------------------------------------------------------|
+*/
+
+.panel .content .team {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+}
+
+.panel .content .team .buttons {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.panel .content .team .buttons button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .buttons button:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .buttons button:nth-child(1) {
+  margin-left: 10px;
+  background-color: #e0b342;
+}
+
+.panel .content .team .buttons button:nth-child(2) {
+  background-color: #41db8e;
+}
+
+.panel .content .team .title {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .team .title i {
+  font-size: 20px;
+  margin-left: 5px;
+  opacity: 0.8;
+}
+
+.panel .content .team .title h2 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.panel .content .team .my-team {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  position: relative;
+}
+
+.panel .content .team .my-team .info {
+  width: 350px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .team .my-team .info .team-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--color-accent);
+}
+
+.panel .content .team .my-team .info h3 {
+  width: calc(100% - 140px);
+  font-size: 30px;
+  direction: ltr;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .team .my-team .status {
+  width: 450px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .team .my-team .status .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .team .my-team .status .header i {
+  font-size: 15px;
   opacity: .8;
+  margin-left: 5px;
+}
+
+.panel .content .team .my-team .status .header h2 {
+  font-size: 15px;
+  opacity: .8;
+}
+
+.panel .content .team .my-team .status .boxs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .team .my-team .status .boxs .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.panel .content .team .my-team .status .boxs .box h5 {
+  opacity: .8;
+}
+
+.panel .content .team .my-team .status .boxs .box p {
+  font-size: 20px;
+  font-family: estedad-bold;
+}
+
+.panel .content .team .my-team .rank {
+  width: 350px;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+}
+
+.panel .content .team .my-team .rank .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .team .my-team .rank .header i {
+  font-size: 15px;
+  margin-left: 5px;
+  opacity: .8;
+}
+
+.panel .content .team .my-team .rank .header h2 {
+  font-size: 15px;
+  opacity: .8;
+}
+
+.panel .content .team .my-team .rank .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.panel .content .team .my-team .rank .box img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.panel .content .team .my-team .rank .box h3 {
+  font-size: 25px;
+}
+
+.panel .content .team .my-team .rank .box p {
+  font-family: estedad-thin;
+}
+
+.panel .content .team .my-team .rank .box .fill-box {
+  width: 100%;
+  height: 10px;
+  background-color: #302E5A;
+  border-radius: 10px;
+  direction: ltr;
+  overflow: hidden;
+}
+
+.panel .content .team .my-team .rank .box .fill-box .fill {
+  width: 40%;
+  height: 100%;
+  background-color: #e0b342;
+  border-radius: 10px;
+}
+
+.panel .content .team .my-team .players {
+  width: 832px;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 180px;
+}
+
+.panel .content .team .my-team .players ul {
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .team .my-team .players ul .player {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #232242;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.panel .content .team .my-team .players ul .player img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.panel .content .team .my-team .players ul .player h4 {
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.panel .content .team .my-team .players ul .player h5 {
+  width: 150px;
+  direction: ltr;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .team .my-team .players ul .player p {
+  width: 120px;
+  text-align: center;
+  font-family: estedad-thin;
+}
+
+.panel .content .team .my-team .players ul .player .buttons {
+  width: fit-content;
+  padding: 0;
+}
+
+.panel .content .team .my-team .players ul .player .buttons button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.panel .content .team .my-team .players ul .player .buttons button:last-child {
+  background-color: #db4b41;
+}
+
+.panel .content .team .my-team .players ul .player .buttons button i {
+  font-size: 18px;
+  margin-top: 4px;
 }
 
 /*
@@ -1091,7 +1411,11 @@ button {
     width: 135px;
   }
 
-  /*=========================================*/
+  /*
+|------------------------------------------------------|
+|=================|  PANEL DASHBOARD  |================|
+|------------------------------------------------------|
+*/
 
   .panel .content .dashboard {
     overflow-x: hidden;
@@ -1165,7 +1489,7 @@ button {
 
   .panel .content .dashboard .joined-room ul .room div p {
     font-size: 12px;
-    opacity: .8;
+    opacity: 0.8;
   }
 
   .panel .content .dashboard .joined-room ul .room a {
@@ -1183,6 +1507,12 @@ button {
     right: 1.5%;
     width: 97%;
   }
+
+  /*
+|------------------------------------------------------|
+|===================|  PANEL TEAM  |===================|
+|------------------------------------------------------|
+*/
 }
 
 /*
