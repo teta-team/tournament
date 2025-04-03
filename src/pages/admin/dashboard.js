@@ -140,6 +140,7 @@ function Dashboard() {
           <DashboardPays status={0} />
           <DashboardPays status={1} />
           <DashboardPays status={2} />
+          <DashboardPays status={3} />
         </ul>
       </div>
     </div>
