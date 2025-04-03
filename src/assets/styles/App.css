@@ -388,13 +388,13 @@ button {
   border: 1px solid var(--color-primary);
   padding: 20px;
   border-radius: 10px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .main .last-pays .pays-box:hover {
   box-shadow: 0 0 10px var(--color-primary);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .main .last-pays .pays-box img {
@@ -420,7 +420,7 @@ button {
 
 /*
 |------------------------------------------------------|
-|=====================|  PANEL  |======================|
+|===================|  PANEL MENU  |===================|
 |------------------------------------------------------|
 */
 
@@ -437,10 +437,120 @@ button {
   width: 15%;
   height: 97vh;
   background-color: #201e3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px 30px 0;
+  border-radius: 10px;
 }
 
 .panel header .profile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  z-index: 200;
+}
 
+.panel header .profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  margin-bottom: 10px;
+}
+
+.panel header .profile h1 {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26px;
+}
+
+.panel header .profile p {
+  font-size: 14px;
+  opacity: 0.8;
+  direction: ltr;
+}
+
+.panel header nav {
+  width: 100%;
+}
+
+.panel header nav a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.panel header nav a.active {
+  background-color: #131225;
+  border-radius: 0 10px 10px 0;
+}
+
+.panel header nav a.active .top {
+  width: 10px;
+  height: 10px;
+  background-color: #131225;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+
+.panel header nav a.active .top div {
+  background-color: #201e3e;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 10px;
+  position: absolute;
+}
+
+.panel header nav a.active .bot {
+  width: 10px;
+  height: 10px;
+  background-color: #131225;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.panel header nav a.active .bot div {
+  background-color: #201e3e;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 0;
+  position: absolute;
+}
+
+.panel header nav a i {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.panel header nav a i:nth-child(1) {
+  display: unset;
+}
+.panel header nav a i:nth-child(2) {
+  display: none;
+}
+
+.panel header nav a.active i:nth-child(1) {
+  display: none;
+}
+.panel header nav a.active i:nth-child(2) {
+  display: unset;
+}
+
+.panel header nav a p {
+  font-size: 18px;
 }
 
 .panel .content {
@@ -462,4 +572,1077 @@ button {
   border-radius: 25px;
   box-shadow: 0 0 12px var(--color-accent);
   margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+/*
+|------------------------------------------------------|
+|=================|  PANEL DASHBOARD  |================|
+|------------------------------------------------------|
+*/
+
+.panel .content .dashboard {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.panel .content .dashboard .wallet {
+  width: 350px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.panel .content .dashboard .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .header h2 {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .header i {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .wallet .amount {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel .content .dashboard .wallet .amount p:first-child {
+  font-family: estedad-bold;
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+.panel .content .dashboard .wallet .amount p:last-child {
+  font-size: 18px;
+}
+
+.panel .content .dashboard .wallet .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.panel .content .dashboard .wallet .buttons button {
+  width: 47%;
+  background-color: transparent;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .wallet .buttons button:first-child {
+  background-color: #41db8e;
+  box-shadow: 0 0 10px #41db8e;
+}
+
+.panel .content .dashboard .wallet .buttons button:last-child {
+  background-color: #e0b342;
+  box-shadow: 0 0 10px #e0b342;
+}
+
+.panel .content .dashboard .wallet .buttons button:hover {
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif {
+  width: 525px;
+  height: 415px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 10px;
+  right: 375px;
+}
+
+.panel .content .dashboard .notif ul {
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .notif ul li {
+  background-color: #232242;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.panel .content .dashboard .notif ul li h3 {
+  font-size: 16px;
+}
+
+.panel .content .dashboard .notif ul li .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.panel .content .dashboard .notif ul li .buttons button {
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:hover {
+  filter: brightness(70%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(1) {
+  background-color: #41db8e;
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(2) {
+  background-color: #db4b41;
+  color: var(--color-heading);
+}
+
+.panel .content .dashboard .notif ul li .buttons button:nth-child(3) {
+  background-color: #e0b342;
+}
+
+.panel .content .dashboard .notif ul li p {
+  direction: ltr;
+  font-family: estedad-thin;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-right: auto;
+}
+
+.panel .content .dashboard .rank {
+  width: 350px;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.panel .content .dashboard .rank .box {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel .content .dashboard .rank .box img {
+  width: 80%;
+  margin: 20px 0;
+}
+
+.panel .content .dashboard .rank .box h3 {
+  font-family: estedad-bold;
+  font-size: 25px;
+}
+
+.panel .content .dashboard .rank .box p {
+  font-family: estedad-thin;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .rank .box .fill-box {
+  width: 100%;
+  height: 8px;
+  background-color: #302e5a;
+  border-radius: 5px;
+  overflow: hidden;
+  direction: ltr;
+}
+
+.panel .content .dashboard .rank .box .fill-box .fill {
+  width: 50%;
+  height: 100%;
+  background-color: #e0b342;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #e0b342;
+}
+
+.panel .content .dashboard .teammates {
+  width: 350px;
+  height: 200px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 225px;
+  right: 10px;
+}
+
+.panel .content .dashboard .teammates .line {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+.panel .content .dashboard .teammates .line .player {
+  width: 80px;
+  padding: 3px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .dashboard .teammates .line .player img {
+  width: 80px;
+  height: 80px;
+  border: 3px solid var(--color-secondary);
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.panel .content .dashboard .teammates .line .player h5 {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.panel .content .dashboard .joined-room {
+  width: 525px;
+  height: 250px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 440px;
+  right: 375px;
+}
+
+.panel .content .dashboard .joined-room ul {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .joined-room ul .room {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .joined-room ul .room div {
+  width: calc(100% - 100px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.panel .content .dashboard .joined-room ul .room div h5 {
+  width: 100%;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .dashboard .joined-room ul .room div p {
+  font-family: estedad-thin;
+  font-size: 14px;
+  align-self: flex-end;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .joined-room ul .room a {
+  width: 80px;
+  background-color: #302e5a;
+  border-radius: 8px;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .joined-room ul .room a:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .dashboard .status {
+  width: 350px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 475px;
+  left: 10px;
+}
+
+.panel .content .dashboard .status .line {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.panel .content .dashboard .status .line .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .dashboard .status .line .box h5 {
+  margin-bottom: 5px;
+  opacity: 0.8;
+}
+
+.panel .content .dashboard .status .line .box p {
+  font-family: estedad-bold;
+  font-size: 20px;
+}
+
+.panel .content .dashboard .last-transactions {
+  width: 350px;
+  height: 250px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  position: absolute;
+  top: 440px;
+  right: 10px;
+}
+
+.panel .content .dashboard .last-transactions ul {
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions h5 {
+  font-size: 15px;
+}
+
+.panel .content .dashboard .last-transactions ul .transactions p {
+  font-family: estedad-thin;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/*
+|------------------------------------------------------|
+|===================|  PANEL TEAM  |===================|
+|------------------------------------------------------|
+*/
+
+.panel .content .team {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel .content .team .buttons {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.panel .content .team .buttons button {
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .buttons button:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .team > .buttons button:nth-child(1) {
+  margin-left: 10px;
+  background-color: #e0b342;
+}
+
+.panel .content .team > .buttons button:nth-child(2) {
+  background-color: #41db8e;
+}
+
+.panel .content .team .title {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .team .title i {
+  font-size: 20px;
+  margin-left: 5px;
+  opacity: 0.8;
+}
+
+.panel .content .team .title h2 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.panel .content .team .my-team {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.panel .content .team .my-team .info {
+  width: 350px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.panel .content .team .my-team .info .team-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid var(--color-accent);
+}
+
+.panel .content .team .my-team .info .text {
+  width: calc(100% - 140px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.panel .content .team .my-team .info .text h3 {
+  width: 100%;
+  font-size: 30px;
+  direction: ltr;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .team .my-team .info .text p {
+  font-size: 13px;
+}
+
+.panel .content .team .my-team .status {
+  width: 450px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.panel .content .team .my-team .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .team .my-team .header i {
+  font-size: 15px;
+  opacity: 0.8;
+  margin-left: 5px;
+}
+
+.panel .content .team .my-team .header h2 {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.panel .content .team .my-team .status .boxs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .team .my-team .status .boxs .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.panel .content .team .my-team .status .boxs .box h5 {
+  opacity: 0.8;
+}
+
+.panel .content .team .my-team .status .boxs .box p {
+  font-size: 20px;
+  font-family: estedad-bold;
+}
+
+.panel .content .team .my-team .invite {
+  width: 390px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.panel .content .team .my-team .invite .box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.panel .content .team .my-team .invite .box .link {
+  width: calc(100% - 40px);
+  height: 35px;
+  background-color: #302e5a;
+  border-radius: 8px;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.panel .content .team .my-team .invite .box .link p {
+  width: 100%;
+  direction: ltr;
+  font-size: 15px;
+  overflow: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+}
+
+.panel .content .team .my-team .invite .box .icon {
+  width: 35px;
+  height: 35px;
+  background-color: #302e5a;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-default);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .my-team .invite .box .icon:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .team .my-team .invite .box .icon i {
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.panel .content .team .my-team .invite .notic {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.panel .content .team .my-team .players {
+  width: 49.5%;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+}
+
+.panel .content .team .my-team .players ul {
+  height: 90%;
+  padding: 10px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+.panel .content .team .my-team .players ul .player {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #232242;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.panel .content .team .my-team .players ul .player img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.panel .content .team .my-team .players ul .player h4 {
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 18px;
+}
+
+.panel .content .team .my-team .players ul .player .buttons {
+  width: fit-content;
+  padding: 0;
+}
+
+.panel .content .team .my-team .players ul .player .buttons button {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* background-color: transparent; */
+}
+
+.panel
+  .content
+  .team
+  .my-team
+  .players
+  ul
+  .player
+  .buttons
+  button:nth-child(1) {
+  color: #e0b342;
+}
+
+.panel
+  .content
+  .team
+  .my-team
+  .players
+  ul
+  .player
+  .buttons
+  button:nth-child(2) {
+  color: #41db8e;
+}
+
+.panel
+  .content
+  .team
+  .my-team
+  .players
+  ul
+  .player
+  .buttons
+  button:nth-child(3) {
+  color: #db4b41;
+}
+
+.panel .content .team .my-team .players ul .player .buttons button i {
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.panel .content .team .my-team .team-history {
+  width: 49.5%;
+  height: 450px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+}
+
+/*
+|------------------------------------------------------|
+|================|  PANEL RESPONSIVE  |================|
+|------------------------------------------------------|
+*/
+
+@media screen and (max-width: 480px) {
+  .panel {
+    flex-direction: column-reverse;
+    padding-top: 8px;
+    padding-bottom: 65px;
+  }
+
+  .panel header {
+    height: 8%;
+    width: 96%;
+    padding: 0;
+    position: fixed;
+    bottom: 1%;
+    z-index: 300;
+  }
+
+  .panel header .profile {
+    position: absolute;
+    top: -30px;
+    margin: 0;
+  }
+
+  .panel header .profile::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-color: #131225;
+    position: absolute;
+    top: -10px;
+    z-index: -100;
+    border-radius: 100px 100px;
+  }
+
+  .panel header .profile img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .panel header .profile h1 {
+    display: none;
+  }
+
+  .panel header .profile p {
+    display: none;
+  }
+
+  .panel header nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px;
+  }
+
+  .panel header nav a {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    z-index: 200;
+  }
+
+  .panel header nav a:nth-child(3) {
+    margin-left: 60px;
+  }
+
+  .panel header nav a:nth-child(4) {
+    margin: 0 10px;
+  }
+
+  .panel header nav a:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .panel header nav a.active {
+    border-radius: 10px;
+  }
+
+  .panel header nav a .top,
+  .panel header nav a .bot {
+    display: none;
+  }
+
+  .panel header nav a i {
+    margin: 0;
+  }
+
+  .panel header nav a p {
+    display: none;
+  }
+
+  .panel .content {
+    width: 96%;
+    padding-bottom: 35px;
+  }
+
+  .panel .content .wallet .buttons button {
+    width: 135px;
+  }
+
+  /*
+|------------------------------------------------------|
+|=================|  PANEL DASHBOARD  |================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .dashboard {
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+
+  .panel .content .dashboard * {
+    scrollbar-width: none;
+  }
+
+  .panel .content .dashboard .wallet {
+    top: 10px;
+    right: 1.5%;
+    width: 97%;
+  }
+  .panel .content .dashboard .notif {
+    top: 840px;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .notif ul li h3 {
+    font-size: 14px;
+  }
+
+  .panel .content .dashboard .notif ul li p {
+    font-size: 12px;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons button {
+    font-size: 13px;
+    padding: 8px 20px;
+    margin-top: 10px;
+  }
+
+  .panel .content .dashboard .rank {
+    top: 220px;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .teammates {
+    top: 1250px;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .teammates .line .player img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .panel .content .dashboard .teammates .line .player h5 {
+    overflow: hidden;
+  }
+
+  .panel .content .dashboard .joined-room {
+    top: 1445px;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .joined-room ul .room div h5 {
+    font-size: 14px;
+  }
+
+  .panel .content .dashboard .joined-room ul .room div p {
+    font-size: 12px;
+    opacity: 0.8;
+  }
+
+  .panel .content .dashboard .joined-room ul .room a {
+    font-size: 13px;
+  }
+
+  .panel .content .dashboard .status {
+    top: 680px;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  .panel .content .dashboard .last-transactions {
+    top: 1705px;
+    right: 1.5%;
+    width: 97%;
+  }
+
+  /*
+|------------------------------------------------------|
+|===================|  PANEL TEAM  |===================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .team {
+    scrollbar-width: none;
+    overflow-x: hidden;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .panel .content .team * {
+    scrollbar-width: none;
+  }
+
+  .panel .content .team .buttons {
+    justify-content: center;
+  }
+
+  .panel .content .team .title {
+    margin: 10px;
+  }
+
+  .panel .content .team .my-team {
+    width: 100%;
+  }
+
+  .panel .content .team .my-team .info,
+  .panel .content .team .my-team .status,
+  .panel .content .team .my-team .invite,
+  .panel .content .team .my-team .players,
+  .panel .content .team .my-team .team-history {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .panel .content .team .my-team .players {
+    padding: 5px;
+    overflow: auto;
+  }
+
+  .panel .content .team .my-team .players ul {
+    width: fit-content;
+  }
+
+  .panel .content .team .my-team .players ul .player img {
+    margin-left: 10px;
+  }
+
+  .panel .content .team .my-team .players ul .player p {
+    width: 130px;
+  }
+}
+/*
+|------------------------------------------------------|
+|=================|  SITE RESPONSIVE  |================|
+|------------------------------------------------------|
+*/
