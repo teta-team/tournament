@@ -5,7 +5,7 @@ function Menu() {
     <div className="menu d-flex row justify-content-between align-items-center">
       <div className="logo">
         <img
-          src="https://maxgaming.ir/_next/image?url=%2F3d.png&w=128&q=75"
+          src="/assets/images/logo.png"
           alt="logo"
         />
       </div>
