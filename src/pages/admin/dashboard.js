@@ -4,7 +4,7 @@ import NotifBox from "../../components/notifBox";
 
 function Dashboard() {
   return (
-    <div className="dashboard d-flex row f-wrap">
+    <div className="dashboard">
       <div className="wallet">
         <div className="header">
           <i className="bi bi-wallet2"></i>
@@ -26,7 +26,7 @@ function Dashboard() {
 
       <div className="notif">
         <div className="header">
-          <i class="bi bi-bell"></i>
+          <i className="bi bi-bell"></i>
           <h2>اعلان ها</h2>
         </div>
         <ul>
@@ -51,7 +51,7 @@ function Dashboard() {
 
       <div className="rank">
         <div className="header">
-          <i class="bi bi-trophy"></i>
+          <i className="bi bi-trophy"></i>
           <h2>رنک من</h2>
         </div>
         <div className="box">
@@ -66,7 +66,7 @@ function Dashboard() {
 
       <div className="teammates">
         <div className="header">
-          <i class="bi bi-people"></i>
+          <i className="bi bi-people"></i>
           <h2>افراد تیم من</h2>
         </div>
         <div className="line">
@@ -75,25 +75,28 @@ function Dashboard() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
               alt=""
             />
+            <h5>Amir</h5>
           </div>
           <div className="player">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
               alt=""
             />
+            <h5>Amir_sdkjfdsolfk</h5>
           </div>
           <div className="player">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
               alt=""
             />
+            <h5>Amir</h5>
           </div>
         </div>
       </div>
 
       <div className="joined-room">
         <div className="header">
-          <i class="bi bi-calendar"></i>
+          <i className="bi bi-calendar"></i>
           <h2>روم های شرکت کرده</h2>
         </div>
         <ul>
@@ -105,7 +108,7 @@ function Dashboard() {
 
       <div className="status">
         <div className="header">
-          <i class="bi bi-bar-chart"></i>
+          <i className="bi bi-bar-chart"></i>
           <h2>آمار من</h2>
         </div>
         <div className="line">
@@ -130,7 +133,7 @@ function Dashboard() {
 
       <div className="last-transactions">
         <div className="header">
-          <i class="bi bi-cash-coin"></i>
+          <i className="bi bi-cash-coin"></i>
           <h2>آخرین تراکنش ها</h2>
         </div>
         <ul>
