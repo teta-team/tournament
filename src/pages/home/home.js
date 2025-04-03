@@ -47,6 +47,16 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <div className="rooms">
+        <div className="container d-flex column">
+          <div className="title">
+            <h2>روم ها</h2>
+            <div className="under-line"></div>
+          </div>
+        </div>
+        <div className=""></div>
+      </div>
     </>
   );
 }
