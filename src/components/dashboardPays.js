@@ -21,7 +21,18 @@ function DashboardPays({ status }) {
   } else if (status === 2) {
     return (
       <div className="transactions">
-        <i style={{ color: "#e0b342" }} className="bi bi-arrow-up-right-circle"></i>
+        <i
+          style={{ color: "#e0b342" }}
+          className="bi bi-arrow-up-right-circle"
+        ></i>
+        <h5>20000 تومان</h5>
+        <p>1403/01/20</p>
+      </div>
+    );
+  } else if (status === 3) {
+    return (
+      <div className="transactions">
+        <i style={{ color: "#afdb41" }} class="bi bi-hourglass-split"></i>
         <h5>20000 تومان</h5>
         <p>1403/01/20</p>
       </div>

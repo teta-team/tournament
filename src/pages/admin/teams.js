@@ -66,7 +66,9 @@ function Teams() {
               <i className="bi bi-copy"></i>
             </button>
           </div>
-          <p className="notic">برای دعوت دوستانتان به تیم خود این لینک را برای آنها ارسال کنید.</p>
+          <p className="notic">
+            برای دعوت دوستانتان به تیم خود این لینک را برای آنها ارسال کنید.
+          </p>
         </div>
 
         <div className="players">
@@ -88,9 +90,21 @@ function Teams() {
             <h2>تاریخچه بازی های تیم</h2>
           </div>
           <ul>
-            <TeamHistory />
-            <TeamHistory />
-            <TeamHistory />
+            <TeamHistory
+              index={3}
+              name="روم هر کیل 5000 تومان"
+              time="1404/01/25"
+            />
+            <TeamHistory
+              index={2}
+              name="روم هر کیل 5000 تومان"
+              time="1404/01/25"
+            />
+            <TeamHistory
+              index={1}
+              name="روم هر کیل 5000 تومان"
+              time="1404/01/25"
+            />
           </ul>
         </div>
       </div>
