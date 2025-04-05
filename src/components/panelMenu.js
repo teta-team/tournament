@@ -7,8 +7,8 @@ function PanelMenu() {
   const navLinks = [
     {
       path: "/panel/",
-      icon1: "bi-house",
-      icon2: "bi-house-fill",
+      icon1: "bi-grid",
+      icon2: "bi-grid-fill",
       text: "داشبورد",
       exact: true,
     },

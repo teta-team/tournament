@@ -1659,7 +1659,7 @@ button {
   }
 
   .panel .content .dashboard .teammates {
-    top: 1250px;
+    top: 1265px;
     right: 1.5%;
     width: 97%;
   }
@@ -1674,7 +1674,7 @@ button {
   }
 
   .panel .content .dashboard .joined-room {
-    top: 1445px;
+    top: 1475px;
     right: 1.5%;
     width: 97%;
   }
@@ -1699,7 +1699,7 @@ button {
   }
 
   .panel .content .dashboard .last-transactions {
-    top: 1705px;
+    top: 1735px;
     right: 1.5%;
     width: 97%;
   }
