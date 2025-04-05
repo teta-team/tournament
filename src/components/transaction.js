@@ -5,7 +5,7 @@ function Transaction({ status }) {
         <p>1</p>
         <h5>20000 تومان</h5>
         <p className="code">122323342234234</p>
-        <div className="mode">لغو شده</div>
+        <p className="mode">لغو شده</p>
         <i style={{ color: "#db4b41" }} className="bi bi-x-circle"></i>
         <p>21:30</p>
         <p>1403/01/20</p>

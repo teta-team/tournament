@@ -1511,12 +1511,12 @@ button {
   .panel {
     flex-direction: column-reverse;
     padding-top: 8px;
-    padding-bottom: 65px;
+    padding-bottom: 85px;
   }
 
   .panel header {
-    height: 50px;
-    width: 97vh;
+    height: 70px;
+    width: 97%;
     padding: 0;
     position: fixed;
     bottom: 1%;
@@ -1555,11 +1555,22 @@ button {
   }
 
   .panel header nav {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 0 5px;
+  }
+
+  .panel header nav .top-links,
+  .panel header nav .bottom-links {
+    width: 41%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .panel header nav a {
@@ -1568,20 +1579,7 @@ button {
     padding: 0;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     z-index: 200;
-  }
-
-  .panel header nav a:nth-child(3) {
-    margin-left: 60px;
-  }
-
-  .panel header nav a:nth-child(4) {
-    margin: 0 10px;
-  }
-
-  .panel header nav a:nth-child(6) {
-    margin-left: 0;
   }
 
   .panel header nav a.active {
@@ -1603,6 +1601,7 @@ button {
 
   .panel .content {
     width: 96%;
+    height: 100%;
     padding-bottom: 35px;
   }
 
@@ -1769,6 +1768,76 @@ button {
   .panel .content .team .my-team .players ul .player p {
     width: 130px;
   }
+
+    .panel .content .team .my-team .team-history {
+      overflow: auto;
+      scrollbar-width: thin;
+    }
+
+  .panel .content .team .my-team .team-history ul {
+    width: fit-content;
+    scrollbar-width: none;
+  }
+
+  .panel .content .team .my-team .team-history ul .room p {
+    margin-left: 20px;
+  }
+
+    /*
+|------------------------------------------------------|
+|===============|  PANEL TRANSACTIONS  |===============|
+|------------------------------------------------------|
+*/
+
+  .panel .content .transactions-page {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .panel .content .transactions-page ul {
+    scrollbar-width: none;
+    width: fit-content;
+  }
+
+  .panel .content .transactions-page ul .transactions p {
+    margin-left: 20px;
+  }
+
+  .panel .content .transactions-page ul .transactions h5 {
+    width: 250px;
+  }
+
+  .panel .content .transactions-page ul .transactions i {
+    margin-left: 20px;
+  }
+
+      /*
+|------------------------------------------------------|
+|=================|  PANEL HISTORY  |==================|
+|------------------------------------------------------|
+*/
+
+.panel .content .rooms-history {
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.panel .content .rooms-history ul {
+  width: fit-content;
+  scrollbar-width: none;
+}
+
+.panel .content .rooms-history ul .room h4 {
+  width: 500px;
+}
+
+.panel .content .rooms-history ul .room p {
+  margin-left: 20px;
+}
+
+.panel .content .rooms-history ul .room i {
+  margin-left: 20px;
+}
 }
 /*
 |------------------------------------------------------|
