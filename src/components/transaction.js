@@ -2,7 +2,6 @@ function Transaction({ status }) {
   if (status === 0) {
     return (
       <div className="transactions">
-        <p>1</p>
         <h5>20000 تومان</h5>
         <p className="code">122323342234234</p>
         <p className="mode">لغو شده</p>
@@ -14,7 +13,6 @@ function Transaction({ status }) {
   } else if (status === 1) {
     return (
       <div className="transactions">
-        <p>1</p>
         <h5>20000 تومان</h5>
         <p className="code">122323342234234</p>
         <p className="mode">واریز</p>
@@ -29,7 +27,6 @@ function Transaction({ status }) {
   } else if (status === 2) {
     return (
       <div className="transactions">
-        <p>1</p>
         <h5>20000 تومان</h5>
         <p className="code">122323342234234</p>
         <p className="mode">برداشت</p>
@@ -44,7 +41,6 @@ function Transaction({ status }) {
   } else if (status === 3) {
     return (
       <div className="transactions">
-        <p>1</p>
         <h5>20000 تومان</h5>
         <p className="code">122323342234234</p>
         <p className="mode">درحال تسویه</p>

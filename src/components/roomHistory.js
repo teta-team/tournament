@@ -7,8 +7,7 @@ function RoomHistory({ status, mode }) {
       >
         <p>1</p>
         <h4>روم هر کیل 5000 تومان</h4>
-        <p className="status">غائب در روم</p>
-        <p className="mode">از دست دادی</p>
+        <p className="status">ای بابا یادت رفت تو روم شرکت کنی!</p>
         <i class="bi bi-emoji-dizzy"></i>
         <p>20:40</p>
         <p>1404/01/20</p>
@@ -23,8 +22,7 @@ function RoomHistory({ status, mode }) {
         >
           <p>1</p>
           <h4>روم هر کیل 5000 تومان</h4>
-          <p className="status">حاضر در روم</p>
-          <p className="mode">باختی</p>
+          <p className="status">عیب نداره دفعه بعد بیشتر تلاش کن.</p>
           <i class="bi bi-emoji-frown"></i>
           <p>20:40</p>
           <p>1404/01/20</p>
@@ -38,8 +36,7 @@ function RoomHistory({ status, mode }) {
         >
           <p>1</p>
           <h4>روم هر کیل 5000 تومان</h4>
-          <p className="status">حاضر در روم</p>
-          <p className="mode">بردی</p>
+          <p className="status">ایول بهت همینجوری ادامه بده.</p>
           <i class="bi bi-trophy"></i>
           <p>20:40</p>
           <p>1404/01/20</p>

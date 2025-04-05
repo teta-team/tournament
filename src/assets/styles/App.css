@@ -1480,6 +1480,9 @@ button {
 .panel .content .rooms-history ul .room h4 {
   font-size: 18px;
   width: 700px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .panel .content .rooms-history ul .room p {
@@ -1487,13 +1490,7 @@ button {
 }
 
 .panel .content .rooms-history ul .room .status {
-  width: 100px;
-  text-align: center;
-}
-
-.panel .content .rooms-history ul .room .mode {
-  width: 100px;
-  text-align: center;
+  width: 300px;
 }
 
 .panel .content .rooms-history ul .room i {
@@ -1602,10 +1599,7 @@ button {
     width: 96%;
     height: 100%;
     padding-bottom: 35px;
-  }
-
-  .panel .content .wallet .buttons button {
-    width: 135px;
+    background-size: 160%;
   }
 
   /*
@@ -1628,6 +1622,11 @@ button {
     right: 1.5%;
     width: 97%;
   }
+
+  .panel .content .wallet .buttons button {
+    width: 135px;
+  }
+
   .panel .content .dashboard .notif {
     top: 840px;
     right: 1.5%;
@@ -1752,34 +1751,70 @@ button {
   }
 
   .panel .content .team .my-team .players {
+    height: 420px;
     padding: 5px;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .panel .content .team .my-team .players ul {
-    width: fit-content;
+    width: 100%;
+  }
+
+  .panel .content .team .my-team .players ul .player {
+    padding: 5px;
   }
 
   .panel .content .team .my-team .players ul .player img {
+    width: 50px;
+    height: 50px;
     margin-left: 10px;
   }
 
-  .panel .content .team .my-team .players ul .player p {
-    width: 130px;
+  .panel .content .team .my-team .players ul .player h4 {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .panel .content .team .my-team .players ul .player button {
+    padding: 5px;
+  }
+
+  .panel .content .team .my-team .players ul .player i {
+    font-size: 16px;
   }
 
   .panel .content .team .my-team .team-history {
     overflow: auto;
-    scrollbar-width: thin;
+    padding: 10px;
   }
 
   .panel .content .team .my-team .team-history ul {
-    width: fit-content;
-    scrollbar-width: none;
+    width: 100%;
+  }
+
+  .panel .content .team .my-team .team-history ul .room {
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+
+  .panel .content .team .my-team .team-history ul .room h4 {
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .panel .content .team .my-team .team-history ul .room p {
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+
+  .panel .content .team .my-team .team-history ul .room h5 {
+    align-self: center;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 5px auto 0 5px;
   }
 
   /*
@@ -1794,20 +1829,43 @@ button {
   }
 
   .panel .content .transactions-page ul {
+    width: 100%;
     scrollbar-width: none;
-    width: fit-content;
   }
 
-  .panel .content .transactions-page ul .transactions p {
-    margin-left: 20px;
+  .panel .content .transactions-page ul .transactions {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .panel .content .transactions-page ul .transactions p:first-child {
+    opacity: 0.8;
   }
 
   .panel .content .transactions-page ul .transactions h5 {
-    width: 250px;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .panel .content .transactions-page ul .transactions .code {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .panel .content .transactions-page ul .transactions .mode {
+    margin: 5px 0;
   }
 
   .panel .content .transactions-page ul .transactions i {
-    margin-left: 20px;
+    /* margin: 5px 0; */
+    position: absolute;
+    opacity: 0.2;
+    font-size: 150px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
   }
 
   /*
@@ -1822,20 +1880,46 @@ button {
   }
 
   .panel .content .rooms-history ul {
-    width: fit-content;
-    scrollbar-width: none;
+    width: 100%;
+  }
+
+  .panel .content .rooms-history ul .room {
+    flex-wrap: wrap;
+    padding: 15px;
+    position: relative;
   }
 
   .panel .content .rooms-history ul .room h4 {
-    width: 500px;
-  }
-
-  .panel .content .rooms-history ul .room p {
-    margin-left: 20px;
+    width: 270px;
+    margin-bottom: 10px;
   }
 
   .panel .content .rooms-history ul .room i {
-    margin-left: 20px;
+    margin: 0 20px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    font-size: 120px;
+  }
+
+  .panel .content .rooms-history ul .room .status {
+    width: 100%;
+    text-align: right;
+    font-size: 15px;
+  }
+
+  .panel .content .rooms-history ul .room p:nth-child(1) {
+    margin-right: 5px;
+  }
+
+  .panel .content .rooms-history ul .room p:nth-child(5) {
+    margin: 10px auto 0 10px;
+  }
+
+  .panel .content .rooms-history ul .room p:nth-child(6) {
+    margin-top: 10px;
   }
 }
 /*
