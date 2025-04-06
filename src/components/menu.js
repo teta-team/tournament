@@ -18,7 +18,7 @@ function Menu() {
         <div className="line"></div>
       </nav>
       <div className="profile">
-        <img src="https://openclipart.org/image/2000px/247319" alt="" />
+        <img src="https://openclipart.org/image/2000px/247319" alt="شیس" />
       </div>
     </div>
   );

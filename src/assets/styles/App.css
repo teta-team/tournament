@@ -1499,6 +1499,95 @@ button {
 
 /*
 |------------------------------------------------------|
+|==================|  PANEL OFFERS  |==================|
+|------------------------------------------------------|
+*/
+
+.panel .content .offers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.panel .content .offers .sub {
+  width: 23%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .offers .sub img {
+  width: 90%;
+}
+
+.panel .content .offers .sub ul {
+  width: 100%;
+}
+
+.panel .content .offers .sub ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .offers .sub h2 {
+  margin-bottom: 20px;
+}
+
+.panel .content .offers .sub ul li {
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+
+.panel .content .offers .sub ul li i {
+  margin-left: 5px;
+  color: #41db8e;
+  font-size: 18px;
+}
+
+.panel .content .offers .sub ul li p {
+  font-size: 16px;
+}
+
+.panel .content .offers .sub > p {
+  margin-top: 10px;
+}
+
+.panel .content .offers .sub p {
+  font-family: estedad-thin;
+  font-size: 18px;
+}
+
+.panel .content .offers .sub button {
+  width: 90%;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: var(--color-primary);
+  margin-top: 20px;
+  color: var(--color-default);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .offers .sub button:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+/*
+|------------------------------------------------------|
 |================|  PANEL RESPONSIVE  |================|
 |------------------------------------------------------|
 */
@@ -1920,6 +2009,23 @@ button {
 
   .panel .content .rooms-history ul .room p:nth-child(6) {
     margin-top: 10px;
+  }
+
+  /*
+|------------------------------------------------------|
+|==================|  PANEL OFFERS  |==================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .offers {
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .panel .content .offers .sub {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 /*
