@@ -8,6 +8,7 @@ import Teams from "./pages/admin/teams";
 import Transactions from "./pages/admin/transactions";
 import History from "./pages/admin/history";
 import Offers from "./pages/admin/offers";
+import Settings from "./pages/admin/settings";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="transactions" element={<Transactions />} />
           <Route path="history" element={<History />} />
           <Route path="offers" element={<Offers />} />
-          <Route path="settings" element={<Teams />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
         {/* <Route path="/*" element={} /> */}
       </Routes>

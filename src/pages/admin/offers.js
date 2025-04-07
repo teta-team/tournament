@@ -1,6 +1,12 @@
 import subs from "../../data/subs.json"
 
 function Offers() {
+  const prices = [
+    process.env.REACT_APP_SUB1_PRICE,
+    process.env.REACT_APP_SUB2_PRICE,
+    process.env.REACT_APP_SUB3_PRICE,
+    process.env.REACT_APP_SUB4_PRICE,
+  ];
   return (
     <div className="offers">
       {subs.map((sub, index) => (
@@ -15,7 +21,7 @@ function Offers() {
               </li>
             ))}
           </ul>
-          <p>{sub.price} تومان</p>
+          <p>{prices[index]} تومان</p>
           <button>خرید</button>
         </div>
       ))}
