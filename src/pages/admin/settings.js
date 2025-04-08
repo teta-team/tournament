@@ -18,7 +18,7 @@ function Settings() {
               placeholder="اسم جدیدت رو بزن..."
               required
               maxLength={15}
-            ></input>
+            />
           </div>
           <button>ثبت اسم جدید</button>
         </div>
@@ -34,7 +34,7 @@ function Settings() {
               type="password"
               placeholder="رمز عبور الانت رو بزن..."
               required
-            ></input>
+            />
           </div>
           <div className="new-password">
             <h3>نام کاربری جدید:</h3>
@@ -42,15 +42,21 @@ function Settings() {
               type="password"
               placeholder="رمز عبور جدیدت رو بزن..."
               required
-            ></input>
+            />
           </div>
           <button>ثبت رمز عبور جدید</button>
         </div>
+        <div className="profile">
+          <div className="title">
+            <i class="bi bi-image"></i>
+            <h2>تغییر عکس پروفایل</h2>
+          </div>
+          <input type="file" />
+          <button>ثبت پروفایل جدید</button>
+        </div>
       </div>
 
-      <div className="line">
-        
-      </div>
+      <div className="line"></div>
     </div>
   );
 }
