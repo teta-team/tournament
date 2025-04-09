@@ -578,6 +578,20 @@ button {
   margin-top: 10px;
   border-radius: 10px;
   overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.main .rooms .Category {
+  width: 100%;
+}
+
+.main .rooms .Category button {
+  width: 120px;
+  height: 80px;
+  border-radius: 20px;
+  background-color: var(--color-accent);
+  border: none;
+  color: #FFF;
   position: relative;
 }
 

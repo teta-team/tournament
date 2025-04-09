@@ -55,7 +55,15 @@ function Home() {
             <div className="under-line"></div>
           </div>
         </div>
-        <div className=""></div>
+        <div className="container">
+          <div className="Category d-flex row justify-content-evenly">
+            <button>Battleroyale</button>
+            <button>Multi Player</button>
+            <button>روم های ویژه</button>
+            <button>روم رایگان</button>
+            <button>دوئل</button>
+          </div>
+        </div>
       </div>
     </>
   );
