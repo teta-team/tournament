@@ -565,11 +565,11 @@ button {
 
 /*
 |------------------------------------------------------|
-|=====================|  ROOMS  |======================|
+|====================|  CATEGORY  |====================|
 |------------------------------------------------------|
 */
 
-.main .rooms .title .under-line {
+.main .categories .title .under-line {
   width: 280px;
   height: 3px;
   background-color: var(--color-accent);
@@ -581,18 +581,284 @@ button {
   margin-bottom: 10px;
 }
 
-.main .rooms .Category {
+.main .categories .Category {
   width: 100%;
 }
 
-.main .rooms .Category button {
-  width: 120px;
+.main .categories .Category a {
+  text-align: center;
+  width: fit-content;
   height: 80px;
+  margin: 30px auto;
   border-radius: 20px;
-  background-color: var(--color-accent);
   border: none;
-  color: #FFF;
+  color: #fff;
+  font-size: 33px;
+  background-color: inherit;
+  color: #fff;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
+    0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e,
+      0 0 40px #ff005e, 0 0 80px #ff005e;
+  }
+  100% {
+    text-shadow: 0 0 10px #1d92db, 0 0 20px #1d92db, 0 0 40px #1d92db,
+      0 0 80px #1d92db, 0 0 200px #1d92db;
+  }
+}
+/*
+|------------------------------------------------------|
+|======================| ROOMS  |======================|
+|------------------------------------------------------|
+*/
+
+.rooms {
+  width: 100%;
+  height: 800px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #471a70c9;
+  width: 33%;
+  height: 500px;
+  border: 2px #57099f solid;
+  border-radius: 50px;
+  margin: 20px;
+}
+.card .img {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
   position: relative;
+  border-radius: 50px 50px 0 0;
+  margin-bottom: 10px;
+}
+.card .img h1 {
+  font-size: 26px;
+  color: #e1b2f4;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: absolute;
+  left: 210px;
+  bottom: -15px;
+}
+
+.card .img h2 {
+  font-size: 21px;
+  color: #e1b2f4;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: absolute;
+  left: 5px;
+  bottom: -15px;
+}
+
+.card .details {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card .details .room-details .price {
+  background-color: #9f53c0;
+  padding: 15px;
+  width: fit-content;
+  border-radius: 15px;
+  margin: 10px auto;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  z-index: 3;
+  color: #ebd6f3;
+}
+
+.card .details .room-details .time {
+  background-color: #9543bb;
+  padding: 20px;
+  width: fit-content;
+  border-radius: 15px;
+  margin: 6px auto;
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  z-index: 2;
+  color: #ebd6f3;
+}
+.card .details .room-details .empty-box {
+  width: 280px;
+  border-radius: 15px;
+  background-color: #9b5bd7;
+  height: 50px;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card .details .room-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .details .btn {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+}
+.card .details .btn button {
+  font-size: 23px;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: #bd37ea;
+  border: none;
+  width: 130px;
+  margin: 15px 25px;
+  color: #e4b6f6;
+}
+.card .details .btn p {
+  font-size: 22px;
+  color: #af8ebd;
+  margin: 15px;
+  color: #e1b2f4;
+}
+.card .details .room-details .price svg {
+  height: 25px;
+  width: 25px;
+  color: #cfe829;
+  margin-left: 5px;
+}
+.card .details .room-details .time svg {
+  height: 25px;
+  width: 25px;
+  color: #f9b8f6;
+  margin-left: 15px;
+}
+
+/*
+|------------------------------------------------------|
+|=====================|  ABOUT US |====================|
+|------------------------------------------------------|
+*/
+
+.about-us {
+  width: 100%;
+}
+.about-us .box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-us .video {
+  width: 45%;
+}
+
+.about-us .video video {
+  width: 100%;
+  border-radius: 10px;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 5px;
+}
+
+.about-us .text {
+  width: 45%;
+  height: 100%;
+  margin: 20px;
+  text-align: justify;
+}
+.about-us .text h1 {
+  width: 200px;
+  color: #af8ebd;
+  text-align: start;
+  font-size: 33px;
+  border-bottom: 3px #9f53c0 solid;
+}
+
+.about-us .text p {
+  font-size: 22px;
+  color: #e1b2f4;
+  line-height: 1.7;
+}
+
+/*
+|------------------------------------------------------|
+|====================|  STREAMERS  |===================|
+|------------------------------------------------------|
+*/
+.streamers-box {
+  width: 100%;
+}
+
+.streamers-box h1 {
+  width: 230px;
+  font-size: 35px;
+  color: #9f53c0;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  border-bottom: 3px #bd37ea solid;
+}
+
+.streamers-box .streamers {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+}
+
+.streamers-box .streamers .streamer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.streamers-box .streamers .streamer p {
+  font-size: 35px;
+  font-weight: normal;
+  font-style: italic;
+  color: #af8ebd;
+  letter-spacing: 1.5px;
+  margin: 15px;
+}
+
+.streamers-box .streamers .streamer .border {
+  width: 153px;
+  height: 153px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #ff0000 0%,
+    #ef6605 25%,
+    #46ef02 50%,
+    #01f3ee 75%,
+    #02c4ff 100%
+  );
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.streamers-box .streamers .streamer .border .streamer-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: black;
 }
 
 /*
