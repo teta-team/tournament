@@ -48,15 +48,37 @@ function Settings() {
         </div>
         <div className="profile">
           <div className="title">
-            <i class="bi bi-image"></i>
+            <i className="bi bi-image"></i>
             <h2>تغییر عکس پروفایل</h2>
           </div>
-          <input type="file" />
-          <button>ثبت پروفایل جدید</button>
+          <div className="pic">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              alt=""
+            />
+            <button className="edit">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className="line"></div>
+      <div className="line">
+        <div className="rules">
+          <div className="title">
+            <i class="bi bi-book"></i>
+            <h2>قوانین سایت</h2>
+          </div>
+          <a href="/assets/documents/قوانین.pdf" download>
+            <i class="bi bi-download"></i>
+            <p>دانلود قوانین سایت</p>
+          </a>
+          <a href="https://t.me/ir_tournament_toturial">
+            <i class="bi bi-telegram"></i>
+            <p>آموزش شرکت در مسابقات</p>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
