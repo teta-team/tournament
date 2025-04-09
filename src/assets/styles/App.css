@@ -435,7 +435,7 @@ button {
 
 .panel header {
   width: 15%;
-  height: 97vh;
+  height: 97%;
   background-color: #201e3e;
   display: flex;
   flex-direction: column;
@@ -556,6 +556,10 @@ button {
 .panel .content {
   width: 83%;
   height: 97vh;
+  background-image: url("/public/assets/images/bg-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #201e3e;
 }
 
@@ -588,6 +592,7 @@ button {
   background-color: var(--color-accent);
   border: none;
   color: #FFF;
+  position: relative;
 }
 
 /*
@@ -598,7 +603,7 @@ button {
 
 .panel .content .dashboard {
   width: 100%;
-  height: 100%;
+  height: 98%;
   overflow-y: auto;
   padding: 20px;
   position: relative;
@@ -1394,6 +1399,527 @@ button {
   box-shadow: inset 0 0 5px var(--color-primary);
 }
 
+.panel .content .team .my-team .team-history ul {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.panel .content .team .my-team .team-history ul .room {
+  height: 90%;
+  overflow-y: auto;
+  background-color: #232242;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .team .my-team .team-history ul .room p {
+  opacity: 0.8;
+  font-family: estedad-thin;
+}
+
+.panel .content .team .my-team .team-history ul .room h4 {
+  width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .transactions-page {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.panel .content .transactions-page ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.panel .content .transactions-page ul .transactions {
+  width: 100%;
+  background-color: #232242;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.panel .content .transactions-page ul .transactions i {
+  font-size: 22px;
+  margin-top: 3px;
+}
+
+.panel .content .transactions-page ul .transactions h5 {
+  font-size: 18px;
+  width: 350px;
+}
+
+.panel .content .transactions-page ul .transactions .code {
+  width: 250px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.panel .content .transactions-page ul .transactions .mode {
+  width: 120px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.panel .content .transactions-page ul .transactions p {
+  font-size: 18px;
+  font-family: estedad-thin;
+}
+
+.panel .content .rooms-history {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+.panel .content .rooms-history ul {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.panel .content .rooms-history ul .room {
+  width: 100%;
+  background-color: #232242;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .rooms-history ul .room h4 {
+  font-size: 18px;
+  width: 700px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel .content .rooms-history ul .room p {
+  font-family: estedad-thin;
+}
+
+.panel .content .rooms-history ul .room .status {
+  width: 300px;
+}
+
+.panel .content .rooms-history ul .room i {
+  font-size: 20px;
+}
+
+/*
+|------------------------------------------------------|
+|==================|  PANEL OFFERS  |==================|
+|------------------------------------------------------|
+*/
+
+.panel .content .offers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.panel .content .offers .sub {
+  width: 23%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .offers .sub img {
+  width: 90%;
+}
+
+.panel .content .offers .sub ul {
+  width: 100%;
+}
+
+.panel .content .offers .sub ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.panel .content .offers .sub h2 {
+  margin-bottom: 20px;
+}
+
+.panel .content .offers .sub ul li {
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+
+.panel .content .offers .sub ul li i {
+  margin-left: 5px;
+  color: #41db8e;
+  font-size: 18px;
+}
+
+.panel .content .offers .sub ul li p {
+  font-size: 16px;
+}
+
+.panel .content .offers .sub > p {
+  margin-top: 10px;
+}
+
+.panel .content .offers .sub p {
+  font-family: estedad-thin;
+  font-size: 18px;
+}
+
+.panel .content .offers .sub button {
+  width: 90%;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: var(--color-primary);
+  margin-top: 20px;
+  color: var(--color-default);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .offers .sub button:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+/*
+|------------------------------------------------------|
+|=================|  PANEL SETTINGS  |=================|
+|------------------------------------------------------|
+*/
+
+.panel .content .settings {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.panel .content .settings .line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel .content .settings .line .user-name {
+  width: 32%;
+  height: 300px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .settings .title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.panel .content .settings .title i {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.panel .content .settings .title h2 {
+  font-size: 15px;
+}
+
+.panel .content .settings .line .user-name .old-name {
+  width: 100%;
+}
+
+.panel .content .settings .line .user-name h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.panel .content .settings .line .user-name h4 {
+  width: 100%;
+  background-color: #302e5a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.panel .content .settings .line .user-name .new-name {
+  width: 100%;
+}
+
+.panel .content .settings .line .user-name input,
+.panel .content .settings .line .user-name input:autofill {
+  width: 100%;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: vazir;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-accent);
+  text-align: center;
+  color: var(--color-default);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.panel .content .settings .line .user-name input:focus,
+.panel .content .settings .line .user-name input:valid {
+  background-color: #302e5a;
+  border-radius: 5px;
+  border-bottom-color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .user-name button {
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-accent);
+  color: var(--color-default);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.panel .content .settings .line .user-name button:hover {
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 10px var(--color-secondary);
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .password {
+  width: 32%;
+  height: 300px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .settings .line .password .old-password {
+  width: 100%;
+}
+
+.panel .content .settings .line .password h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.panel .content .settings .line .password h4 {
+  width: 100%;
+  background-color: #302e5a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.panel .content .settings .line .password .new-password {
+  width: 100%;
+}
+
+.panel .content .settings .line .password input {
+  width: 100%;
+  background-color: transparent;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: vazir;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color-accent);
+  text-align: center;
+  color: var(--color-default);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.panel .content .settings .line .password input:focus,
+.panel .content .settings .line .password input:valid {
+  background-color: #302e5a;
+  border-radius: 5px;
+  border-bottom-color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .password button {
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--color-accent);
+  color: var(--color-default);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.panel .content .settings .line .password button:hover {
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 10px var(--color-secondary);
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .profile {
+  width: 32%;
+  height: 300px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel .content .settings .line .profile .pic {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  margin: auto 0;
+}
+
+.panel .content .settings .line .profile .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+}
+
+.panel .content .settings .line .profile .pic .edit {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  bottom: 3px;
+  left: 10px;
+  color: var(--color-default);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .profile .pic .edit:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .profile .pic .edit i {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.panel .content .settings .line .rules {
+  width: 32%;
+  height: 180px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.panel .content .settings .line .rules a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .rules a:hover {
+  filter: brightness(80%);
+  transition: all 0.3s ease;
+}
+
+.panel .content .settings .line .rules .title {
+  margin-bottom: 15px;
+}
+
+.panel .content .settings .line .rules .title i {
+  margin-left: 8px;
+}
+
+.panel .content .settings .line .rules a i {
+  font-size: 22px;
+  margin-left: 10px;
+  color: #b587ff;
+}
+
+.panel .content .settings .line .rules a p {
+  font-size: 18px;
+  color: #41b7db;
+}
+
 /*
 |------------------------------------------------------|
 |================|  PANEL RESPONSIVE  |================|
@@ -1404,12 +1930,12 @@ button {
   .panel {
     flex-direction: column-reverse;
     padding-top: 8px;
-    padding-bottom: 65px;
+    padding-bottom: 85px;
   }
 
   .panel header {
-    height: 50px;
-    width: 96%;
+    height: 70px;
+    width: 97%;
     padding: 0;
     position: fixed;
     bottom: 1%;
@@ -1448,11 +1974,22 @@ button {
   }
 
   .panel header nav {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 0 5px;
+  }
+
+  .panel header nav .top-links,
+  .panel header nav .bottom-links {
+    width: 41%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .panel header nav a {
@@ -1461,20 +1998,7 @@ button {
     padding: 0;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
     z-index: 200;
-  }
-
-  .panel header nav a:nth-child(3) {
-    margin-left: 60px;
-  }
-
-  .panel header nav a:nth-child(4) {
-    margin: 0 10px;
-  }
-
-  .panel header nav a:nth-child(6) {
-    margin-left: 0;
   }
 
   .panel header nav a.active {
@@ -1496,11 +2020,9 @@ button {
 
   .panel .content {
     width: 96%;
+    height: 100%;
     padding-bottom: 35px;
-  }
-
-  .panel .content .wallet .buttons button {
-    width: 135px;
+    background-size: 160%;
   }
 
   /*
@@ -1523,6 +2045,11 @@ button {
     right: 1.5%;
     width: 97%;
   }
+
+  .panel .content .wallet .buttons button {
+    width: 135px;
+  }
+
   .panel .content .dashboard .notif {
     top: 840px;
     right: 1.5%;
@@ -1555,7 +2082,7 @@ button {
   }
 
   .panel .content .dashboard .teammates {
-    top: 1250px;
+    top: 1265px;
     right: 1.5%;
     width: 97%;
   }
@@ -1570,7 +2097,7 @@ button {
   }
 
   .panel .content .dashboard .joined-room {
-    top: 1445px;
+    top: 1475px;
     right: 1.5%;
     width: 97%;
   }
@@ -1595,7 +2122,7 @@ button {
   }
 
   .panel .content .dashboard .last-transactions {
-    top: 1705px;
+    top: 1735px;
     right: 1.5%;
     width: 97%;
   }
@@ -1647,20 +2174,368 @@ button {
   }
 
   .panel .content .team .my-team .players {
+    height: 420px;
     padding: 5px;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .panel .content .team .my-team .players ul {
-    width: fit-content;
+    width: 100%;
+  }
+
+  .panel .content .team .my-team .players ul .player {
+    padding: 5px;
   }
 
   .panel .content .team .my-team .players ul .player img {
+    width: 50px;
+    height: 50px;
     margin-left: 10px;
   }
 
-  .panel .content .team .my-team .players ul .player p {
-    width: 130px;
+  .panel .content .team .my-team .players ul .player h4 {
+    width: 100px;
+    font-size: 16px;
+  }
+
+  .panel .content .team .my-team .players ul .player button {
+    padding: 5px;
+  }
+
+  .panel .content .team .my-team .players ul .player i {
+    font-size: 16px;
+  }
+
+  .panel .content .team .my-team .team-history {
+    overflow: auto;
+    padding: 10px;
+  }
+
+  .panel .content .team .my-team .team-history ul {
+    width: 100%;
+  }
+
+  .panel .content .team .my-team .team-history ul .room {
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+
+  .panel .content .team .my-team .team-history ul .room h4 {
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .panel .content .team .my-team .team-history ul .room p {
+    margin-left: 10px;
+  }
+
+  .panel .content .team .my-team .team-history ul .room h5 {
+    align-self: center;
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 5px auto 0 5px;
+  }
+
+  /*
+|------------------------------------------------------|
+|===============|  PANEL TRANSACTIONS  |===============|
+|------------------------------------------------------|
+*/
+
+  .panel .content .transactions-page {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .panel .content .transactions-page ul {
+    width: 100%;
+    scrollbar-width: none;
+  }
+
+  .panel .content .transactions-page ul .transactions {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .panel .content .transactions-page ul .transactions p:first-child {
+    opacity: 0.8;
+  }
+
+  .panel .content .transactions-page ul .transactions h5 {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .panel .content .transactions-page ul .transactions .code {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .panel .content .transactions-page ul .transactions .mode {
+    margin: 5px 0;
+  }
+
+  .panel .content .transactions-page ul .transactions i {
+    /* margin: 5px 0; */
+    position: absolute;
+    opacity: 0.2;
+    font-size: 150px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  /*
+|------------------------------------------------------|
+|=================|  PANEL HISTORY  |==================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .rooms-history {
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .panel .content .rooms-history ul {
+    width: 100%;
+  }
+
+  .panel .content .rooms-history ul .room {
+    flex-wrap: wrap;
+    padding: 15px;
+    position: relative;
+  }
+
+  .panel .content .rooms-history ul .room h4 {
+    width: 270px;
+    margin-bottom: 10px;
+  }
+
+  .panel .content .rooms-history ul .room i {
+    margin: 0 20px;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    font-size: 120px;
+  }
+
+  .panel .content .rooms-history ul .room .status {
+    width: 100%;
+    text-align: right;
+    font-size: 15px;
+  }
+
+  .panel .content .rooms-history ul .room p:nth-child(1) {
+    margin-right: 5px;
+  }
+
+  .panel .content .rooms-history ul .room p:nth-child(5) {
+    margin: 10px auto 0 10px;
+  }
+
+  .panel .content .rooms-history ul .room p:nth-child(6) {
+    margin-top: 10px;
+  }
+
+  /*
+|------------------------------------------------------|
+|==================|  PANEL OFFERS  |==================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .offers {
+    flex-direction: column;
+    overflow: auto;
+    scrollbar-width: none;
+  }
+
+  .panel .content .offers .sub {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/*
+|------------------------------------------------------|
+|====================|  MONITOR  |=====================|
+|------------------------------------------------------|
+*/
+
+@media only screen and (min-width: 1600px) and (max-width: 2000px) {
+  /*
+|------------------------------------------------------|
+|================|  PANEL DASHBOARD  |=================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .dashboard .wallet {
+    width: 400px;
+  }
+
+  .panel .content .dashboard .teammates {
+    width: 400px;
+  }
+
+  .panel .content .dashboard .last-transactions {
+    width: 400px;
+    height: 450px;
+  }
+
+  .panel .content .dashboard .notif {
+    width: 735px;
+    right: 425px;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons button {
+    width: 30%;
+    margin: 10px 0;
+  }
+
+  .panel .content .dashboard .joined-room {
+    width: 735px;
+    height: 450px;
+    right: 425px;
+  }
+
+  .panel .content .dashboard .rank {
+    width: 400px;
+    height: 550px;
+  }
+
+  .panel .content .dashboard .status {
+    width: 400px;
+    top: 575px;
+  }
+
+  /*
+|------------------------------------------------------|
+|===================|  PANEL TEAM  |===================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .team .my-team .info {
+    /* width: 500px; */
+    width: 32%;
+  }
+
+  .panel .content .team .my-team .status {
+    /* width: 500px; */
+    width: 32%;
+  }
+
+  .panel .content .team .my-team .invite {
+    /* width: 500px; */
+    width: 34%;
+  }
+
+  .panel .content .team .my-team .players {
+    height: 550px;
+  }
+
+  .panel .content .team .my-team .team-history {
+    height: 550px;
+  }
+}
+
+/*
+|------------------------------------------------------|
+|====================|  LAPTOP L  |====================|
+|------------------------------------------------------|
+*/
+
+@media only screen and (min-width: 1360px) and (max-width: 1600px) {
+  /*
+|------------------------------------------------------|
+|================|  PANEL DASHBOARD  |=================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .dashboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .panel .content .dashboard .wallet {
+    width: 350px;
+  }
+
+  .panel .content .dashboard .teammates {
+    width: 350px;
+  }
+
+  .panel .content .dashboard .last-transactions {
+    width: 450px;
+    height: 250px;
+    top: 805px;
+    right: 375px;
+  }
+
+  .panel .content .dashboard .notif {
+    width: 740px;
+    right: 375px;
+  }
+
+  .panel .content .dashboard .notif ul li .buttons button {
+    width: 30%;
+    margin: 10px 0;
+  }
+
+  .panel .content .dashboard .joined-room {
+    width: 740px;
+    height: 350px;
+    right: 375px;
+  }
+
+  .panel .content .dashboard .rank {
+    width: 350px;
+    height: 450px;
+    top: 440px;
+    right: 10px;
+  }
+
+  .panel .content .dashboard .status {
+    width: 350px;
+    right: 10px;
+    top: 905px;
+  }
+
+  /*
+|------------------------------------------------------|
+|===================|  PANEL TEAM  |===================|
+|------------------------------------------------------|
+*/
+
+  .panel .content .team .my-team .info {
+    /* width: 350px; */
+    width: 32%;
+  }
+
+  .panel .content .team .my-team .status {
+    /* width: 350px; */
+    width: 32%;
+  }
+
+  .panel .content .team .my-team .invite {
+    /* width: 390px; */
+    width: 34%;
+  }
+
+  .panel .content .team .my-team .players {
+    height: 550px;
+  }
+
+  .panel .content .team .my-team .team-history {
+    height: 550px;
   }
 }
 /*
