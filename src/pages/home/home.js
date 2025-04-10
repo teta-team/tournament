@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import LastPays from "../../components/lastPays";
 import RoomBox from "../../components/roomBox";
 import Streamers from "../../components/streamers";
+import Footer from "../../components/footer";
 
 function Home() {
   return (
@@ -142,7 +143,10 @@ function Home() {
           </div>
         </div>
       </div>
+    <Footer/>
+    
     </div>
+
   );
 }
 
