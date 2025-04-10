@@ -74,46 +74,49 @@ function PanelMenu() {
         <p>id: #JSBO4857</p>
       </div>
       <nav>
-        <div className="top-links">
-          {topLinks.map((link, index) => (
-            <Link
-              to={link.path}
-              key={index}
-              className={activeLink === index ? "active" : ""}
-              onClick={() => setActiveLink(index)}
-            >
-              <i className={`bi ${link.icon1}`}></i>
-              <i className={`bi ${link.icon2}`}></i>
-              <p>{link.text}</p>
-              <div className="top">
-                <div></div>
-              </div>
-              <div className="bot">
-                <div></div>
-              </div>
-            </Link>
-          ))}
-        </div>
+        {topLinks.map((link, index) => (
+          <Link
+            to={link.path}
+            key={index}
+            className={activeLink === index ? "active" : ""}
+            onClick={() => setActiveLink(index)}
+          >
+            <i className={`bi ${link.icon1}`}></i>
+            <i className={`bi ${link.icon2}`}></i>
+            <p>{link.text}</p>
+            <div className="top">
+              <div></div>
+            </div>
+            <div className="bot">
+              <div></div>
+            </div>
+          </Link>
+        ))}
 
-        <div className="bottom-links">
-          {bottomLinks.map((link, index) => (
-            <Link
-              to={link.path}
-              key={index + 3}
-              className={activeLink === index + 3 ? "active" : ""}
-              onClick={() => setActiveLink(index + 3)}
-            >
-              <i className={`bi ${link.icon1}`}></i>
-              <i className={`bi ${link.icon2}`}></i>
-              <p>{link.text}</p>
-              <div className="top">
-                <div></div>
-              </div>
-              <div className="bot">
-                <div></div>
-              </div>
-            </Link>
-          ))}
+        {bottomLinks.map((link, index) => (
+          <Link
+            to={link.path}
+            key={index + 3}
+            className={activeLink === index + 3 ? "active" : ""}
+            onClick={() => setActiveLink(index + 3)}
+          >
+            <i className={`bi ${link.icon1}`}></i>
+            <i className={`bi ${link.icon2}`}></i>
+            <p>{link.text}</p>
+            <div className="top">
+              <div></div>
+            </div>
+            <div className="bot">
+              <div></div>
+            </div>
+          </Link>
+        ))}
+
+        <div className="back-site">
+          <Link to="/">
+            <i class="bi bi-box-arrow-right"></i>
+            <p>بازگشت به سایت</p>
+          </Link>
         </div>
       </nav>
     </header>
