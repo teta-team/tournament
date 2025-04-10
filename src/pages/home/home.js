@@ -6,10 +6,10 @@ import Footer from "../../components/footer";
 
 function Home() {
   return (
-    <>
+    <div className="home-page">
       <div className="welcome">
         <div className="container">
-          <img src="/assets/images/banners/1.png" alt="banner" />
+          <img src="/assets/images/banners/1.webp" alt="banner" />
         </div>
       </div>
 
@@ -144,7 +144,9 @@ function Home() {
         </div>
       </div>
     <Footer/>
-    </>
+    
+    </div>
+
   );
 }
 
