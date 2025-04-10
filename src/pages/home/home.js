@@ -8,17 +8,7 @@ function Home() {
     <>
       <div className="welcome">
         <div className="container">
-          <div className="right">
-            <h1>به سایت ایران تورنومنت خوش آمدید</h1>
-            <p>
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-              استفاده از طراحان گرافیک است
-            </p>
-          </div>
-          <div className="left d-flex row justify-content-evenly align-items-center">
-            <div className="box"></div>
-            <div className="box"></div>
-          </div>
+          <img src="/assets/images/banners/1.jpg" alt="banner" />
         </div>
       </div>
 
@@ -54,7 +44,7 @@ function Home() {
       <div className="categories">
         <div className="container d-flex column">
           <div className="title">
-            <h2>روم ها</h2>
+            <h2>دسته بندی</h2>
             <div className="under-line"></div>
           </div>
           <div className="Category d-flex row justify-content-center">
@@ -73,17 +63,29 @@ function Home() {
             <h2>روم ها</h2>
             <div className="under-line"></div>
           </div>
-          <div className="rooms-row">
-            <RoomBox
-              image=""
-              name="روم بتل رویال"
-              players="50"
-              prize="2,000,000"
-              winners="3"
-              time="22:00"
-              date="3روز بعد"
-              price="20,000"
-            />
+          <div className="rooms-box">
+            <div className="rooms-row">
+              <RoomBox
+                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                name="روم بتل رویال"
+                players="50"
+                prize="2,000,000"
+                winners="3"
+                time="22:00"
+                date="3روز بعد"
+                price="20,000"
+              />
+              <RoomBox
+                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                name="روم بتل رویال"
+                players="50"
+                prize="2,000,000"
+                winners="3"
+                time="22:00"
+                date="3روز بعد"
+                price="20,000"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -91,12 +93,17 @@ function Home() {
       <div className="about-us">
         <div className="container">
           <div className="title">
-            <h2>درباره ی ما</h2>
+            <h2>درباره ما</h2>
             <div className="under-line"></div>
           </div>
           <div className="box">
             <div className="video">
-              <video src="#" controls />
+              <video
+                controls
+                poster="https://img.freepik.com/free-photo/futuristic-metaverse-empty-room-product-display-presentation-abstract-technology-scifi-with-neon-light-3d-background_56104-2314.jpg?semt=ais_country_boost&w=740"
+              >
+                <source src="#" type="mp4" />
+              </video>
             </div>
             <div className="text">
               <p>
@@ -120,13 +127,17 @@ function Home() {
       <div className="streamers-box">
         <div className="container">
           <div className="title">
-            <h2>روم ها</h2>
+            <h2>استریمر ها</h2>
             <div className="under-line"></div>
           </div>
           <div className="streamers">
-            <Streamers 
-            image=""
-            name="امیر حسین"
+            <Streamers
+              image="https://static.cdn.asset.aparat.com/profile-photo/20144408-818269-s.jpg"
+              name="BK Team"
+            />
+            <Streamers
+              image="https://static.cdn.asset.aparat.com/profile-photo/9812932-626663-s.jpg"
+              name="MOGIYT"
             />
           </div>
         </div>
