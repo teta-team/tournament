@@ -4,7 +4,7 @@ function RoomBox({ image, name, players, prize, winners, time, date, price }) {
       <div className="img">
         <img src={image} alt={name} />
         <h1>{name}</h1>
-        <h2>{players}نفر باقی مونده</h2>
+        <h2>{players} نفر باقی مونده</h2>
       </div>
       <div className="details">
         <div className="room-details">

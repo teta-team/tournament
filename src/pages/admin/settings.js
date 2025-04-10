@@ -73,7 +73,7 @@ function Settings() {
             <i class="bi bi-download"></i>
             <p>دانلود قوانین سایت</p>
           </a>
-          <a href="https://t.me/ir_tournament_toturial">
+          <a href="https://t.me/ir_tournament_toturial" target="_blank" rel="noreferrer">
             <i class="bi bi-telegram"></i>
             <p>آموزش شرکت در مسابقات</p>
           </a>

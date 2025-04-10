@@ -8,7 +8,7 @@ function Home() {
     <>
       <div className="welcome">
         <div className="container">
-          <img src="/assets/images/banners/1.jpg" alt="banner" />
+          <img src="/assets/images/banners/1.png" alt="banner" />
         </div>
       </div>
 
