@@ -86,7 +86,7 @@ function Teams() {
 
         <div className="team-history">
           <div className="header">
-            <i style={{ paddingTop: "5px" }} class="bi bi-clock-history"></i>
+            <i style={{ paddingTop: "5px" }} className="bi bi-clock-history"></i>
             <h2>تاریخچه بازی های تیم</h2>
           </div>
           <ul>

@@ -4,7 +4,7 @@ function Settings() {
       <div className="line">
         <div className="user-name">
           <div className="title">
-            <i class="bi bi-person"></i>
+            <i className="bi bi-person"></i>
             <h2>تغییر نام کاربری</h2>
           </div>
           <div className="old-name">
@@ -25,7 +25,7 @@ function Settings() {
 
         <div className="password">
           <div className="title">
-            <i class="bi bi-lock"></i>
+            <i className="bi bi-lock"></i>
             <h2>تغییر رمز عبور</h2>
           </div>
           <div className="old-password">
@@ -57,7 +57,7 @@ function Settings() {
               alt=""
             />
             <button className="edit">
-              <i class="bi bi-pencil"></i>
+              <i className="bi bi-pencil"></i>
             </button>
           </div>
         </div>
@@ -66,17 +66,26 @@ function Settings() {
       <div className="line">
         <div className="rules">
           <div className="title">
-            <i class="bi bi-book"></i>
+            <i className="bi bi-book"></i>
             <h2>قوانین سایت</h2>
           </div>
           <a href="/assets/documents/قوانین.pdf" download>
-            <i class="bi bi-download"></i>
+            <i className="bi bi-download"></i>
             <p>دانلود قوانین سایت</p>
           </a>
-          <a href="https://t.me/ir_tournament_toturial" target="_blank" rel="noreferrer">
-            <i class="bi bi-telegram"></i>
+          <a
+            href="https://t.me/ir_tournament_toturial"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="bi bi-telegram"></i>
             <p>آموزش شرکت در مسابقات</p>
           </a>
+        </div>
+
+        <div className="buttons">
+          <button>درخواست استریمر</button>
+          <button>خروج از حساب کاربری</button>
         </div>
       </div>
     </div>

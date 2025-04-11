@@ -44,7 +44,7 @@ function Transaction({ status }) {
         <h5>20000 تومان</h5>
         <p className="code">122323342234234</p>
         <p className="mode">درحال تسویه</p>
-        <i style={{ color: "#afdb41" }} class="bi bi-hourglass-split"></i>
+        <i style={{ color: "#afdb41" }} className="bi bi-hourglass-split"></i>
         <p>21:30</p>
         <p>1403/01/20</p>
       </div>

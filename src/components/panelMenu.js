@@ -114,7 +114,7 @@ function PanelMenu() {
 
         <div className="back-site">
           <Link to="/">
-            <i class="bi bi-box-arrow-right"></i>
+            <i className="bi bi-box-arrow-right"></i>
             <p>بازگشت به سایت</p>
           </Link>
         </div>

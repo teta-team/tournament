@@ -2358,6 +2358,54 @@ button {
   color: #41b7db;
 }
 
+.panel .content .settings .line .buttons {
+  width: 32%;
+  height: 180px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px var(--color-primary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.panel .content .settings .line .buttons button {
+  padding: 10px 40px;
+  margin: auto 0;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-heading);
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.panel .content .settings .line .buttons button:nth-child(1) {
+  border: 1px solid #41db8e;
+  box-shadow: inset 0 0 8px #41db8e;
+}
+
+.panel .content .settings .line .buttons button:nth-child(1):hover {
+  background-color: #41db8e;
+  color: #000;
+  transition: all .2s ease;
+}
+
+.panel .content .settings .line .buttons button:nth-child(2) {
+  border: 1px solid #db4b41;
+  box-shadow: inset 0 0 8px #db4b41;
+}
+
+.panel .content .settings .line .buttons button:nth-child(2):hover {
+  background-color: #db4b41;
+  transition: all .2s ease;
+}
+
 /*
 |------------------------------------------------------|
 |================|  PANEL RESPONSIVE  |================|
@@ -2848,6 +2896,12 @@ button {
   }
 
   .panel .content .settings .line .rules {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .panel .content .settings .line .buttons {
     width: 100%;
     margin: 0;
   }

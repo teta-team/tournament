@@ -32,7 +32,7 @@ function DashboardPays({ status }) {
   } else if (status === 3) {
     return (
       <div className="transactions">
-        <i style={{ color: "#afdb41" }} class="bi bi-hourglass-split"></i>
+        <i style={{ color: "#afdb41" }} className="bi bi-hourglass-split"></i>
         <h5>20000 تومان</h5>
         <p>1403/01/20</p>
       </div>
