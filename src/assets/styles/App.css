@@ -724,14 +724,13 @@ button {
 */
 .main footer {
   width: 100%;
-}
-
-.main footer .container {
-  width: 100%;
+  background-color: #1b1931;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 20px 100px;
 }
+
 .main footer .footer-menu {
   width: 20%;
   display: flex;
@@ -749,19 +748,20 @@ button {
 }
 
 .main footer .footer-menu .title {
-  height: 20px;
+  height: 50px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .main footer .footer-menu .title h5 {
-  background-color: var(--color-background);
-  font-size: 21px;
+  background-color: #1b1931;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
   padding: 5px 10px;
+  z-index: 1;
 }
 
 .main footer .footer-menu .title .line {
@@ -772,7 +772,7 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -100;
+  z-index: 0;
 }
 
 .main footer .footer-details {
@@ -784,19 +784,20 @@ button {
 
 .main footer .footer-details .title {
   width: 100%;
-  height: 20px;
+  height: 50px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .main footer .footer-details .title h5 {
-  background-color: var(--color-background);
-  font-size: 21px;
+  background-color: #1b1931;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
   padding: 5px 10px;
+  z-index: 2;
 }
 
 .main footer .footer-details .title .line {
@@ -807,7 +808,7 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -100;
+  z-index: 1;
 }
 
 .main footer .footer-details p {
@@ -821,12 +822,45 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 20px;
 }
 
 .main footer .footer-details .social a {
+  width: 60px;
+  height: 60px;
   font-size: 40px;
   margin: 0 10px;
-  margin-top: 20px;
+  position: relative;
+  border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.main footer .footer-details .social a:hover {
+  filter: brightness(80%);
+  transition: all .3s ease;
+}
+
+.main footer .footer-details .social a i {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main footer .footer-details .social a:nth-child(1) {
+  background-color: #427fe0;
+}
+
+.main footer .footer-details .social a:nth-child(2) {
+  background-color: #e04286;
+}
+
+.main footer .footer-details .social a:nth-child(3) {
+  background-color: #4299e0;
+}
+
+.main footer .footer-details .social a:nth-child(4) {
+  background-color: #db4b41;
 }
 
 .main footer .footer-details h4 {

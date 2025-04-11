@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <div className="container">
         <div className="footer-menu">
           <div className="title">
             <h5>منو</h5>
@@ -66,7 +65,6 @@ function Footer() {
             alt="e-nemad"
           ></img>
         </div>
-      </div>
     </footer>
 );
 }
