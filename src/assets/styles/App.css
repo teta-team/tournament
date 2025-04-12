@@ -573,20 +573,6 @@ button {
   font-family: estedad-thin;
 }
 
-.main .home-page .card .details .room-details .price svg {
-  height: 25px;
-  width: 25px;
-  color: #cfe829;
-  margin-left: 5px;
-}
-
-.main .home-page .card .details .room-details .time svg {
-  height: 25px;
-  width: 25px;
-  color: #f9b8f6;
-  margin-left: 15px;
-}
-
 /*
 |------------------------------------------------------|
 |=====================|  ABOUT US |====================|
@@ -888,41 +874,182 @@ button {
 |------------------------------------------------------|
 */
 
-.battle-royal {
-  margin: 50px auto;
+.main .tournaments-page .classification-of-rooms {
+  margin: 90px 0;
   position: relative;
 }
-.battle-royal .matchs-box {
+.main .tournaments-page .classification-of-rooms .matchs-box {
   width: 100%;
   display: flex;
   flex-direction: row;
-  border: 2px #9543bb;
-  border-style: double;
+  border: 2px solid#9543bb;
   padding: 25px 0 25px 0;
   border-radius: 15px;
 }
 
-.box-room {
-  border-radius: 15px;
-  border: 2px #9b5bd7 solid;
-  height: 500px;
-  width: 29%;
-  margin: auto;
-}
-.title {
+.main .tournaments-page .classification-of-rooms .title {
   position: absolute;
-  font-size: 22px;
+  font-size: 15px;
   color: #9267ba;
   z-index: 20;
   right: 20px;
-  top: -30px;
+  top: -35px;
   width: fit-content;
   height: fit-content;
   padding: 0 15px;
-  background-color: #250742;
+  background-color: var(--color-background);
 }
-.partx .title h1 {
+.main .tournaments-page .classification-of-rooms .title h1 {
   margin: 0;
+}
+.main .tournaments-page .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #69359817;
+  width: 380px;
+  height: 450px;
+  border: 2px #57099f solid;
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+}
+
+.main .tournaments-page .card .img {
+  height: 30%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+.main .tournaments-page .card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.main .tournaments-page .card .img h1 {
+  font-size: 26px;
+  font-family: estedad-bold;
+  position: absolute;
+  right: 20px;
+  bottom: 2px;
+}
+
+.main .tournaments-page .card .img h2 {
+  font-size: 18px;
+  color: var(--color-heading);
+  font-weight: normal;
+  position: absolute;
+  left: 10px;
+  bottom: 2px;
+}
+
+.main .tournaments-page .card .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main .tournaments-page .card .details .room-details .price {
+  width: 90%;
+  background-color: #af8dff;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 17px;
+  font-family: estedad-thin;
+  z-index: 3;
+  color: #000;
+  position: absolute;
+  top: 200px;
+}
+
+.main .tournaments-page .card .details .room-details .price i {
+  margin-left: 10px;
+  font-size: 22px;
+}
+
+.main .tournaments-page .card .details .room-details .time {
+  background-color: #d1d1d1;
+  padding: 5px 10px;
+  width: 70%;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: estedad-thin;
+  z-index: 2;
+  color: #000;
+  position: absolute;
+  top: 270px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main .tournaments-page .card .details .room-details .time i {
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--color-secondary);
+}
+
+.main .tournaments-page .card .details .room-details .time p {
+  width: 90%;
+  text-align: center;
+}
+
+.main .tournaments-page .card .details .room-details .empty-box {
+  width: 80%;
+  border-radius: 25px;
+  background-color: #8e8e8e;
+  height: 90px;
+  position: absolute;
+  margin: auto;
+  z-index: 1;
+  top: 185px;
+}
+
+.main .tournaments-page .card .details .room-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .tournaments-page .card .details .btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+}
+
+.main .tournaments-page .card .details .btn button {
+  font-size: 20px;
+  padding: 8px 15px;
+  border-radius: 9px;
+  background-color: var(--color-accent);
+  border: none;
+  width: 130px;
+  color: var(--color-default);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main .tournaments-page .card .details .btn button:hover {
+  box-shadow: 0 0 10px var(--color-accent);
+  transition: all 0.3s ease;
+}
+
+.main .tournaments-page .card .details .btn p {
+  font-size: 22px;
+  color: var(--color-heading);
+  font-size: 20px;
+  font-family: estedad-thin;
 }
 
 /*
@@ -3304,7 +3431,7 @@ button {
 |------------------------------------------------------|
 */
 
-.panel .content .settings {
+  .panel .content .settings {
     height: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -3691,7 +3818,7 @@ button {
 |------------------------------------------------------|
 */
 
-.panel .content .settings {
+  .panel .content .settings {
     height: 100%;
     flex-direction: column;
     flex-wrap: nowrap;
