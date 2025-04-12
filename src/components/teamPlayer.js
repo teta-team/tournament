@@ -14,7 +14,7 @@ function TeamPlayer() {
           <i className="bi bi-pencil-square"></i>
         </button>
         <button>
-          <i class="bi bi-box-arrow-right"></i>
+          <i className="bi bi-box-arrow-right"></i>
         </button>
       </div>
     </div>

@@ -3,26 +3,25 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>
-      <div className="container">
         <div className="footer-menu">
           <div className="title">
             <h5>منو</h5>
             <div className="line"></div>
           </div>
           <Link to="/tournaments">
-            <i class="bi bi-house"></i>خانه
+            <i className="bi bi-house"></i>خانه
           </Link>
           <Link to="/tournaments">
-            <i class="bi bi-controller"></i>مسابقات
+            <i className="bi bi-controller"></i>مسابقات
           </Link>
           <Link to="/winners">
-            <i class="bi bi-trophy"></i>برندگان
+            <i className="bi bi-trophy"></i>برندگان
           </Link>
           <Link to="/sponsers">
-            <i class="bi bi-cash-coin"></i>اسپانسر ها
+            <i className="bi bi-cash-coin"></i>اسپانسر ها
           </Link>
           <Link to="/learn">
-            <i class="bi bi-journal"></i>آموزش
+            <i className="bi bi-journal"></i>آموزش
           </Link>
         </div>
         <div className="footer-details">
@@ -39,16 +38,16 @@ function Footer() {
           </p>
           <div className="social">
             <Link to="/">
-              <i class="bi bi-discord"></i>
+              <i className="bi bi-discord"></i>
             </Link>
             <Link to="/">
-              <i class="bi bi-instagram"></i>
+              <i className="bi bi-instagram"></i>
             </Link>
             <Link to="/">
-              <i class="bi bi-telegram"></i>
+              <i className="bi bi-telegram"></i>
             </Link>
             <Link to="/">
-              <i class="bi bi-youtube"></i>
+              <i className="bi bi-youtube"></i>
             </Link>
           </div>
           <h4>
@@ -66,7 +65,6 @@ function Footer() {
             alt="e-nemad"
           ></img>
         </div>
-      </div>
     </footer>
 );
 }
