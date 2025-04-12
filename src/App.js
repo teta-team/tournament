@@ -9,6 +9,7 @@ import Transactions from "./pages/admin/transactions";
 import History from "./pages/admin/history";
 import Offers from "./pages/admin/offers";
 import Settings from "./pages/admin/settings";
+import Tournaments from "./pages/home/tournaments";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}>
           <Route index element={<Home />} />
+          <Route path="tournaments" element={<Tournaments />} />
         </Route>
         <Route path="/panel" element={<Panel />}>
           <Route index element={<Dashboard />} />
