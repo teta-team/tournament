@@ -1,7 +1,7 @@
 function Streamers({ image, name }) {
   return (
     <div className="streamer">
-      <div className="border">
+      <div className="border a">
         <img src={image} alt={name} />
       </div>
       <p>{name}</p>

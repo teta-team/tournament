@@ -1,6 +1,6 @@
 function LastPays({ image, name, price, roomName }) {
   return (
-    <div className="pays-box d-flex row align-items-center justify-content-between">
+    <div className="pays-box b">
       <img src={image} alt={name} />
       <div className="d-flex column justify-content-between">
         <h3>{price} تومان برای {name}</h3>

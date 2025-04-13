@@ -205,7 +205,7 @@ button {
 }
 
 .main nav a:nth-child(3):hover ~ .line {
-  width: 70px;
+  width: 65px;
   -webkit-transform: translateX(-135px);
   transform: translateX(-135px);
   -webkit-transition: all 0.2s ease-in-out;
@@ -216,7 +216,7 @@ button {
 .main nav a:nth-child(4):hover ~ .line {
   width: 95px;
   -webkit-transform: translateX(-208px);
-  transform: translateX(-208px);
+  transform: translateX(-203px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -225,7 +225,7 @@ button {
 .main nav a:nth-child(5):hover ~ .line {
   width: 65px;
   -webkit-transform: translateX(-306px);
-  transform: translateX(-306px);
+  transform: translateX(-300px);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 1;
@@ -254,7 +254,7 @@ button {
 .main .home-page .welcome {
   overflow: hidden;
   height: 450px;
-  margin-bottom: 20px;
+  margin: 50px 0 20px;
 }
 
 .main .home-page .welcome .container {
@@ -276,6 +276,39 @@ button {
 |------------------------------------------------------|
 */
 
+.main .home-page .last-pays {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .home-page .last-pays::before {
+  content: "";
+  height: 170px;
+  width: 350px;
+  background: linear-gradient(90deg, transparent, #131225af, #131225 70%);
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  z-index: 1;
+}
+
+.main .home-page .last-pays::after {
+  content: "";
+  height: 170px;
+  width: 350px;
+  background: linear-gradient(90deg, #131225 30%, #131225af, transparent);
+  position: absolute;
+  bottom: 0;
+  left: -5px;
+  z-index: 1;
+}
+
+.main .home-page .last-pays .title {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .main .home-page .last-pays .title h2 {
   margin: 0;
   padding-bottom: 15px;
@@ -289,37 +322,69 @@ button {
   box-shadow: 0 0 12px var(--color-accent);
 }
 
-.main .home-page .last-pays .p-3 {
+.main .home-page .last-pays .box {
+  width: 100%;
+}
+
+.main .home-page .last-pays .pays-row {
+  width: fit-content;
   padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .main .home-page .last-pays .pays-box {
-  width: 30%;
-  border: 1px solid var(--color-primary);
-  padding: 20px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  margin: 0 10px;
+  --border-angle: 0deg;
+  border-radius: 12px;
+  width: 350px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 25%);
+  animation: border-angle-rotate 5s infinite linear;
+  border: 5px solid transparent;
+  position: relative;
+  &.b {
+    background: linear-gradient(var(--color-background), var(--color-background)) padding-box,
+      conic-gradient(
+          from var(--border-angle),
+          var(--color-background) 50%,
+          var(--color-accent)
+        )
+        border-box;
+  }
 }
 
-.main .home-page .last-pays .pays-box:hover {
-  box-shadow: 0 0 10px var(--color-primary);
-  transition: all 0.3s ease;
+@keyframes border-angle-rotate {
+  from { --border-angle: 0deg; }
+  to { --border-angle: 360deg; }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .main .home-page .last-pays .pays-box img {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 50%;
   outline: 3px solid var(--color-accent);
   outline-offset: 5px;
+  margin-left: 30px;
 }
 
 .main .home-page .last-pays .pays-box h3 {
   width: 200px;
   font-size: 18px;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .main .home-page .last-pays .pays-box p {
@@ -346,21 +411,98 @@ button {
   margin-bottom: 10px;
 }
 
-.main .home-page .categories .Category {
-  width: 100%;
+.main .home-page .categories {
+  margin-bottom: 30px;
 }
 
-.main .home-page .categories .Category a {
+.main .home-page .categories .category {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .home-page .categories .category .box {
   text-align: center;
   width: fit-content;
-  height: 80px;
-  margin: 30px auto;
-  border-radius: 20px;
+  margin: 20px auto 0;
+  border-radius: 20px 20px 0 0;
   border: none;
+  padding: 20px;
   color: #fff;
   font-size: 33px;
   background-color: inherit;
   color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.main .home-page .categories .category .box.active .right {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  background-color: #201e3e;
+}
+
+.main .home-page .categories .category .box.active .right div {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  border-radius: 0 0 0 10px;
+}
+
+.main .home-page .categories .category .box.active .left {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  background-color: #201e3e;
+}
+
+.main .home-page .categories .category .box.active .left div {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-background);
+  border-radius: 0 0 10px 0;
+}
+
+.main .home-page .categories .category .box.active {
+  background-color: #201e3e;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+.main .home-page .categories .category .box:nth-child(4) {
+  color: #e0b342;
+  text-shadow: 0 0 20px #e0b342;
+  animation: none;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 30px red;
+  }
+  16% {
+    text-shadow: 0 0 30px orange;
+  }
+  32% {
+    text-shadow: 0 0 30px yellow;
+  }
+  48% {
+    text-shadow: 0 0 30px green;
+  }
+  64% {
+    text-shadow: 0 0 30px blue;
+  }
+  80% {
+    text-shadow: 0 0 30px purple;
+  }
+  100% {
+    text-shadow: 0 0 30px red;
+  }
 }
 
 /*
@@ -369,30 +511,15 @@ button {
 |------------------------------------------------------|
 */
 
-.main .home-page .rooms {
-  width: 100%;
-  height: 550px;
-}
-
-.main .home-page .rooms .title .under-line {
-  width: 100px;
-  height: 3px;
-  background-color: var(--color-accent);
-  border-radius: 25px;
-  box-shadow: 0 0 12px var(--color-accent);
-  margin-top: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.main .home-page .rooms .rooms-box {
+.main .home-page .categories .rooms-box {
   width: 100%;
   overflow-x: auto;
   scrollbar-width: thin;
+  background-color: #201e3e;
+  border-radius: 20px;
 }
 
-.main .home-page .rooms .rooms-row {
+.main .home-page .categories .rooms-row {
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -400,7 +527,7 @@ button {
   justify-content: center;
 }
 
-.main .home-page .card {
+.main .home-page .categories .card {
   display: flex;
   flex-direction: column;
   background-color: #69359817;
@@ -412,7 +539,7 @@ button {
   position: relative;
 }
 
-.main .home-page .card .img {
+.main .home-page .categories .card .img {
   height: 30%;
   width: 100%;
   background-size: cover;
@@ -421,14 +548,14 @@ button {
   margin-bottom: 10px;
 }
 
-.main .home-page .card .img img {
+.main .home-page .categories .card .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
-.main .home-page .card .img h1 {
+.main .home-page .categories .card .img h1 {
   font-size: 26px;
   font-family: estedad-bold;
   position: absolute;
@@ -436,7 +563,7 @@ button {
   bottom: 2px;
 }
 
-.main .home-page .card .img h2 {
+.main .home-page .categories .card .img h2 {
   font-size: 18px;
   color: var(--color-heading);
   font-weight: normal;
@@ -445,14 +572,14 @@ button {
   bottom: 2px;
 }
 
-.main .home-page .card .details {
+.main .home-page .categories .card .details {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.main .home-page .card .details .room-details .price {
+.main .home-page .categories .card .details .room-details .price {
   width: 90%;
   background-color: #af8dff;
   padding: 10px;
@@ -465,12 +592,12 @@ button {
   top: 150px;
 }
 
-.main .home-page .card .details .room-details .price i {
+.main .home-page .categories .card .details .room-details .price i {
   margin-left: 10px;
   font-size: 22px;
 }
 
-.main .home-page .card .details .room-details .time {
+.main .home-page .categories .card .details .room-details .time {
   background-color: #d1d1d1;
   padding: 5px 10px;
   width: 70%;
@@ -486,18 +613,18 @@ button {
   align-items: center;
 }
 
-.main .home-page .card .details .room-details .time i {
+.main .home-page .categories .card .details .room-details .time i {
   margin-left: 10px;
   font-size: 20px;
   color: var(--color-secondary);
 }
 
-.main .home-page .card .details .room-details .time p {
+.main .home-page .categories .card .details .room-details .time p {
   width: 90%;
   text-align: center;
 }
 
-.main .home-page .card .details .room-details .empty-box {
+.main .home-page .categories .card .details .room-details .empty-box {
   width: 80%;
   border-radius: 25px;
   background-color: #8e8e8e;
@@ -508,14 +635,14 @@ button {
   top: 185px;
 }
 
-.main .home-page .card .details .room-details {
+.main .home-page .categories .card .details .room-details {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-.main .home-page .card .details .btn {
+.main .home-page .categories .card .details .btn {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -526,7 +653,7 @@ button {
   left: 0px;
 }
 
-.main .home-page .card .details .btn button {
+.main .home-page .categories .card .details .btn button {
   font-size: 20px;
   padding: 8px 15px;
   border-radius: 9px;
@@ -538,12 +665,12 @@ button {
   transition: all 0.3s ease;
 }
 
-.main .home-page .card .details .btn button:hover {
+.main .home-page .categories .card .details .btn button:hover {
   box-shadow: 0 0 10px var(--color-accent);
   transition: all 0.3s ease;
 }
 
-.main .home-page .card .details .btn p {
+.main .home-page .categories .card .details .btn p {
   font-size: 22px;
   color: var(--color-heading);
   font-size: 20px;
@@ -557,11 +684,17 @@ button {
 */
 
 .main .home-page .about-us {
-  width: 100%;
+  width: 98%;
+  background-image: url("/public/assets/images/bg-logo.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 50px;
+  margin: 0 auto;
 }
 
 .main .home-page .about-us .title .under-line {
-  width: 120px;
+  width: 280px;
   height: 3px;
   background-color: var(--color-accent);
   border-radius: 25px;
@@ -658,6 +791,37 @@ button {
 }
 
 .main .home-page .streamers-box .streamers .streamer .border {
+  --border-angle: 0deg;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px hsl(0 0% 0% / 25%);
+  animation: border-angle-rotate 2s infinite linear;
+  border: 5px solid transparent;
+  position: relative;
+
+  &.a {
+    background: linear-gradient(var(--color-background), var(--color-background)) padding-box,
+      conic-gradient(
+          from var(--border-angle),
+          oklch(100% 100% 0deg),
+          oklch(100% 100% 45deg),
+          oklch(100% 100% 90deg),
+          oklch(100% 100% 135deg),
+          oklch(100% 100% 180deg),
+          oklch(100% 100% 225deg),
+          oklch(100% 100% 270deg),
+          oklch(100% 100% 315deg),
+          oklch(100% 100% 360deg)
+        )
+        border-box;
+  }
+}
+
+/* .main .home-page .streamers-box .streamers .streamer .border {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -674,7 +838,7 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
+} */
 
 .main .home-page .streamers-box .streamers .streamer .border img {
   width: 100%;
@@ -4953,7 +5117,6 @@ button {
     height: 550px;
   }
 }
-
 
 /*
 |------------------------------------------------------|

@@ -13,12 +13,42 @@ function Home() {
       </div>
 
       <div className="last-pays">
-        <div className="container d-flex column">
-          <div className="title">
-            <h2>آخرین پرداختی های جوایز</h2>
-            <div className="under-line"></div>
-          </div>
-          <div className="d-flex row justify-content-between align-items-center p-3">
+        <div className="title">
+          <h2>آخرین پرداختی های جوایز</h2>
+          <div className="under-line"></div>
+        </div>
+        <div className="box">
+          <div className="pays-row">
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
+            />
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
+            />
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
+            />
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
+            />
+            <LastPays
+              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
+              name="aria_kg"
+              price="40000"
+              roomName="هر کیل 5000 تومن"
+            />
             <LastPays
               image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
               name="aria_kg"
@@ -47,21 +77,52 @@ function Home() {
             <h2>دسته بندی</h2>
             <div className="under-line"></div>
           </div>
-          <div className="Category d-flex row justify-content-center">
-            <Link to="">Battleroyale</Link>
-            <Link to="">Multi Player</Link>
-            <Link to="">روم های ویژه</Link>
-            <Link to="">روم رایگان</Link>
-            <Link to="">دوئل</Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="rooms">
-        <div className="container">
-          <div className="title">
-            <h2>روم ها</h2>
-            <div className="under-line"></div>
+          <div className="category">
+            <div className="box active">
+              Battleroyale
+              <div className="right">
+                <div></div>
+              </div>
+              <div className="left">
+                <div></div>
+              </div>
+            </div>
+            <div className="box">
+              Multi Player
+              <div className="right">
+                <div></div>
+              </div>
+              <div className="left">
+                <div></div>
+              </div>
+            </div>
+            <div className="box">
+              روم های ویژه
+              <div className="right">
+                <div></div>
+              </div>
+              <div className="left">
+                <div></div>
+              </div>
+            </div>
+            <div className="box">
+              روم رایگان
+              <div className="right">
+                <div></div>
+              </div>
+              <div className="left">
+                <div></div>
+              </div>
+            </div>
+            <div className="box">
+              دوئل
+              <div className="right">
+                <div></div>
+              </div>
+              <div className="left">
+                <div></div>
+              </div>
+            </div>
           </div>
           <div className="rooms-box">
             <div className="rooms-row">
@@ -93,7 +154,7 @@ function Home() {
       <div className="about-us">
         <div className="container">
           <div className="title">
-            <h2>درباره ما</h2>
+            <h2>آموزش شرکت در مسابقات</h2>
             <div className="under-line"></div>
           </div>
           <div className="box">
@@ -143,7 +204,6 @@ function Home() {
         </div>
       </div>
     </div>
-
   );
 }
 

@@ -10,6 +10,7 @@ import History from "./pages/admin/history";
 import Offers from "./pages/admin/offers";
 import Settings from "./pages/admin/settings";
 import Tournaments from "./pages/home/tournaments";
+import LeaderBoard from "./pages/home/leaderboard";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         <Route path="/" element={<Main />}>
           <Route index element={<Home />} />
           <Route path="tournaments" element={<Tournaments />} />
+          <Route path="leaderboard" element={<LeaderBoard />} />
         </Route>
+        
         <Route path="/panel" element={<Panel />}>
           <Route index element={<Dashboard />} />
           <Route path="team" element={<Teams />} />
