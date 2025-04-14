@@ -12,8 +12,8 @@ function Menu() {
       <nav className="d-flex row">
         <Link to="/">خانه</Link>
         <Link to="/tournaments">مسابقات</Link>
-        <Link to="/winners">برندگان</Link>
-        <Link to="/sponsers">اسپانسر ها</Link>
+        <Link to="/leaderboard">لیدربرد</Link>
+        <Link to="/streamers">استریمر ها</Link>
         <Link to="/learn">آموزش</Link>
         <div className="line"></div>
       </nav>
