@@ -307,6 +307,7 @@ button {
 .main .home-page .last-pays .title {
   width: 1200px;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .main .home-page .last-pays .title h2 {
@@ -324,6 +325,8 @@ button {
 
 .main .home-page .last-pays .box {
   width: 100%;
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 .main .home-page .last-pays .pays-row {
@@ -1209,6 +1212,11 @@ button {
 |===================|  LEADERBOARD  |==================|
 |------------------------------------------------------|
 */
+
+.main .leaderboard-page .title {
+  width: 100%;
+  margin: 20px 0 40px;
+}
 
 .main .leaderboard-page ul {
   width: 75%;
