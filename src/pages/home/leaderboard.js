@@ -4,6 +4,7 @@ function LeaderBoard() {
   return (
     <div className="leaderboard-page">
       <div className="container">
+        <img src="/assets/images/leaderboard/leaderboard.png" alt="" className="title" />
         <ul>
           <LeaderBoardUser
             index={1}
