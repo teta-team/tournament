@@ -448,6 +448,10 @@ button {
   cursor: pointer;
 }
 
+.main .home-page .last-pays .pays-box {
+  padding: 15px;
+}
+
 .main .home-page .categories .category .box.active .right {
   width: 15px;
   height: 15px;
@@ -835,25 +839,6 @@ button {
   }
 }
 
-/* .main .home-page .streamers-box .streamers .streamer .border {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: linear-gradient(
-    45deg,
-    #ff0000 0%,
-    #ef6605 25%,
-    #46ef02 50%,
-    #01f3ee 75%,
-    #02c4ff 100%
-  );
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-} */
-
 .main .home-page .streamers-box .streamers .streamer .border img {
   width: 100%;
   border-radius: 50%;
@@ -1021,6 +1006,71 @@ button {
   height: 160px;
   align-self: center;
   border-radius: 10px;
+}
+
+/*
+|------------------------------------------------------|
+|===================|  RESPONSIVE  |===================|
+|------------------------------------------------------|
+*/
+@media only screen and (max-width: 1024px) {
+  .main .home-page .welcome .container {
+    width: 100%;
+  }
+  .main .home-page .last-pays {
+    width: 100%;
+  }
+  .main .home-page .last-pays .pays-row {
+    width: 100%;
+  }
+  .main .home-page .last-pays .title {
+    width: 100%;
+  }
+  .main .home-page .last-pays .title h2 {
+    margin-right: 10px;
+  }
+  .main .home-page .last-pays .title .under-line {
+    margin-right: 10px;
+  }
+  .main .home-page .categories .category .box {
+    font-size: 25px;
+  }
+  .main .home-page .categories .card .img h1 {
+    font-size: 24px;
+  }
+  .main .home-page .about-us .text p {
+    font-size: 16px;
+  }
+  .main .home-page .streamers-box .streamers .streamer .border {
+    width: 120px;
+    height: 120px;
+  }
+  .main .home-page .streamers-box .streamers .streamer p {
+    font-size: 26px;
+    font-family: vazir;
+    color: var(--color-heading);
+    margin: 15px;
+  }
+  .main footer .footer-details p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .main footer .footer-nemads img {
+    width: 140px;
+    height: 140px;
+    align-self: center;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .main footer .footer-nemads {
+    flex-direction: column;
+  }
+  .main footer {
+    padding: 5px 50px;
+  }
+  .main footer .footer-menu .title .line {
+    width: 240px;
+  }
 }
 
 /*
@@ -2383,18 +2433,6 @@ button {
   .player
   .buttons
   button:nth-child(2) {
-  color: #41db8e;
-}
-
-.panel
-  .content
-  .team
-  .my-team
-  .players
-  ul
-  .player
-  .buttons
-  button:nth-child(3) {
   color: #db4b41;
 }
 
