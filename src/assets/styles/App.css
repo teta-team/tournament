@@ -1091,7 +1091,7 @@ button {
     font-size: 24px;
   }
   .main .home-page .about-us .text p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .main .home-page .streamers-box .streamers .streamer .border {
     width: 120px;
@@ -1123,6 +1123,75 @@ button {
   .main footer .footer-menu .title .line {
     width: 240px;
   }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .main .home-page .categories .category .box {
+    font-size: 19px;
+  }
+  .main .home-page .categories .category .box {
+    margin: 20px 5px 0;
+  }
+  .main .home-page .categories .rooms-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-x: scroll;
+  }
+  .main .home-page .categories .card {
+    height: 400px;
+  }
+  .main .home-page .categories .card .img h1 {
+    font-size: 24px;
+  }
+  .main .home-page .categories .card .details .room-details .price {
+    font-size: 16px;
+  }
+  .main .home-page .categories .card .details .room-details .time {
+    font-size: 14px;
+    width: fit-content;
+  }
+  .main .home-page .categories .card .details .room-details .empty-box {
+    width: 70%;
+  }
+  .main .home-page .categories .card .details .btn p {
+    font-size: 18px;
+  }
+  .main .home-page .categories .card .details .btn button {
+    font-size: 19px;
+  }
+  .main .home-page .about-us .box {
+    flex-direction: column-reverse;
+  }.main .home-page .about-us .text p {font-size: 18px;
+text-align: justify;}
+.about-us .container .title {
+  margin-right: 10px;
+}
+.main .home-page .about-us .text {width: 80%;}
+.main .home-page .about-us .video {width: 80%;
+height: 400px;}
+.main footer .footer-menu .title .line {
+  width: 150px;
+}
+.main footer .footer-details p {
+  font-size: 15px;
+}
+.main footer .footer-details h4 {
+  font-size: 14px;
+  text-align: justify;
+}
+.main footer .footer-details .social a i {
+    position: absolute;
+    top: 60%;
+    left: 49%;}
+.main footer .footer-details .social a {
+    width: 42px;
+    height: 42px;
+    font-size: 28px;}
 }
 
 /*
