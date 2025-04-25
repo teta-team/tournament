@@ -151,6 +151,32 @@ button {
 
 .main .menu {
   height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#burger-btn {
+  display: none;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: var(--color-accent);
+  z-index: 1001;
+}
+
+#burger-menu {
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  border-radius: 10px 0 0 10px;
 }
 
 .main .menu img {
@@ -159,6 +185,8 @@ button {
 
 .main nav {
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .main nav a {
@@ -243,6 +271,32 @@ button {
   height: 40px;
   object-fit: cover;
   object-position: center;
+}
+
+@media only screen and (max-width: 480px) {
+  #burger-btn {
+    display: unset;
+  }
+
+  #burger-menu {
+    width: 60%;
+    height: 100vh;
+    background-color: var(--color-background);
+    padding: 0 20px;
+  }
+
+  #burger-menu a {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  #burger-menu a:first-child {
+    margin-top: 80px;
+  }
+
+  .main nav {
+    display: none;
+  }
 }
 
 /*
