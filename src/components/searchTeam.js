@@ -11,7 +11,7 @@ function SearchTeam() {
   }, [])
 
   return (
-    <div className="search-team" id="search-team">
+    <div className="popover" id="search-team">
       <div className="box">
         <div className="header">
           <button id="close">

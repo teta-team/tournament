@@ -1,6 +1,17 @@
+import { useEffect } from "react";
+import ChangeUserImg from "../../components/changeUserImg";
+
 function Settings() {
+  useEffect(() => {
+      const editBtn = document.getElementById("edit")
+      
+      editBtn.addEventListener("click", () => {
+        document.getElementById("change-img").style.display = "flex"
+      })
+    }, [])
   return (
     <div className="settings">
+      <ChangeUserImg />
       <div className="line">
         <div className="user-name">
           <div className="title">
@@ -56,7 +67,7 @@ function Settings() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
               alt=""
             />
-            <button className="edit">
+            <button className="edit" id="edit">
               <i className="bi bi-pencil"></i>
             </button>
           </div>
