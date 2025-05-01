@@ -2897,7 +2897,7 @@ button {
   border-radius: 10px;
   color: var(--color-default);
   margin-left: 20px;
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .panel .content .popover#create-team .box form input::placeholder {
@@ -2908,7 +2908,7 @@ button {
 .panel .content .popover#create-team .box form input:focus {
   width: 350px;
   background-color: #232242;
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .panel .content .popover#create-team .box form button {
@@ -2920,12 +2920,12 @@ button {
   background-color: #232242;
   color: var(--color-default);
   cursor: pointer;
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#create-team .box form button:hover {
   background-color: var(--color-accent);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#streamer-form .box {
@@ -2948,20 +2948,25 @@ button {
   font-family: vazir;
   margin-bottom: 10px;
   border-radius: 10px;
-  background-color: #302E5A;
+  background-color: #302e5a;
   outline: none;
   border: 1px solid var(--color-accent);
   color: var(--color-default);
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
-.panel .content .popover#streamer-form .box form input[type="text"]::placeholder {
+.panel
+  .content
+  .popover#streamer-form
+  .box
+  form
+  input[type="text"]::placeholder {
   color: var(--color-default);
 }
 
 .panel .content .popover#streamer-form .box form input[type="text"]:focus {
   box-shadow: 0 0 10px var(--color-accent);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#streamer-form .box form .row {
@@ -2988,7 +2993,13 @@ button {
   margin-left: 20px;
 }
 
-.panel .content .popover#streamer-form .box form .socials input[type="checkbox"] {
+.panel
+  .content
+  .popover#streamer-form
+  .box
+  form
+  .socials
+  input[type="checkbox"] {
   margin: 10px 0;
 }
 
@@ -3001,17 +3012,17 @@ button {
   padding: 10px;
   font-size: 20px;
   margin-top: 15px;
-  background-color: #302E5A;
+  background-color: #302e5a;
   color: var(--color-default);
   border: 1px solid var(--color-accent);
   border-radius: 10px;
   cursor: pointer;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#streamer-form .box form button:hover {
   background-color: var(--color-accent);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 /*
