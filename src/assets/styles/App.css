@@ -2709,7 +2709,7 @@ button {
 
 .panel .content .popover .box .list {
   width: 80%;
-  height: 80%;
+  height: 100%;
   padding: 10px;
   margin: 0 auto;
   margin-top: 30px;
@@ -2721,6 +2721,7 @@ button {
 
 .panel .content .popover .box .list ul {
   width: 100%;
+  height: 100%;
 }
 
 .panel .content .popover .box .list ul li {
@@ -2783,7 +2784,8 @@ button {
 }
 
 .panel .content .popover#create-team .box {
-  height: 200px;
+  width: 50%;
+  height: 20%;
 }
 
 .panel .content .popover#create-team .box form {
@@ -2795,7 +2797,7 @@ button {
 }
 
 .panel .content .popover#create-team .box form input {
-  width: 300px;
+  width: 200px;
   text-align: center;
   padding: 10px;
   font-size: 20px;
@@ -2803,11 +2805,13 @@ button {
   border: none;
   outline: none;
   border-bottom: 1px solid var(--color-accent);
+  border-top: 1px solid var(--color-accent);
   font-family: vazir;
   color: var(--color-accent);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
   color: var(--color-default);
   margin-left: 20px;
+    transition: all .3s ease;
 }
 
 .panel .content .popover#create-team .box form input::placeholder {
@@ -2816,12 +2820,112 @@ button {
 
 .panel .content .popover#create-team .box form input:valid,
 .panel .content .popover#create-team .box form input:focus {
+  width: 350px;
   background-color: #232242;
+    transition: all .3s ease;
 }
 
 .panel .content .popover#create-team .box form button {
-  width: 100px;
+  width: 200px;
   padding: 10px;
+  font-size: 20px;
+  border: 1px solid var(--color-accent);
+  border-radius: 10px;
+  background-color: #232242;
+  color: var(--color-default);
+  cursor: pointer;
+    transition: all .2s ease;
+}
+
+.panel .content .popover#create-team .box form button:hover {
+  background-color: var(--color-accent);
+  transition: all .2s ease;
+}
+
+.panel .content .popover#streamer-form .box {
+  width: 50%;
+  height: 60%;
+}
+
+.panel .content .popover#streamer-form .box form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.panel .content .popover#streamer-form .box form input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
+  font-family: vazir;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #302E5A;
+  outline: none;
+  border: 1px solid var(--color-accent);
+  color: var(--color-default);
+    transition: all .2s ease;
+}
+
+.panel .content .popover#streamer-form .box form input[type="text"]::placeholder {
+  color: var(--color-default);
+}
+
+.panel .content .popover#streamer-form .box form input[type="text"]:focus {
+  box-shadow: 0 0 10px var(--color-accent);
+  transition: all .2s ease;
+}
+
+.panel .content .popover#streamer-form .box form .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.panel .content .popover#streamer-form .box form .row input {
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.panel .content .popover#streamer-form .box form .socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.panel .content .popover#streamer-form .box form .socials input[type="text"] {
+  width: 620px;
+  margin-left: 20px;
+}
+
+.panel .content .popover#streamer-form .box form .socials input[type="checkbox"] {
+  margin: 10px 0;
+}
+
+.panel .content .popover#streamer-form .box form .socials label a {
+  color: #41db8e;
+}
+
+.panel .content .popover#streamer-form .box form button {
+  width: 250px;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 15px;
+  background-color: #302E5A;
+  color: var(--color-default);
+  border: 1px solid var(--color-accent);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.panel .content .popover#streamer-form .box form button:hover {
+  background-color: var(--color-accent);
+  transition: all .2s ease;
 }
 
 /*

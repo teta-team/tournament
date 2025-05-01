@@ -1,17 +1,18 @@
-import { useEffect } from "react";
 import ChangeUserImg from "../../components/changeUserImg";
+import StreamerForm from "../../components/requestStreamer";
 
 function Settings() {
-  useEffect(() => {
-      const editBtn = document.getElementById("edit")
-      
-      editBtn.addEventListener("click", () => {
-        document.getElementById("change-img").style.display = "flex"
-      })
-    }, [])
+    function OpenImgEdit() {
+      document.getElementById("change-img").style.display = "flex";
+    }
+
+    function OpenStreamerForm() {
+      document.getElementById("streamer-form").style.display = "flex";
+    }
   return (
     <div className="settings">
       <ChangeUserImg />
+      <StreamerForm />
       <div className="line">
         <div className="user-name">
           <div className="title">
@@ -67,7 +68,7 @@ function Settings() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
               alt=""
             />
-            <button className="edit" id="edit">
+            <button className="edit" onClick={OpenImgEdit}>
               <i className="bi bi-pencil"></i>
             </button>
           </div>
@@ -95,7 +96,7 @@ function Settings() {
         </div>
 
         <div className="buttons">
-          <button>درخواست استریمر</button>
+          <button onClick={OpenStreamerForm}>درخواست استریمر</button>
           <button>خروج از حساب کاربری</button>
         </div>
       </div>

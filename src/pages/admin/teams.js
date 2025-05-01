@@ -2,6 +2,7 @@ import TeamHistory from "../../components/teamHistory";
 import TeamPlayer from "../../components/teamPlayer";
 import SearchTeam from "../../components/searchTeam";
 import CreateTeam from "../../components/createTeam";
+import TeamMateInfo from "../../components/teamMateInfo";
 
 function Teams() {
     function OpenSearch() {
@@ -14,6 +15,7 @@ function Teams() {
     <div className="team">
       <SearchTeam />
       <CreateTeam />
+      <TeamMateInfo />
       <div className="buttons">
         <button onClick={OpenSearch}>جستوجوی تیم</button>
         <button onClick={OpenCreate}>ساخت تیم</button>
