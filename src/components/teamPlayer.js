@@ -1,4 +1,7 @@
 function TeamPlayer() {
+  function OpenPlayerInfo() {
+    document.getElementById("teammate-info").style.display = "flex";
+  }
   return (
     <div className="player">
       <img
@@ -7,7 +10,7 @@ function TeamPlayer() {
       />
       <h4>Amir_1234</h4>
       <div className="buttons">
-        <button>
+        <button onClick={OpenPlayerInfo}>
           <i className="bi bi-eye"></i>
         </button>
         <button>
