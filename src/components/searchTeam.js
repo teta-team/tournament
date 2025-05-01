@@ -1,20 +1,15 @@
-import { useEffect } from "react";
 import Team from "./teams";
 
 function SearchTeam() {
-
-  useEffect(() => {
-    const closeBtn = document.getElementById("close")
-    closeBtn.addEventListener("click", () => {
-      document.getElementById("search-team").style.display = "none";
-    })
-  }, [])
+  function Close() {
+    document.getElementById("search-team").style.display = "none";
+  }
 
   return (
     <div className="popover" id="search-team">
       <div className="box">
         <div className="header">
-          <button id="close">
+          <button onClick={Close}>
             <i className="bi bi-x-lg"></i>
           </button>
         </div>

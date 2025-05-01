@@ -3,15 +3,16 @@ import { useEffect } from "react";
 function Team() {
   useEffect(() => {
     const players = document.querySelectorAll("li p")
+    
     players.forEach((player) => {
-      if (Number(player.textContent[0]) < Number(player.textContent[2])) {
+      if (Number(player.textContent[0]) < Number(player.textContent[4])) {
         player.style.color = "#41db8e";
       } if (
-        Number(player.textContent[0]) === Number(player.textContent[2])-1
+        Number(player.textContent[0]) === Number(player.textContent[4])-1
       ) {
         player.style.color = "#e0b342";
       } else if (
-        Number(player.textContent[0]) === Number(player.textContent[2])
+        Number(player.textContent[0]) === Number(player.textContent[4])
       ) {
         player.style.color = "#db4b41";
       }

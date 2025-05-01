@@ -1,22 +1,22 @@
 import TeamHistory from "../../components/teamHistory";
 import TeamPlayer from "../../components/teamPlayer";
 import SearchTeam from "../../components/searchTeam";
-import { useEffect } from "react";
+import CreateTeam from "../../components/createTeam";
 
 function Teams() {
-  useEffect(() => {
-    const searchBtn = document.getElementById("search-team-btn")
-    
-    searchBtn.addEventListener("click", () => {
-      document.getElementById("search-team").style.display = "flex"
-    })
-  }, [])
+    function OpenSearch() {
+      document.getElementById("search-team").style.display = "flex";
+    }
+    function OpenCreate() {
+      document.getElementById("create-team").style.display = "flex";
+    }
   return (
     <div className="team">
       <SearchTeam />
+      <CreateTeam />
       <div className="buttons">
-        <button id="search-team-btn">جستوجوی تیم</button>
-        <button>ساخت تیم</button>
+        <button onClick={OpenSearch}>جستوجوی تیم</button>
+        <button onClick={OpenCreate}>ساخت تیم</button>
       </div>
       <div className="title">
         <i className="bi bi-people"></i>
