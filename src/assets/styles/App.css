@@ -493,7 +493,7 @@ button {
   border: none;
   padding: 20px;
   color: #fff;
-  font-size: 33px;
+  font-size: 28px;
   background-color: inherit;
   color: #fff;
   position: relative;
@@ -591,6 +591,7 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .main .home-page .categories .card {
@@ -1070,10 +1071,14 @@ button {
     width: 100%;
   }
   .main .home-page .last-pays {
-    width: 100%;
+    width: 95%;
   }
   .main .home-page .last-pays .pays-row {
     width: 100%;
+  }
+  .main .home-page .categories .rooms-row {
+    overflow-x: auto;
+    width: fit-content;
   }
   .main .home-page .last-pays .title {
     width: 100%;
@@ -1135,12 +1140,8 @@ button {
     margin: 20px 5px 0;
   }
   .main .home-page .categories .rooms-row {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow-x: scroll;
+    width: fit-content;
+    overflow-x: auto;
   }
   .main .home-page .categories .card {
     height: 400px;
@@ -1202,6 +1203,91 @@ button {
     font-size: 28px;
   }
 }
+@media only screen and (max-width: 425px) {
+  .main .home-page .categories .category .box {
+    font-size: 12px;
+    margin: 12;
+    padding: 15px 5px;
+  }
+  .main .home-page .categories .category {
+    align-items: end;
+  }
+
+  .main .home-page .title h2 {
+    font-size: 1.2rem;
+  }
+  .main .home-page .about-us .text p {
+    font-size: 14px;
+  }
+  .main .home-page .about-us .video {
+    height: 230px;
+  }
+  .main .home-page .about-us {
+    border-radius: 25px;
+  }
+  .main .home-page .streamers-box .streamers {
+    height: 150px;
+    margin-top: 40px;
+  }
+
+  .main .home-page .streamers-box .streamers .streamer .border {
+    width: 95px;
+    height: 95px;
+  }
+  .main .home-page .streamers-box .streamers .streamer p {
+    font-size: 20px;
+  }
+  .main .home-page .streamers-box .title .under-line {
+    width: 170px;
+  }
+  .main footer {
+    flex-direction: column;
+  }
+  
+  .main footer .footer-menu {
+    width: 100%;
+    flex-direction: row;
+    font-size: 17px;
+    line-height: 2;
+    display: inline;
+  }
+  .main footer .footer-menu a {
+    margin: 13px;
+}
+.main footer .footer-details p {
+        line-height: 1.6;
+    }
+      .main footer .footer-menu .title .line {
+        width: 100%;
+    }
+    .main footer .footer-details {
+      width: 100%;
+    }
+    .main footer .footer-details .title .line {
+    width: 100%;
+}
+.main footer .footer-nemads {
+  width: 100%;
+  flex-direction: row;
+}
+    .main footer .footer-nemads img {
+      width: 100px;
+      height: 100px;
+      margin-top: 15px;
+    }
+
+}
+@media only screen and (max-width: 380px) {
+    .main .home-page .categories .category .box {
+        font-size: 10px;
+        margin: 12;
+        padding: 15px 4px;
+    }
+    .main footer .footer-menu {
+        font-size: 17px;
+    }
+}
+
 
 /*
 |------------------------------------------------------|
