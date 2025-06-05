@@ -592,6 +592,7 @@ button {
   align-items: center;
   justify-content: center;
   overflow-x: auto;
+  padding: 10px;
 }
 
 .main .home-page .categories .card {
@@ -599,7 +600,7 @@ button {
   flex-direction: column;
   background-color: #00000026;
   width: 380px;
-  height: 450px;
+  height: 400px;
   border: 2px var(--color-primary) solid;
   border-radius: 10px;
   margin: 20px;
@@ -1079,6 +1080,7 @@ button {
   .main .home-page .categories .rooms-row {
     overflow-x: auto;
     width: fit-content;
+    padding: 15px;
   }
   .main .home-page .last-pays .title {
     width: 100%;
@@ -1092,6 +1094,12 @@ button {
   .main .home-page .categories .category .box {
     font-size: 25px;
   }
+.main .home-page .categories .card .img {
+  height: 35%;
+}
+.main .home-page .categories .card .details{
+  height: 60%;
+}
   .main .home-page .categories .card .img h1 {
     font-size: 24px;
   }
@@ -1203,7 +1211,7 @@ button {
     font-size: 28px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 480px) {
   .main .home-page .categories .category .box {
     font-size: 12px;
     margin: 12;
@@ -1212,7 +1220,34 @@ button {
   .main .home-page .categories .category {
     align-items: end;
   }
+  .main .home-page .categories .card{
+width: 310px;
+height: 350px;
 
+  }
+  .main .home-page .categories .card .img h1{
+    font-size: 19px;
+  }
+  .main .home-page .categories .card .img h2{
+    font-size: 14px;
+  }
+  .main .home-page .categories .card .details .room-details .price{
+    font-size: 14px;
+  }
+  .main .home-page .categories .card .details .room-details .empty-box {
+    top: 175px;
+  }
+  .main .home-page .categories .card .details .room-details .time {
+    top: 220px;
+    font-size: 13px;
+  }
+  .main .home-page .categories .card .details .btn button{
+    font-size: 17px;
+    width: 100px;
+  }
+  .main .home-page .categories .card .details .btn p{
+    font-size: 15px;
+  }
   .main .home-page .title h2 {
     font-size: 1.2rem;
   }
