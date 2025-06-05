@@ -33,9 +33,9 @@ function Menu() {
         </div>
       )}
 
-      <div className="logo">
+      <Link to="/login" className="logo">
         <img src="/assets/images/logo.png" alt="logo" />
-      </div>
+      </Link>
       <nav>
         <Link to="/">خانه</Link>
         <Link to="/tournaments">مسابقات</Link>
