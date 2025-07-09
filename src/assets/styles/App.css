@@ -49,9 +49,10 @@
 }
 
 :root {
-  --color-accent: #6742e0;
-  --color-primary: #6f4be1;
-  --color-secondary: #6039e0;
+  --color-accent: #b0b14e;
+  --color-primary: #00ffff;
+  --color-hover: #9b9c45;
+  --color-border: #9b9c45;
 }
 
 :root {
