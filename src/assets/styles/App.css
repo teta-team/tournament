@@ -49,9 +49,10 @@
 }
 
 :root {
-  --color-accent: #6742e0;
-  --color-primary: #6f4be1;
-  --color-secondary: #6039e0;
+  --color-accent: #b0b14e;
+  --color-primary: #00ffff;
+  --color-hover: #9b9c45;
+  --color-border: #9b9c45;
 }
 
 :root {
@@ -1094,12 +1095,12 @@ button {
   .main .home-page .categories .category .box {
     font-size: 25px;
   }
-.main .home-page .categories .card .img {
-  height: 35%;
-}
-.main .home-page .categories .card .details{
-  height: 60%;
-}
+  .main .home-page .categories .card .img {
+    height: 35%;
+  }
+  .main .home-page .categories .card .details {
+    height: 60%;
+  }
   .main .home-page .categories .card .img h1 {
     font-size: 24px;
   }
@@ -1220,18 +1221,17 @@ button {
   .main .home-page .categories .category {
     align-items: end;
   }
-  .main .home-page .categories .card{
-width: 310px;
-height: 350px;
-
+  .main .home-page .categories .card {
+    width: 310px;
+    height: 350px;
   }
-  .main .home-page .categories .card .img h1{
+  .main .home-page .categories .card .img h1 {
     font-size: 19px;
   }
-  .main .home-page .categories .card .img h2{
+  .main .home-page .categories .card .img h2 {
     font-size: 14px;
   }
-  .main .home-page .categories .card .details .room-details .price{
+  .main .home-page .categories .card .details .room-details .price {
     font-size: 14px;
   }
   .main .home-page .categories .card .details .room-details .empty-box {
@@ -1241,11 +1241,11 @@ height: 350px;
     top: 220px;
     font-size: 13px;
   }
-  .main .home-page .categories .card .details .btn button{
+  .main .home-page .categories .card .details .btn button {
     font-size: 17px;
     width: 100px;
   }
-  .main .home-page .categories .card .details .btn p{
+  .main .home-page .categories .card .details .btn p {
     font-size: 15px;
   }
   .main .home-page .title h2 {
@@ -1278,7 +1278,7 @@ height: 350px;
   .main footer {
     flex-direction: column;
   }
-  
+
   .main footer .footer-menu {
     width: 100%;
     flex-direction: row;
@@ -1288,41 +1288,39 @@ height: 350px;
   }
   .main footer .footer-menu a {
     margin: 13px;
-}
-.main footer .footer-details p {
-        line-height: 1.6;
-    }
-      .main footer .footer-menu .title .line {
-        width: 100%;
-    }
-    .main footer .footer-details {
-      width: 100%;
-    }
-    .main footer .footer-details .title .line {
+  }
+  .main footer .footer-details p {
+    line-height: 1.6;
+  }
+  .main footer .footer-menu .title .line {
     width: 100%;
-}
-.main footer .footer-nemads {
-  width: 100%;
-  flex-direction: row;
-}
-    .main footer .footer-nemads img {
-      width: 100px;
-      height: 100px;
-      margin-top: 15px;
-    }
-
+  }
+  .main footer .footer-details {
+    width: 100%;
+  }
+  .main footer .footer-details .title .line {
+    width: 100%;
+  }
+  .main footer .footer-nemads {
+    width: 100%;
+    flex-direction: row;
+  }
+  .main footer .footer-nemads img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+  }
 }
 @media only screen and (max-width: 380px) {
-    .main .home-page .categories .category .box {
-        font-size: 10px;
-        margin: 12;
-        padding: 15px 4px;
-    }
-    .main footer .footer-menu {
-        font-size: 17px;
-    }
+  .main .home-page .categories .category .box {
+    font-size: 10px;
+    margin: 12;
+    padding: 15px 4px;
+  }
+  .main footer .footer-menu {
+    font-size: 17px;
+  }
 }
-
 
 /*
 |------------------------------------------------------|
