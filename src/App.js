@@ -11,6 +11,8 @@ import Offers from "./pages/admin/offers";
 import Settings from "./pages/admin/settings";
 import Tournaments from "./pages/home/tournaments";
 import LeaderBoard from "./pages/home/leaderboard";
+import Login from "./pages/home/login";
+import Learn from "./pages/home/learn";
 
 function App() {
   return (
@@ -20,9 +22,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="tournaments" element={<Tournaments />} />
           <Route path="leaderboard" element={<LeaderBoard />} />
+          <Route path="learn" element={<Learn />} />
         </Route>
 
-        <Route path="login" element={} />
+        <Route path="login" element={<Login />} />
 
         <Route path="/panel" element={<Panel />}>
           <Route index element={<Dashboard />} />

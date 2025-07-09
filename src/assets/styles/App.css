@@ -1094,12 +1094,12 @@ button {
   .main .home-page .categories .category .box {
     font-size: 25px;
   }
-.main .home-page .categories .card .img {
-  height: 35%;
-}
-.main .home-page .categories .card .details{
-  height: 60%;
-}
+  .main .home-page .categories .card .img {
+    height: 35%;
+  }
+  .main .home-page .categories .card .details {
+    height: 60%;
+  }
   .main .home-page .categories .card .img h1 {
     font-size: 24px;
   }
@@ -1220,18 +1220,17 @@ button {
   .main .home-page .categories .category {
     align-items: end;
   }
-  .main .home-page .categories .card{
-width: 310px;
-height: 350px;
-
+  .main .home-page .categories .card {
+    width: 310px;
+    height: 350px;
   }
-  .main .home-page .categories .card .img h1{
+  .main .home-page .categories .card .img h1 {
     font-size: 19px;
   }
-  .main .home-page .categories .card .img h2{
+  .main .home-page .categories .card .img h2 {
     font-size: 14px;
   }
-  .main .home-page .categories .card .details .room-details .price{
+  .main .home-page .categories .card .details .room-details .price {
     font-size: 14px;
   }
   .main .home-page .categories .card .details .room-details .empty-box {
@@ -1241,11 +1240,11 @@ height: 350px;
     top: 220px;
     font-size: 13px;
   }
-  .main .home-page .categories .card .details .btn button{
+  .main .home-page .categories .card .details .btn button {
     font-size: 17px;
     width: 100px;
   }
-  .main .home-page .categories .card .details .btn p{
+  .main .home-page .categories .card .details .btn p {
     font-size: 15px;
   }
   .main .home-page .title h2 {
@@ -1278,7 +1277,7 @@ height: 350px;
   .main footer {
     flex-direction: column;
   }
-  
+
   .main footer .footer-menu {
     width: 100%;
     flex-direction: row;
@@ -1288,41 +1287,39 @@ height: 350px;
   }
   .main footer .footer-menu a {
     margin: 13px;
-}
-.main footer .footer-details p {
-        line-height: 1.6;
-    }
-      .main footer .footer-menu .title .line {
-        width: 100%;
-    }
-    .main footer .footer-details {
-      width: 100%;
-    }
-    .main footer .footer-details .title .line {
+  }
+  .main footer .footer-details p {
+    line-height: 1.6;
+  }
+  .main footer .footer-menu .title .line {
     width: 100%;
-}
-.main footer .footer-nemads {
-  width: 100%;
-  flex-direction: row;
-}
-    .main footer .footer-nemads img {
-      width: 100px;
-      height: 100px;
-      margin-top: 15px;
-    }
-
+  }
+  .main footer .footer-details {
+    width: 100%;
+  }
+  .main footer .footer-details .title .line {
+    width: 100%;
+  }
+  .main footer .footer-nemads {
+    width: 100%;
+    flex-direction: row;
+  }
+  .main footer .footer-nemads img {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+  }
 }
 @media only screen and (max-width: 380px) {
-    .main .home-page .categories .category .box {
-        font-size: 10px;
-        margin: 12;
-        padding: 15px 4px;
-    }
-    .main footer .footer-menu {
-        font-size: 17px;
-    }
+  .main .home-page .categories .category .box {
+    font-size: 10px;
+    margin: 12;
+    padding: 15px 4px;
+  }
+  .main footer .footer-menu {
+    font-size: 17px;
+  }
 }
-
 
 /*
 |------------------------------------------------------|
@@ -1757,6 +1754,225 @@ height: 350px;
 .main .leaderboard-page ul .my-score img.rank {
   width: 50px;
   margin-left: 35px;
+}
+
+/*
+|------------------------------------------------------|
+|====================| LEARN PAGE |====================|
+|------------------------------------------------------|
+*/
+.main .learning-page .box {
+  border: 1px #dbdbdb double;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-around;
+  margin: 20px;
+  border-radius: 15px;
+}
+.main .learning-page .box:nth-child(odd) {
+  flex-direction: row;
+}
+.main .learning-page .box .learning-video {
+  width: 45%;
+}
+.main .learning-page .box .learning-video video {
+  width: 100%;
+  height: 320px;
+  border-radius: 15px;
+}
+.main .learning-page .box .details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.9;
+  background-color: #242336;
+  padding: 15px;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+.main .learning-page .box .details h1 {
+  margin-bottom: 16px;
+  border-bottom: 4px solid #473a53;
+  width: 50%;
+  text-align: start;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+/*
+|------------------------------------------------------|
+|======================| LOGIN |=======================|
+|------------------------------------------------------|
+*/
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.login .board {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  border: 1px solid #434040;
+  flex-direction: row-reverse;
+
+}
+
+.login .board .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.login .board .right .up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+  border-top: none;
+  border-right: none;
+  border-radius: 0 0 100px 0;
+  background-color: #75787a;
+}
+
+.login .board .right img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: -40px;
+}
+
+.login .board .right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login .board .right form .input-box {
+  position: relative;
+  width: 70%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.login .board .right form .input-box input {
+  width: 100%;
+  padding: 10px 15px 10px 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #373439;
+  transition: 0.5s;
+  color: #000000;
+}
+
+.login .board .right form input:focus {
+  border-bottom: 1px solid #3e6dd8;
+}
+
+.login .board .right form .input-box label {
+  color: #646363;
+  position: absolute;
+  top: 35%;
+  left: 85%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.login .board .right form .input-box input:focus ~ label,
+.login .board .right form .input-box input:valid ~ label {
+  top: -5px;
+  color: #3e6dd8;
+  font-size: 13px;
+}
+
+.login .board .right form .input-box svg {
+  position: absolute;
+  left: 0%;
+  top: 35%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.login .board .right form .input-box input:focus ~ svg,
+.login .board .right form .input-box input:valid ~ svg {
+  display: none;
+}
+
+.login .board .right form .texts {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.login .board .right form .texts h4 {
+  color: #138bff;
+}
+
+.login .board .right form .texts button {
+  width: 70px;
+  padding: 6px;
+  margin-right: 10px;
+  margin-top: -3px;
+  border-radius: 50px;
+  border: none;
+  background-color: #138bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login .board .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url();
+  width: 60%;
+  height: 100%;
+  background-size: cover;
+  background-position: 60%;
+  background-color: #454546;
+}
+
+.login .board .left .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+}
+
+.login .board .left .right button {
+  width: 65px;
+  height: 40px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background: transparent;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
 }
 
 /*
@@ -2932,7 +3148,7 @@ height: 350px;
   border-radius: 10px;
   color: var(--color-default);
   margin-left: 20px;
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .panel .content .popover#create-team .box form input::placeholder {
@@ -2943,7 +3159,7 @@ height: 350px;
 .panel .content .popover#create-team .box form input:focus {
   width: 350px;
   background-color: #232242;
-    transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .panel .content .popover#create-team .box form button {
@@ -2955,12 +3171,12 @@ height: 350px;
   background-color: #232242;
   color: var(--color-default);
   cursor: pointer;
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#create-team .box form button:hover {
   background-color: var(--color-accent);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#streamer-form .box {
@@ -2983,20 +3199,25 @@ height: 350px;
   font-family: vazir;
   margin-bottom: 10px;
   border-radius: 10px;
-  background-color: #302E5A;
+  background-color: #302e5a;
   outline: none;
   border: 1px solid var(--color-accent);
   color: var(--color-default);
-    transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
-.panel .content .popover#streamer-form .box form input[type="text"]::placeholder {
+.panel
+  .content
+  .popover#streamer-form
+  .box
+  form
+  input[type="text"]::placeholder {
   color: var(--color-default);
 }
 
 .panel .content .popover#streamer-form .box form input[type="text"]:focus {
   box-shadow: 0 0 10px var(--color-accent);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#streamer-form .box form .row {
@@ -3023,7 +3244,13 @@ height: 350px;
   margin-left: 20px;
 }
 
-.panel .content .popover#streamer-form .box form .socials input[type="checkbox"] {
+.panel
+  .content
+  .popover#streamer-form
+  .box
+  form
+  .socials
+  input[type="checkbox"] {
   margin: 10px 0;
 }
 
@@ -3036,17 +3263,17 @@ height: 350px;
   padding: 10px;
   font-size: 20px;
   margin-top: 15px;
-  background-color: #302E5A;
+  background-color: #302e5a;
   color: var(--color-default);
   border: 1px solid var(--color-accent);
   border-radius: 10px;
   cursor: pointer;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .panel .content .popover#streamer-form .box form button:hover {
   background-color: var(--color-accent);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 /*
