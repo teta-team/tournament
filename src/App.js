@@ -22,7 +22,7 @@ function App() {
           <Route path="leaderboard" element={<LeaderBoard />} />
         </Route>
 
-        <Route path="login" element={} />
+        {/* <Route path="login" element={} /> */}
 
         <Route path="/panel" element={<Panel />}>
           <Route index element={<Dashboard />} />
