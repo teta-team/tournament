@@ -1,6 +1,5 @@
 import LastPays from "../../components/lastPays";
 import RoomBox from "../../components/roomBox";
-import Streamers from "../../components/streamers";
 
 function Home() {
   return (
@@ -173,14 +172,6 @@ function Home() {
             <div className="under-line"></div>
           </div>
           <div className="streamers">
-            <Streamers
-              image="https://static.cdn.asset.aparat.com/profile-photo/20144408-818269-s.jpg"
-              name="BK Team"
-            />
-            <Streamers
-              image="https://static.cdn.asset.aparat.com/profile-photo/9812932-626663-s.jpg"
-              name="MOGIYT"
-            />
           </div>
         </div>
       </div>
