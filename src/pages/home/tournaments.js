@@ -6,44 +6,6 @@ function Tournaments() {
       <div className="container">
         <div className="classification-of-rooms">
           <div className="title">
-            <h1>روم های ویژه</h1>
-          </div>
-          <div className="matchs-box">
-            <RoomBox
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
-              name="روم بتل رویال"
-              players="50"
-              prize="2,000,000"
-              winners="3"
-              time="22:00"
-              date="3روز بعد"
-              price="20,000"
-            />
-            <RoomBox
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
-              name="روم بتل رویال"
-              players="50"
-              prize="2,000,000"
-              winners="3"
-              time="22:00"
-              date="3روز بعد"
-              price="20,000"
-            />
-            <RoomBox
-              image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
-              name="روم بتل رویال"
-              players="50"
-              prize="2,000,000"
-              winners="3"
-              time="22:00"
-              date="3روز بعد"
-              price="20,000"
-            />
-          </div>
-        </div>
-
-        <div className="classification-of-rooms">
-          <div className="title">
             <h1>روم های بتل رویال</h1>
           </div>
           <div className="matchs-box">
@@ -120,43 +82,6 @@ function Tournaments() {
           <div className="classification-of-rooms">
             <div className="title">
               <h1>روم های رایگان</h1>
-            </div>
-            <div className="matchs-box">
-              <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
-                name="روم بتل رویال"
-                players="50"
-                prize="2,000,000"
-                winners="3"
-                time="22:00"
-                date="3روز بعد"
-                price="20,000"
-              />
-              <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
-                name="روم بتل رویال"
-                players="50"
-                prize="2,000,000"
-                winners="3"
-                time="22:00"
-                date="3روز بعد"
-                price="20,000"
-              />
-              <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
-                name="روم بتل رویال"
-                players="50"
-                prize="2,000,000"
-                winners="3"
-                time="22:00"
-                date="3روز بعد"
-                price="20,000"
-              />
-            </div>
-          </div>
-          <div className="classification-of-rooms">
-            <div className="title">
-              <h1>دوئل ها</h1>
             </div>
             <div className="matchs-box">
               <RoomBox

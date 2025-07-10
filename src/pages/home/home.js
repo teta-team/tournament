@@ -96,25 +96,7 @@ function Home() {
               </div>
             </div>
             <div className="box">
-              روم های ویژه
-              <div className="right">
-                <div></div>
-              </div>
-              <div className="left">
-                <div></div>
-              </div>
-            </div>
-            <div className="box">
               روم رایگان
-              <div className="right">
-                <div></div>
-              </div>
-              <div className="left">
-                <div></div>
-              </div>
-            </div>
-            <div className="box">
-              دوئل
               <div className="right">
                 <div></div>
               </div>
