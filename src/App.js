@@ -13,6 +13,7 @@ import Tournaments from "./pages/home/tournaments";
 import LeaderBoard from "./pages/home/leaderboard";
 import Login from "./pages/home/login";
 import Learn from "./pages/home/learn";
+import Streamers from "./pages/home/streamers";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="tournaments" element={<Tournaments />} />
           <Route path="leaderboard" element={<LeaderBoard />} />
+          <Route path="streamers" element={<Streamers />} />
           <Route path="learn" element={<Learn />} />
         </Route>
 
