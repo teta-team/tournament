@@ -5,9 +5,7 @@ function Home() {
   return (
     <div className="home-page">
       <div className="welcome">
-        <div className="container">
-          <img src="/assets/images/banners/1.webp" alt="banner" />
-        </div>
+        <img src="/assets/images/banners/1.webp" alt="banner" />
       </div>
 
       <div className="last-pays">
@@ -171,8 +169,7 @@ function Home() {
             <h2>استریمر ها</h2>
             <div className="under-line"></div>
           </div>
-          <div className="streamers">
-          </div>
+          <div className="streamers"></div>
         </div>
       </div>
     </div>

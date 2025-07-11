@@ -1,3 +1,5 @@
+@import url("./animations.css");
+
 /*
 |------------------------------------------------------|
 |===========|  FONTS & COLORS & SCROLL BAR  |==========|
@@ -306,20 +308,16 @@ button {
 */
 
 .main .home-page .welcome {
+  width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 50px 0 20px;
 }
 
-.main .home-page .welcome .container {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .main .home-page .welcome img {
-  width: 100%;
+  width: 80%;
   animation: fadeInUp 0.5s ease;
 }
 
@@ -2330,6 +2328,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 10px;
   right: 10px;
+  animation: faderight .5s ease;
 }
 
 .panel .content .dashboard .header {
@@ -2418,6 +2417,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 10px;
   right: 375px;
+  animation: fadeup .5s ease;
 }
 
 .panel .content .dashboard .notif ul {
@@ -2497,6 +2497,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 10px;
   left: 10px;
+  animation: fadeleft .5s ease;
 }
 
 .panel .content .dashboard .rank .box {
@@ -2553,6 +2554,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 225px;
   right: 10px;
+  animation: faderight .5s ease;
 }
 
 .panel .content .dashboard .teammates .line {
@@ -2604,6 +2606,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 440px;
   right: 375px;
+  animation: fadeup .5s ease;
 }
 
 .panel .content .dashboard .joined-room ul {
@@ -2674,6 +2677,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 475px;
   left: 10px;
+  animation: fadeleft .5s ease;
 }
 
 .panel .content .dashboard .status .line {
@@ -2713,6 +2717,7 @@ background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 440px;
   right: 10px;
+  animation: faderight .5s ease;
 }
 
 .panel .content .dashboard .last-transactions ul {
@@ -2840,6 +2845,7 @@ background: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  animation: faderight .5s ease;
 }
 
 .panel .content .team .my-team .info .team-logo {
@@ -2883,6 +2889,7 @@ background: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  animation: fadeup .5s ease;
 }
 
 .panel .content .team .my-team .header {
@@ -2937,6 +2944,7 @@ background: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
   margin-bottom: 10px;
+  animation: fadeleft .5s ease;
 }
 
 .panel .content .team .my-team .invite .box {
@@ -3005,6 +3013,7 @@ background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
+  animation: fadedown .5s ease;
 }
 
 .panel .content .team .my-team .players ul {
@@ -3092,6 +3101,7 @@ background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
+  animation: fadedown .5s ease;
 }
 
 .panel .content .team .my-team .team-history ul {
@@ -3138,6 +3148,7 @@ background: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  animation: showpop .5s ease;
 }
 
 .panel .content .popover .box {
@@ -3202,7 +3213,7 @@ background: rgba(0, 0, 0, 0.6);
 
 .panel .content .popover .box .search-box button {
   background-color: var(--color-primary);
-  color: var(--color-default);
+  color: #000;
   width: 50px;
   height: 50px;
   font-size: 18px;
@@ -3544,15 +3555,18 @@ background: rgba(0, 0, 0, 0.6);
 
 .panel .content .rooms-history ul .room p {
   font-family: estedad-thin;
+  color: var(--color-heading);
 }
 
 .panel .content .rooms-history ul .room .status {
   width: 300px;
+  color: var(--color-heading);
 }
 
 .panel .content .rooms-history ul .room i {
   font-size: 20px;
   margin-left: 20px;
+  color: var(--color-heading);
 }
 
 /*
@@ -3634,13 +3648,14 @@ background: rgba(0, 0, 0, 0.6);
   font-size: 16px;
   background-color: var(--color-primary);
   margin-top: 20px;
-  color: var(--color-default);
+  color: #000;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .panel .content .offers .sub button:hover {
   filter: brightness(80%);
+  box-shadow: 0 0 10px var(--color-primary);
   transition: all 0.3s ease;
 }
 
@@ -3681,6 +3696,7 @@ background: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: faderight .5s ease;
 }
 
 .panel .content .settings .title {
@@ -3754,15 +3770,15 @@ background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   border: none;
   background-color: var(--color-accent);
-  color: var(--color-default);
+  color: #000;
   margin: 20px 0;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .panel .content .settings .line .user-name button:hover {
-  background-color: var(--color-secondary);
-  box-shadow: 0 0 10px var(--color-secondary);
+  filter: brightness(80%);
+  box-shadow: 0 0 10px var(--color-accent);
   transition: all 0.3s ease;
 }
 
@@ -3778,6 +3794,7 @@ background: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeup .5s ease;
 }
 
 .panel .content .settings .line .password .old-password {
@@ -3833,15 +3850,15 @@ background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   border: none;
   background-color: var(--color-accent);
-  color: var(--color-default);
+  color: #000;
   margin: 20px 0;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .panel .content .settings .line .password button:hover {
-  background-color: var(--color-secondary);
-  box-shadow: 0 0 10px var(--color-secondary);
+  filter: brightness(80%);
+  box-shadow: 0 0 10px var(--color-accent);
   transition: all 0.3s ease;
 }
 
@@ -3857,6 +3874,7 @@ background: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeleft .5s ease;
 }
 
 .panel .content .settings .line .profile .pic {
@@ -3886,7 +3904,7 @@ background: rgba(0, 0, 0, 0.6);
   border: none;
   bottom: 3px;
   left: 10px;
-  color: var(--color-default);
+  color: #000;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -3914,6 +3932,7 @@ background: rgba(0, 0, 0, 0.6);
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  animation: fadedown .5s ease;
 }
 
 .panel .content .settings .line .rules a {
@@ -3962,6 +3981,7 @@ background: rgba(0, 0, 0, 0.6);
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  animation: fadedown .5s ease;
 }
 
 .panel .content .settings .line .buttons button {

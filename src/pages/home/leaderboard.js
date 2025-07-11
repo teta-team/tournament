@@ -1,10 +1,26 @@
-import LeaderBoardUser from "../../components/leaderBoardUser"
+import { useEffect } from "react";
+import LeaderBoardUser from "../../components/leaderBoardUser";
 
 function LeaderBoard() {
+  useEffect(() => {
+    const items = document.querySelectorAll(".leaderboard-page ul li");
+
+    items.forEach((item, index) => {
+      item.style.opacity = "0";
+      setTimeout(() => {
+        item.style.animation = "fadedown .5s ease";
+        item.style.opacity = "1";
+      }, 100 * index);
+    });
+  }, []);
   return (
     <div className="leaderboard-page">
       <div className="container">
-        <img src="/assets/images/leaderboard/leaderboard.png" alt="" className="title" />
+        <img
+          src="/assets/images/leaderboard/leaderboard.png"
+          alt=""
+          className="title"
+        />
         <ul>
           <LeaderBoardUser
             index={1}
@@ -46,7 +62,7 @@ function LeaderBoard() {
             rank="Legend"
             rankNum={4}
           />
-          <div className="my-score">
+          <li className="my-score">
             <p>6</p>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKV5tUbnX6wSXB8VxeVu-KWkuEltLRqGlxzQ&s"
@@ -57,11 +73,11 @@ function LeaderBoard() {
             <h4>Elite</h4>
             <p>129</p>
             <img src="/assets/images/ranks/1.png" alt="" className="rank" />
-          </div>
+          </li>
         </ul>
       </div>
     </div>
   );
 }
 
-export default LeaderBoard
+export default LeaderBoard;
