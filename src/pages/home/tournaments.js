@@ -11,7 +11,7 @@ function Tournaments() {
           <div className="matchs-box">
             <ul>
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                image={`${process.env.PUBLIC_URL}/assets/images/banners/roomsBanner.webp`}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
