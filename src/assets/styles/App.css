@@ -1372,12 +1372,20 @@ button {
 }
 .main .tournaments-page .classification-of-rooms .matchs-box {
   width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.main .tournaments-page .classification-of-rooms .matchs-box ul {
+  width: fit-content;
   display: flex;
   flex-direction: row;
   border: 2px solid var(--color-secondary);
   padding: 25px 0 25px 0;
   border-radius: 15px;
 }
+
+
 
 .main .tournaments-page .classification-of-rooms .title {
   position: absolute;
@@ -1394,6 +1402,7 @@ button {
 .main .tournaments-page .classification-of-rooms .title h1 {
   margin: 0;
 }
+
 .main .tournaments-page .card {
   display: flex;
   flex-direction: column;
@@ -1567,6 +1576,109 @@ button {
   color: var(--color-heading);
   font-size: 20px;
   font-family: estedad-thin;
+}
+
+/*
+|------------------------------------------------------|
+|===================|  RESPONSIVE  |===================|
+|------------------------------------------------------|
+*/
+@media only screen and (max-width: 1024px) {
+  .main .tournaments-page .card {
+    height:380px;
+    width: 380px;
+  }
+  .main .tournaments-page .card .img {
+    height: 30%;
+  }
+ .main .tournaments-page .card .details {
+    height: 70%;
+  }
+    .main .tournaments-page  .card .img h1 {
+    font-size: 22px;
+  }
+   .main .tournaments-page .card .img h2 {
+    font-size: 14px;
+   }
+   .main .tournaments-page .card .details .room-details .price {
+    font-size: 14px;
+    width: 95%;
+    top: 150px;
+
+   }
+   .main .tournaments-page .card .details .room-details .empty-box {
+    width:75% ;
+    top: 140px;
+   }
+   .main .tournaments-page .card .details .room-details .time {
+    width: 60%;
+    font-size: 13px;
+    top: 220px;
+   }
+.main .tournaments-page .card .details .btn p{
+  font-size: 17px;
+}
+.main .tournaments-page .card .details .btn button {
+  font-size: 17px;
+  padding: 10px;
+}
+
+
+
+}
+
+@media only screen and (max-width: 770px) {
+  .main .tournaments-page .classification-of-rooms .matchs-box {
+    overflow-x: auto;
+    width: 100%;
+  }
+    .main .tournaments-page .card {
+      width: 400px;
+    height:380px;
+  }
+  .main .tournaments-page .card .img {
+    height: 30%;
+  }
+ .main .tournaments-page .card .details {
+    height: 70%;
+  }
+    .main .tournaments-page  .card .img h1 {
+    font-size: 15px;
+  }
+   .main .tournaments-page .card .img h2 {
+    font-size: 10px;
+   }
+   .main .tournaments-page .card .details .room-details .price {
+    font-size: 14px;
+    width: 95%;
+    top: 150px;
+
+   }
+   .main .tournaments-page .card .details .room-details .empty-box {
+    width:75% ;
+    top: 140px;
+   }
+   .main .tournaments-page .card .details .room-details .time {
+    width: 60%;
+    font-size: 13px;
+    top: 220px;
+   }
+.main .tournaments-page .card .details .btn p{
+  font-size: 17px;
+}
+.main .tournaments-page .card .details .btn button {
+  font-size: 17px;
+  padding: 10px;
+}
+}
+
+@media only screen and (max-width: 380px) {
+}
+
+@media only screen and (max-width: 380px) {
+}
+
+@media only screen and (max-width: 380px) {
 }
 
 /*
@@ -1941,7 +2053,7 @@ button {
   border: 2px solid var(--color-danger);
   position: absolute;
   left: 340px;
-  top:80px;
+  top: 80px;
   z-index: 10;
   background-color: var(--color-default);
   display: flex;
@@ -1999,7 +2111,7 @@ button {
 }
 .main .streamers .streamer .logo i {
   cursor: pointer;
- font-size: 27px;
+  font-size: 27px;
 }
 .main .streamers .streamer .logo .bi-youtube {
   color: #c4302b;
@@ -2008,16 +2120,17 @@ button {
   color: #7d60c6;
 }
 
-.main .streamers .streamer .logo .bi-discord{
+.main .streamers .streamer .logo .bi-discord {
   color: #5661ea;
 }
 
-.main .streamers .streamer .logo .bi-instagram{
-  background-image:linear-gradient(45deg,#efbb00 , #eb1f02 , #9e40a8 , #7a39ab);
+.main .streamers .streamer .logo .bi-instagram {
+  background-image: linear-gradient(45deg, #efbb00, #eb1f02, #9e40a8, #7a39ab);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;}
+  -webkit-text-fill-color: transparent;
+}
 /*
 |------------------------------------------------------|
 |======================| LOGIN |=======================|
@@ -2366,7 +2479,7 @@ button {
   position: absolute;
   top: 10px;
   right: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .dashboard .header {
@@ -2455,7 +2568,7 @@ button {
   position: absolute;
   top: 10px;
   right: 375px;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .dashboard .notif ul {
@@ -2535,7 +2648,7 @@ button {
   position: absolute;
   top: 10px;
   left: 10px;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .dashboard .rank .box {
@@ -2592,7 +2705,7 @@ button {
   position: absolute;
   top: 225px;
   right: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .dashboard .teammates .line {
@@ -2644,7 +2757,7 @@ button {
   position: absolute;
   top: 440px;
   right: 375px;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .dashboard .joined-room ul {
@@ -2715,7 +2828,7 @@ button {
   position: absolute;
   top: 475px;
   left: 10px;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .dashboard .status .line {
@@ -2755,7 +2868,7 @@ button {
   position: absolute;
   top: 440px;
   right: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .dashboard .last-transactions ul {
@@ -2883,7 +2996,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .team .my-team .info .team-logo {
@@ -2927,7 +3040,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .team .my-team .header {
@@ -2982,7 +3095,7 @@ button {
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
   margin-bottom: 10px;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .team .my-team .invite .box {
@@ -3051,7 +3164,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .team .my-team .players ul {
@@ -3139,7 +3252,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .team .my-team .team-history ul {
@@ -3186,7 +3299,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  animation: showpop .5s ease;
+  animation: showpop 0.5s ease;
 }
 
 .panel .content .popover .box {
@@ -3734,7 +3847,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .settings .title {
@@ -3832,7 +3945,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .settings .line .password .old-password {
@@ -3912,7 +4025,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .settings .line .profile .pic {
@@ -3970,7 +4083,7 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .settings .line .rules a {
@@ -4019,7 +4132,7 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .settings .line .buttons button {
