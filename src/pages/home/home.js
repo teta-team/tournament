@@ -114,6 +114,7 @@ function Home() {
                 date="3روز بعد"
                 price="20,000"
               />
+              
               <RoomBox
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
                 name="روم بتل رویال"
