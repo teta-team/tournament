@@ -392,16 +392,19 @@ button {
 
 @keyframes rail {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) scale(1) skewX(0deg);
   }
-  33% {
-    transform: translateX(1200px);
+  20% {
+    transform: translateX(800px) scale(1.05) skewX(2deg);
   }
-  66% {
-    transform: translateX(-200px);
+  50% {
+    transform: translateX(-200px) scale(0.98) skewX(-2deg);
+  }
+  80% {
+    transform: translateX(1200px) scale(1.04) skewX(1deg);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0) scale(1) skewX(0deg);
   }
 }
 
@@ -434,11 +437,17 @@ button {
 }
 
 @keyframes border-angle-rotate {
-  from {
+  0% {
     --border-angle: 0deg;
+    filter: brightness(1) drop-shadow(0 0 0 #c400ff00);
   }
-  to {
+  50% {
+    --border-angle: 180deg;
+    filter: brightness(1.2) drop-shadow(0 0 8px #00ffff88);
+  }
+  100% {
     --border-angle: 360deg;
+    filter: brightness(1) drop-shadow(0 0 0 #c400ff00);
   }
 }
 
@@ -564,25 +573,28 @@ button {
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 30px red;
+    text-shadow: 0 0 30px #00ffff, 0 0 10px #c400ff;
+    filter: brightness(1.1);
   }
-  16% {
-    text-shadow: 0 0 30px orange;
+  20% {
+    text-shadow: 0 0 40px #c400ff, 0 0 20px #00ffff;
+    filter: brightness(1.2);
   }
-  32% {
-    text-shadow: 0 0 30px yellow;
+  40% {
+    text-shadow: 0 0 30px #ffea00, 0 0 10px #00ffea;
+    filter: brightness(1.1);
   }
-  48% {
-    text-shadow: 0 0 30px green;
-  }
-  64% {
-    text-shadow: 0 0 30px blue;
+  60% {
+    text-shadow: 0 0 40px #00ffea, 0 0 20px #ffea00;
+    filter: brightness(1.2);
   }
   80% {
-    text-shadow: 0 0 30px purple;
+    text-shadow: 0 0 30px #c400ff, 0 0 10px #00ffff;
+    filter: brightness(1.1);
   }
   100% {
-    text-shadow: 0 0 30px red;
+    text-shadow: 0 0 30px #00ffff, 0 0 10px #c400ff;
+    filter: brightness(1.1);
   }
 }
 
@@ -1411,12 +1423,19 @@ button {
 
 @keyframes fadeInUp {
   0% {
-    transform: translateY(10px);
+    transform: translateY(24px) scale(0.97) skewY(2deg);
     opacity: 0;
+    filter: blur(2px);
+  }
+  70% {
+    transform: translateY(-4px) scale(1.03) skewY(-1deg);
+    opacity: 0.85;
+    filter: blur(0.3px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1) skewY(0deg);
     opacity: 1;
+    filter: blur(0);
   }
 }
 
@@ -1941,7 +1960,7 @@ button {
   border: 2px solid var(--color-danger);
   position: absolute;
   left: 340px;
-  top:80px;
+  top: 80px;
   z-index: 10;
   background-color: var(--color-default);
   display: flex;
@@ -1999,7 +2018,7 @@ button {
 }
 .main .streamers .streamer .logo i {
   cursor: pointer;
- font-size: 27px;
+  font-size: 27px;
 }
 .main .streamers .streamer .logo .bi-youtube {
   color: #c4302b;
@@ -2008,23 +2027,22 @@ button {
   color: #7d60c6;
 }
 
-.main .streamers .streamer .logo .bi-discord{
+.main .streamers .streamer .logo .bi-discord {
   color: #5661ea;
 }
 
-.main .streamers .streamer .logo .bi-instagram{
-  background-image:linear-gradient(45deg,#efbb00 , #eb1f02 , #9e40a8 , #7a39ab);
+.main .streamers .streamer .logo .bi-instagram {
+  background-image: linear-gradient(45deg, #efbb00, #eb1f02, #9e40a8, #7a39ab);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;}
+  -webkit-text-fill-color: transparent;
+}
 /*
 |------------------------------------------------------|
 |======================| LOGIN |=======================|
 |------------------------------------------------------|
 */
-
-
 
 /*
 |------------------------------------------------------|
@@ -2193,6 +2211,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  overflow-x: hidden;
 }
 
 .panel .content .dashboard .wallet {
@@ -2206,7 +2225,7 @@ button {
   position: absolute;
   top: 10px;
   right: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .dashboard .header {
@@ -2295,7 +2314,7 @@ button {
   position: absolute;
   top: 10px;
   right: 375px;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .dashboard .notif ul {
@@ -2375,7 +2394,7 @@ button {
   position: absolute;
   top: 10px;
   left: 10px;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .dashboard .rank .box {
@@ -2432,7 +2451,7 @@ button {
   position: absolute;
   top: 225px;
   right: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .dashboard .teammates .line {
@@ -2484,7 +2503,7 @@ button {
   position: absolute;
   top: 440px;
   right: 375px;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .dashboard .joined-room ul {
@@ -2555,7 +2574,7 @@ button {
   position: absolute;
   top: 475px;
   left: 10px;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .dashboard .status .line {
@@ -2595,7 +2614,7 @@ button {
   position: absolute;
   top: 440px;
   right: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .dashboard .last-transactions ul {
@@ -2646,6 +2665,7 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .panel .content .team .buttons {
@@ -2723,7 +2743,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .team .my-team .info .team-logo {
@@ -2767,7 +2787,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .team .my-team .header {
@@ -2822,7 +2842,7 @@ button {
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
   margin-bottom: 10px;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .team .my-team .invite .box {
@@ -2891,7 +2911,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .team .my-team .players ul {
@@ -2979,7 +2999,7 @@ button {
   padding: 20px;
   border-radius: 10px;
   box-shadow: inset 0 0 5px var(--color-primary);
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .team .my-team .team-history ul {
@@ -3026,7 +3046,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  animation: showpop .5s ease;
+  animation: showpop 0.5s ease;
 }
 
 .panel .content .popover .box {
@@ -3574,7 +3594,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: faderight .5s ease;
+  animation: faderight 0.5s ease;
 }
 
 .panel .content .settings .title {
@@ -3672,7 +3692,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeup .5s ease;
+  animation: fadeup 0.5s ease;
 }
 
 .panel .content .settings .line .password .old-password {
@@ -3752,7 +3772,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeleft .5s ease;
+  animation: fadeleft 0.5s ease;
 }
 
 .panel .content .settings .line .profile .pic {
@@ -3810,7 +3830,7 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .settings .line .rules a {
@@ -3859,7 +3879,7 @@ button {
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
-  animation: fadedown .5s ease;
+  animation: fadedown 0.5s ease;
 }
 
 .panel .content .settings .line .buttons button {
