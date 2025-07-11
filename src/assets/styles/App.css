@@ -624,6 +624,7 @@ header {
   justify-content: center;
   overflow-x: auto;
   padding: 10px;
+  padding-top: 40px;
 }
 
 .main .home-page .categories .card {
@@ -642,7 +643,7 @@ header {
 }
 
 .main .home-page .categories .card .img {
-  height: 30%;
+  height: 28%;
   width: 100%;
   background-size: cover;
   position: absolute;
@@ -650,19 +651,47 @@ header {
   margin-bottom: 10px;
 }
 
+.main .home-page .categories .card .img::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-top: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
+  border-radius: 10px 0 0 0;
+  top: -1.5%;
+  left: -.5%;
+}
+
+.main .home-page .categories .card .img::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-top: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  border-radius: 0 10px 0 0;
+  top: -1.5%;
+  right: -.7%;
+  z-index: 1;
+}
+
 .main .home-page .categories .card .img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+  position: absolute;
+    bottom: 0;
 }
 
 .main .home-page .categories .card .img h1 {
   font-size: 26px;
-  font-family: estedad-bold;
-  position: absolute;
-  right: 20px;
-  bottom: 2px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: estedad-bold;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+    right: 0;
+    bottom: 0;
+    padding-right: 20px;
 }
 
 .main .home-page .categories .card .img h2 {
@@ -1423,7 +1452,7 @@ header {
   background-color: #1a1c2c;
   width: 380px;
   height: 450px;
-  border: 2px var(--color-primary) solid;
+  border: 2px solid var(--color-primary);
   border-radius: 10px;
   margin: 20px;
   position: relative;
@@ -1464,6 +1493,31 @@ header {
   margin-bottom: 10px;
 }
 
+.main .tournaments-page .card .img::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-top: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
+  border-radius: 10px 0 0 0;
+  top: -1.5%;
+  left: -.5%;
+}
+
+.main .tournaments-page .card .img::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-top: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  border-radius: 0 10px 0 0;
+  top: -1.5%;
+  right: -.7%;
+  z-index: 1;
+}
+
 .main .tournaments-page .card .img img {
   width: 100%;
   position: absolute;
@@ -1493,9 +1547,16 @@ header {
 
 .main .tournaments-page .card .details {
   width: 100%;
+  height: 72%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  /* border-right: 2px solid var(--color-primary);
+  border-left: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary); */
 }
 
 .main .tournaments-page .card .details .room-details .price {
@@ -1508,7 +1569,7 @@ header {
   z-index: 3;
   color: #000;
   position: absolute;
-  top: 200px;
+  top: 50px;
 }
 
 .main .tournaments-page .card .details .room-details .price i {
@@ -1526,7 +1587,7 @@ header {
   z-index: 2;
   color: #000;
   position: absolute;
-  top: 270px;
+  top: 120px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1551,7 +1612,7 @@ header {
   position: absolute;
   margin: auto;
   z-index: 1;
-  top: 185px;
+  top: 50px;
 }
 
 .main .tournaments-page .card .details .room-details {
