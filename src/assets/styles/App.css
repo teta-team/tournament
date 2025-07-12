@@ -526,6 +526,7 @@ header {
   color: #fff;
   position: relative;
   cursor: pointer;
+  transition: background-color .2s ease;
 }
 
 .main .home-page .last-pays .pays-box {
@@ -567,6 +568,7 @@ header {
 .main .home-page .categories .category .box.active {
   background-color: #201e3e;
   animation: glow 3s ease-in-out infinite alternate;
+  transition: background-color .2s ease;
 }
 
 .main .home-page .categories .category .box:nth-child(3) {
@@ -649,31 +651,6 @@ header {
   position: absolute;
   border-radius: 10px 10px 0 0;
   margin-bottom: 10px;
-}
-
-.main .home-page .categories .card .img::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-left: 2px solid var(--color-primary);
-  border-radius: 10px 0 0 0;
-  top: -1.5%;
-  left: -.5%;
-}
-
-.main .home-page .categories .card .img::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-right: 2px solid var(--color-primary);
-  border-radius: 0 10px 0 0;
-  top: -1.5%;
-  right: -.7%;
-  z-index: 1;
 }
 
 .main .home-page .categories .card .img img {
@@ -1493,31 +1470,6 @@ header {
   margin-bottom: 10px;
 }
 
-.main .tournaments-page .card .img::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-left: 2px solid var(--color-primary);
-  border-radius: 10px 0 0 0;
-  top: -1.5%;
-  left: -.5%;
-}
-
-.main .tournaments-page .card .img::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-right: 2px solid var(--color-primary);
-  border-radius: 0 10px 0 0;
-  top: -1.5%;
-  right: -.7%;
-  z-index: 1;
-}
-
 .main .tournaments-page .card .img img {
   width: 100%;
   position: absolute;
@@ -2027,6 +1979,7 @@ header {
 .main .learning-page .box .learning-video {
   width: 55%;
   margin-right: auto;
+  animation: showpop .5s ease;
 }
 
 .main .learning-page .box:nth-child(even) .learning-video {
@@ -2053,6 +2006,7 @@ header {
   margin-bottom: 100px;
   margin-right: 80px;
   box-shadow: 0 0 10px var(--color-accent);
+  animation: faderight .5s ease;
 }
 
 .main .learning-page .box:nth-child(even) .details {
