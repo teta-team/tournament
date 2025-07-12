@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react";
 import LastPays from "../../components/lastPays";
 import RoomBox from "../../components/roomBox";
-import Streamer from "../../components/streamer";
 
 function Home() {
+  const [active, setActive] = useState(0)
+  useEffect(() => {
+    const boxs = document.querySelectorAll(".categories .category .box")
+    boxs.forEach((box,index) => {
+      box.addEventListener("click", () => {
+        setActive(index)
+      })
+    }) 
+  }, [])
   return (
     <div className="home-page">
       <div className="welcome">
@@ -75,8 +84,8 @@ function Home() {
             <div className="under-line"></div>
           </div>
           <div className="category">
-            <div className="box active">
-              Battleroyale
+            <div className={`box ${active === 0 ? "active" : ""}`}>
+              <h3>Battleroyale</h3>
               <div className="right">
                 <div></div>
               </div>
@@ -84,8 +93,8 @@ function Home() {
                 <div></div>
               </div>
             </div>
-            <div className="box">
-              Multi Player
+            <div className={`box ${active === 1 ? "active" : ""}`}>
+              <h3>Multi Player</h3>
               <div className="right">
                 <div></div>
               </div>
@@ -93,8 +102,8 @@ function Home() {
                 <div></div>
               </div>
             </div>
-            <div className="box">
-              روم رایگان
+            <div className={`box ${active === 2 ? "active" : ""}`}>
+              <h3>روم رایگان</h3>
               <div className="right">
                 <div></div>
               </div>
