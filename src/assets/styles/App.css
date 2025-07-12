@@ -141,6 +141,10 @@ button {
   color: #000;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 .main {
   user-select: none;
 }
@@ -395,19 +399,19 @@ button {
 
 @keyframes rail {
   0% {
-    transform: translateX(0) scale(1) skewX(0deg);
+    transform: translateX(0);
   }
   20% {
-    transform: translateX(800px) scale(1.05) skewX(2deg);
+    transform: translateX(800px);
   }
   50% {
-    transform: translateX(-200px) scale(0.98) skewX(-2deg);
+    transform: translateX(-200px);
   }
   80% {
-    transform: translateX(1200px) scale(1.04) skewX(1deg);
+    transform: translateX(1200px);
   }
   100% {
-    transform: translateX(0) scale(1) skewX(0deg);
+    transform: translateX(0);
   }
 }
 
@@ -1738,7 +1742,7 @@ button {
 
 .main .leaderboard-page .title {
   width: 100%;
-  margin: 20px 0 40px;
+  margin: 10px 0 20px;
 }
 
 .main .leaderboard-page ul {

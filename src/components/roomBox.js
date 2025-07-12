@@ -6,8 +6,6 @@ function RoomBox({ image, name, players, prize, winners, time, date, price }) {
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/banners/banner.webp`}
           alt={name}
-          draggable="false"
-          onDragStart={(e) => e.preventDefault()}
         />
         <h1>{name}</h1>
         <h2>{players} نفر باقی مونده</h2>
