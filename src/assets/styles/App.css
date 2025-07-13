@@ -660,10 +660,35 @@ img {
   margin-bottom: 10px;
 }
 
-.main .home-page .categories .card .img img {
+.main .home-page .categories .card .img .brsquad {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.main .home-page .categories .card .img .brsquad img {
   width: 100%;
   position: absolute;
   bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(2) {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(3) {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(4) {
+  transform: scale(1.1);
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(5) {
+  transform: scale(1.1);
 }
 
 .main .home-page .categories .card .img h1 {
@@ -1496,10 +1521,35 @@ img {
   margin-bottom: 10px;
 }
 
-.main .tournaments-page .card .img img {
+.main .tournaments-page .card .img .brsquad {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.main .tournaments-page .card .img .brsquad img {
   width: 100%;
   position: absolute;
   bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(2) {
+  animation: floatleftcard 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(3) {
+  animation: floatrightcard 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(4) {
+  animation: floatmidcard 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(5) {
+  animation: floatmidcard 2s infinite;
 }
 
 .main .tournaments-page .card .img h1 {

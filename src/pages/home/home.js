@@ -115,7 +115,7 @@ function Home() {
           <div className="rooms-box">
             <div className="rooms-row">
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={0}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -126,7 +126,7 @@ function Home() {
               />
 
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={0}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
