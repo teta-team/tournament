@@ -344,7 +344,7 @@ img {
   content: "";
   height: 170px;
   width: 350px;
-  background: linear-gradient(90deg, transparent, #131225af, #131225 70%);
+  background: linear-gradient(90deg, transparent, rgba(11, 12, 26, 0.7), #0b0c1a 70%);
   position: absolute;
   bottom: 0;
   right: -5px;
@@ -355,7 +355,7 @@ img {
   content: "";
   height: 170px;
   width: 350px;
-  background: linear-gradient(90deg, #131225 30%, #131225af, transparent);
+  background: linear-gradient(90deg, #0b0c1a 30%, rgba(11, 12, 26, 0.7), transparent);
   position: absolute;
   bottom: 0;
   left: -5px;
@@ -533,7 +533,6 @@ img {
   color: #fff;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 .main .home-page .last-pays .pays-box {
@@ -575,40 +574,12 @@ img {
 .main .home-page .categories .category .box.active {
   background-color: #201e3e;
   animation: glow 3s ease-in-out infinite alternate;
-  transition: background-color 0.2s ease;
 }
 
 .main .home-page .categories .category .box:nth-child(3) {
   color: #e0b342;
   text-shadow: 0 0 20px #e0b342;
   animation: none;
-}
-
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 30px #00ffff, 0 0 10px #c400ff;
-    filter: brightness(1.1);
-  }
-  20% {
-    text-shadow: 0 0 40px #c400ff, 0 0 20px #00ffff;
-    filter: brightness(1.2);
-  }
-  40% {
-    text-shadow: 0 0 30px #ffea00, 0 0 10px #00ffea;
-    filter: brightness(1.1);
-  }
-  60% {
-    text-shadow: 0 0 40px #00ffea, 0 0 20px #ffea00;
-    filter: brightness(1.2);
-  }
-  80% {
-    text-shadow: 0 0 30px #c400ff, 0 0 10px #00ffff;
-    filter: brightness(1.1);
-  }
-  100% {
-    text-shadow: 0 0 30px #00ffff, 0 0 10px #c400ff;
-    filter: brightness(1.1);
-  }
 }
 
 /*
@@ -1169,7 +1140,7 @@ img {
     width: 100%;
   }
   .main .home-page .last-pays {
-    width: 95%;
+    width: 100%;
   }
   .main .home-page .last-pays .pays-row {
     width: 100%;
@@ -1181,7 +1152,17 @@ img {
   }
   .main .home-page .last-pays .title {
     width: 100%;
+    margin-bottom: 20px;
   }
+
+  .main .home-page .last-pays::before {
+    width: 80px;
+  }
+
+  .main .home-page .last-pays::after {
+    width: 80px;
+  }
+
   .main .home-page .last-pays .title h2 {
     margin-right: 10px;
   }
@@ -1521,7 +1502,7 @@ img {
   margin-bottom: 10px;
 }
 
-.main .tournaments-page .card .img .brsquad {
+.main .tournaments-page .card .img .banner {
   width: 100%;
   height: 180px;
   position: absolute;
@@ -1529,11 +1510,10 @@ img {
   overflow: hidden;
 }
 
-.main .tournaments-page .card .img .brsquad img {
+.main .tournaments-page .card .img img {
   width: 100%;
   position: absolute;
   bottom: 0;
-  transition: all 0.2s ease;
 }
 
 .main .tournaments-page .card:hover .img .brsquad img:nth-child(2) {

@@ -56,7 +56,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                mode={0}
+                mode={1}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -66,7 +66,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                mode={0}
+                mode={1}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -106,7 +106,7 @@ function Tournaments() {
           <div className="matchs-box">
             <ul>
               <RoomBox
-                mode={0}
+                mode={2}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -116,7 +116,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                mode={0}
+                mode={2}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -126,7 +126,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                mode={0}
+                mode={2}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -145,7 +145,7 @@ function Tournaments() {
             <div className="matchs-box">
               <ul>
                 <RoomBox
-                  mode={0}
+                  mode={3}
                   name="روم بتل رویال"
                   players="50"
                   prize="2,000,000"
@@ -155,7 +155,7 @@ function Tournaments() {
                   price="20,000"
                 />
                 <RoomBox
-                  mode={0}
+                  mode={3}
                   name="روم بتل رویال"
                   players="50"
                   prize="2,000,000"
@@ -165,7 +165,7 @@ function Tournaments() {
                   price="20,000"
                 />
                 <RoomBox
-                  mode={0}
+                  mode={3}
                   name="روم بتل رویال"
                   players="50"
                   prize="2,000,000"
