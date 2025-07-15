@@ -25,7 +25,7 @@ function Tournaments() {
     if (!isDragging) return;
     e.preventDefault();
     const x = e.pageX - matchsBoxRef.current.offsetLeft;
-    const walk = (x - startX) * 2; // سرعت حرکت را می‌توانید تنظیم کنید
+    const walk = (x - startX) * 2;
     matchsBoxRef.current.scrollLeft = scrollLeft - walk;
   };
   return (
@@ -46,7 +46,7 @@ function Tournaments() {
           >
             <ul>
               <RoomBox
-                image={`${process.env.PUBLIC_URL}/assets/images/banners/banner.webp`}
+                mode={0}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -56,7 +56,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                image={`${process.env.PUBLIC_URL}/assets/images/banners/banner.webp`}
+                mode={1}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -66,7 +66,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                image={`${process.env.PUBLIC_URL}/assets/images/banners/banner.webp`}
+                mode={1}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -76,7 +76,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={0}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -86,7 +86,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={0}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -106,7 +106,7 @@ function Tournaments() {
           <div className="matchs-box">
             <ul>
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={2}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -116,7 +116,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={2}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -126,7 +126,7 @@ function Tournaments() {
                 price="20,000"
               />
               <RoomBox
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                mode={2}
                 name="روم بتل رویال"
                 players="50"
                 prize="2,000,000"
@@ -145,7 +145,7 @@ function Tournaments() {
             <div className="matchs-box">
               <ul>
                 <RoomBox
-                  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                  mode={3}
                   name="روم بتل رویال"
                   players="50"
                   prize="2,000,000"
@@ -155,7 +155,7 @@ function Tournaments() {
                   price="20,000"
                 />
                 <RoomBox
-                  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                  mode={3}
                   name="روم بتل رویال"
                   players="50"
                   prize="2,000,000"
@@ -165,7 +165,7 @@ function Tournaments() {
                   price="20,000"
                 />
                 <RoomBox
-                  image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyPC7bf8SZSvwZnEYNHUFqRiq9SaDl54dNQ&s"
+                  mode={3}
                   name="روم بتل رویال"
                   players="50"
                   prize="2,000,000"
