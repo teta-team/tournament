@@ -88,6 +88,59 @@
   }
 }
 
+@keyframes right {
+  0% {
+    right: 30%;
+  }
+
+  100% {
+    right: 200px;
+  }
+}
+
+@keyframes mid {
+  0% {
+    width: 0;
+    right: 51%;
+  }
+  100% {
+    right: 537px;
+    width: 32.5%;
+  }
+}
+
+@keyframes left {
+  0% {
+    left: 30%;
+  }
+
+  100% {
+    left: 200px;
+  }
+}
+
+@keyframes marioJump {
+  0%{transform: translateY(0);}
+  50%{transform: translateY(-50px);}
+  100%{transform: translateY(0);}
+}
+
+@keyframes marioCome {
+  0%{transform: translateY(100px)}
+  50%{transform: translateY(-20px)}
+  100%{transform: translateY(0)}
+}
+
+@keyframes invis {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes floatmidcard {
   0% {transform: scale(1.1) translateY(0)}
   50%{transform: scale(1.1) translateY(-5px)}

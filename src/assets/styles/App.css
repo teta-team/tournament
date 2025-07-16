@@ -2307,6 +2307,246 @@ img {
 |------------------------------------------------------|
 */
 
+.login {
+  position: relative;
+  user-select: none;
+}
+
+.login .right {
+  position: absolute;
+  right: 200px;
+  background-image: url(/public/assets/images/login/r-switch.png);
+  width: 30%;
+  height: 690px;
+  background-size: 97.6%;
+  animation: right 2s alternate;
+  z-index: 100;
+}
+
+.login .mid {
+  position: absolute;
+  right: 536.5px;
+  top: 43px;
+  height: 595px;
+  width: 32.58%;
+  border-bottom: 3px solid #b95a9d;
+  border-top: 3px solid #00afd3;
+  box-shadow: 0 0 5px var(--color-default);
+  animation: mid 2s alternate;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.login .mid .form {
+  width: 500px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login .mid .form .input-box {
+  position: relative;
+  width: 47%;
+  height: 50px;
+  margin-bottom: 60px;
+}
+
+.login .mid .form .input-box:nth-child(1) label {
+  left: 44%;
+}
+
+.login .mid .form .input-box:nth-child(3) label {
+  left: 64%;
+}
+
+.login .mid .form .input-box:nth-child(4) label {
+  left: 80%;
+}
+
+.login .mid .form .input-box:nth-child(5) label {
+  left: 75%;
+}
+
+.login .mid .form .input-box:nth-child(6) label {
+  left: 57%;
+}
+
+.login .mid .form .input-box input {
+  width: 100%;
+  padding: 10px 15px 10px 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  transition: 0.5s;
+  color: var(--color-heading);
+  font-size: 18px;
+}
+
+.login .mid .form .input-box input:-webkit-autofill,
+.login .mid .form .input-box input:-webkit-autofill:hover, 
+.login .mid .form .input-box input:-webkit-autofill:focus, 
+.login .mid .form .input-box input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    background-color: transparent !important;
+}
+
+.login .mid .form .input-box:nth-child(odd) input {
+  border-bottom: 1px solid #b95a9d;
+}
+
+.login .mid .form .input-box:nth-child(even) input {
+  border-bottom: 1px solid #00afd3;
+}
+
+.login .mid .form .input-box:nth-child(even) input:focus {
+  border-bottom: 1px solid #00afd3;
+}
+
+.login .mid .form .input-box:nth-child(odd) input:focus {
+  border-bottom: 1px solid #b95a9d;
+}
+
+.login .mid .form .input-box label {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  transition: 0.5s;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.login .mid .form .input-box:nth-child(odd) label {
+  color: #b95a9d;
+}
+
+.login .mid .form .input-box:nth-child(even) label {
+  color: #00afd3;
+}
+
+.login .mid .form .input-box input:focus ~ label,
+.login .mid .form .input-box input:valid ~ label {
+  top: -5px;
+  font-size: 13px;
+}
+
+.login .mid .form .input-box input:-webkit-autofill ~ label,
+.login .mid .form .input-box input:-webkit-autofill:hover ~ label,
+.login .mid .form .input-box input:-webkit-autofill:focus ~ label,
+.login .mid .form .input-box input:-webkit-autofill:active ~ label {
+  top: -5px;
+  font-size: 13px;
+}
+
+.login .mid .form .input-box svg {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.login .mid .form .input-box:nth-child(odd) svg {
+  color: #b95a9d;
+}
+
+.login .mid .form .input-box:nth-child(even) svg {
+  color: #00afd3;
+}
+
+.login .mid .form .input-box input:focus ~ svg,
+.login .mid .form .input-box input:valid ~ svg {
+  display: none;
+}
+
+.login .mid button {
+  position: absolute;
+  width: 50%;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #00afd3, #b95a9d);
+  color: var(--color-heading);
+  border: none;
+  margin-right: 25%;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #ffffff98;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  animation: invis .5s 2s alternate;
+}
+
+.login .mid .super-mario {
+  position: absolute;
+  bottom: 0;
+  margin-right: 210px;
+  margin-top: 10px;
+  width: 120px;
+  height: 80px;
+  background-image: url(/public/assets/images/login/super-mario.png);
+  background-size: cover;
+  transform: translateY(100px);
+  animation: marioCome .5s 2s alternate;
+}
+
+.login  .change-form {
+  cursor: pointer;
+  color: #00afd3;
+}
+
+.login  .change-form:hover {
+  color:  #b95a9d;
+}
+
+.login .left {
+  position: absolute;
+  left: 200px;
+  background-image: url(/public/assets/images/login/l-switch.png);
+  width: 30%;
+  height: 690px;
+  background-size: cover;
+  animation: left 2s alternate;
+  z-index: 100;
+}
+
+.login .change-form {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.login.minimal .mid .form {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; 
+}
+
+.login.minimal .mid .form .input-box {
+  width: 90% !important;
+  margin-bottom:50px;
+}
+
+.login.minimal .mid .form:nth-child(1) .input-box label {
+  right: 10px;
+}
+
+
+.login.minimal .mid button {
+  width: 60% !important;
+  margin-right: 100px;
+  margin-top: 7px;
+}
+
+.login.minimal .mid .super-mario {
+  bottom: 10px;
+}
+
 /*
 |------------------------------------------------------|
 |===================|  PANEL MENU  |===================|
