@@ -150,8 +150,7 @@ button {
 |======================|  MENU  |======================|
 |------------------------------------------------------|
 */
-.main 
-header {
+.main header {
   background-image: linear-gradient(90deg, transparent, #232242, transparent);
 }
 
@@ -660,7 +659,7 @@ header {
   border-left: 2px solid var(--color-primary);
   border-radius: 10px 0 0 0;
   top: -1.5%;
-  left: -.5%;
+  left: -0.5%;
 }
 
 .main .home-page .categories .card .img::before {
@@ -672,26 +671,26 @@ header {
   border-right: 2px solid var(--color-primary);
   border-radius: 0 10px 0 0;
   top: -1.5%;
-  right: -.7%;
+  right: -0.7%;
   z-index: 1;
 }
 
 .main .home-page .categories .card .img img {
   width: 100%;
   position: absolute;
-    bottom: 0;
+  bottom: 0;
 }
 
 .main .home-page .categories .card .img h1 {
   font-size: 26px;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    font-family: estedad-bold;
-    position: absolute;
-    border-radius: 0 0 8px 8px;
-    right: 0;
-    bottom: 0;
-    padding-right: 20px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  font-family: estedad-bold;
+  position: absolute;
+  border-radius: 0 0 8px 8px;
+  right: 0;
+  bottom: 0;
+  padding-right: 20px;
 }
 
 .main .home-page .categories .card .img h2 {
@@ -1502,7 +1501,7 @@ header {
   border-left: 2px solid var(--color-primary);
   border-radius: 10px 0 0 0;
   top: -1.5%;
-  left: -.5%;
+  left: -0.5%;
 }
 
 .main .tournaments-page .card .img::before {
@@ -1514,7 +1513,7 @@ header {
   border-right: 2px solid var(--color-primary);
   border-radius: 0 10px 0 0;
   top: -1.5%;
-  right: -.7%;
+  right: -0.7%;
   z-index: 1;
 }
 
@@ -1668,9 +1667,9 @@ header {
   .main .tournaments-page .card {
     height: 400px;
   }
-.main .tournaments-page .card .img h2 {
-  font-size: 15px;
-}
+  .main .tournaments-page .card .img h2 {
+    font-size: 15px;
+  }
 
   .main .tournaments-page .card .img {
     height: 35%;
@@ -1679,12 +1678,12 @@ header {
   .main .tournaments-page .card .details {
     height: 65%;
   }
-.main .tournaments-page .card .details .room-details .price {
-  top: 160px;
-}
-.main .tournaments-page .card .details .room-details .empty-box {
-  top: 150px;
-}
+  .main .tournaments-page .card .details .room-details .price {
+    top: 160px;
+  }
+  .main .tournaments-page .card .details .room-details .empty-box {
+    top: 150px;
+  }
   .main .tournaments-page .card .img h1 {
     font-size: 24px;
   }
@@ -1704,8 +1703,8 @@ header {
     font-size: 20px;
   }
   .main .tournaments-page .card .img h2 {
-  font-size: 13px;
-}
+    font-size: 13px;
+  }
   .main .tournaments-page .card .details .room-details .price {
     font-size: 15px;
     width: 86%;
@@ -1727,23 +1726,23 @@ header {
 }
 
 @media only screen and (max-width: 480px) {
-  .main .tournaments-page  .card {
+  .main .tournaments-page .card {
     width: 310px;
     height: 370px;
   }
-  .main .tournaments-page  .card .img h1 {
+  .main .tournaments-page .card .img h1 {
     font-size: 19px;
   }
   .main .tournaments-page .card .img h2 {
     font-size: 14px;
   }
-  .main .tournaments-page  .card .details .room-details .price {
+  .main .tournaments-page .card .details .room-details .price {
     font-size: 14px;
   }
-  .main .tournaments-page  .card .details .room-details .empty-box {
+  .main .tournaments-page .card .details .room-details .empty-box {
     top: 145px;
   }
-  .main .tournaments-page  .card .details .room-details .time {
+  .main .tournaments-page .card .details .room-details .time {
     top: 227px;
     font-size: 13px;
   }
@@ -2213,104 +2212,332 @@ header {
 |------------------------------------------------------|
 */
 @media only screen and (max-width: 1024px) {
-.main .streamers .streamer {
-  width: 460px;
-  height: 400px;
-}
+  .main .streamers .streamer {
+    width: 460px;
+    height: 400px;
+  }
 
-.main .streamers .streamer .streamer-imge {
-  width: 100px;
-  height: 100px;
-  top: 145px;
-  left: 320px;
-  
-}
+  .main .streamers .streamer .streamer-imge {
+    width: 100px;
+    height: 100px;
+    top: 145px;
+    left: 320px;
+  }
 
-.main .streamers .streamer .streamer-name{
-  top: 180px;
-}
+  .main .streamers .streamer .streamer-name {
+    top: 180px;
+  }
 
-
-
-.main .streamers .streamer button {
-  font-size: 16px;
-  padding: 15px;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.main .streamers .streamer .text{
-  left: 50%;
-  transform: translateX(-50%);
-bottom: 110px;
-}
-.main .streamers .streamer .text h3 {
-  font-size: 15px;
-}
-.main .streamers .streamer .logo{
-  font-size: 20px;
-  bottom: 55px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 330px;
-}
+  .main .streamers .streamer button {
+    font-size: 16px;
+    padding: 15px;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .streamers .streamer .text {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 110px;
+  }
+  .main .streamers .streamer .text h3 {
+    font-size: 15px;
+  }
+  .main .streamers .streamer .logo {
+    font-size: 20px;
+    bottom: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 330px;
+  }
 }
 
 @media only screen and (max-width: 770px) {
-.main .streamers .streamer {
-  width: 300px;
-  height: 450px;
+  .main .streamers .streamer {
+    width: 300px;
+    height: 450px;
+  }
+  .main .streamers .streamer .poster {
+    height: 40%;
+  }
+  .main .streamers .streamer .streamer-imge {
+    top: 128px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .streamers .streamer .streamer-name {
+    top: 235px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+  }
+  .main .streamers .streamer .text {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 110px;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+  .main .streamers .streamer .logo {
+    font-size: 16px;
+    width: 320px;
+  }
+  .main .streamers .streamer button {
+    width: 230px;
+    top: 92%;
+  }
 }
-.main .streamers .streamer .poster {
-  height: 40%;
-}
-.main .streamers .streamer .streamer-imge{
-  top: 128px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.main .streamers .streamer .streamer-name{
-  top: 235px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  text-align: center;
-}
-.main .streamers .streamer .text {
-  left: 50%;
-  transform: translateX(-50%);
-  bottom:110px;
-  font-size: 14px;
-  width: 80%;
-  text-align: center;
-}
-.main .streamers .streamer .logo{
-  font-size: 16px;
-  width: 320px;
-}
-.main .streamers .streamer button{
-  width: 230px;
-  top: 92%;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 |------------------------------------------------------|
 |======================| LOGIN |=======================|
 |------------------------------------------------------|
 */
+
+.login {
+  position: relative;
+  user-select: none;
+}
+
+.login .right {
+  position: absolute;
+  right: 200px;
+  background-image: url(/public/assets/images/login/r-switch.png);
+  width: 30%;
+  height: 690px;
+  background-size: 97.6%;
+  animation: right 2s alternate;
+  z-index: 100;
+}
+
+.login .mid {
+  position: absolute;
+  right: 536.5px;
+  top: 43px;
+  height: 595px;
+  width: 32.58%;
+  border-bottom: 3px solid #b95a9d;
+  border-top: 3px solid #00afd3;
+  box-shadow: 0 0 5px var(--color-default);
+  animation: mid 2s alternate;
+  z-index: 200;
+  overflow: hidden;
+}
+
+.login .mid .form {
+  width: 500px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login .mid .form .input-box {
+  position: relative;
+  width: 47%;
+  height: 50px;
+  margin-bottom: 60px;
+}
+
+.login .mid .form .input-box:nth-child(1) label {
+  left: 44%;
+}
+
+.login .mid .form .input-box:nth-child(3) label {
+  left: 64%;
+}
+
+.login .mid .form .input-box:nth-child(4) label {
+  left: 80%;
+}
+
+.login .mid .form .input-box:nth-child(5) label {
+  left: 75%;
+}
+
+.login .mid .form .input-box:nth-child(6) label {
+  left: 57%;
+}
+
+.login .mid .form .input-box input {
+  width: 100%;
+  padding: 10px 15px 10px 0;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  transition: 0.5s;
+  color: var(--color-heading);
+  font-size: 18px;
+}
+
+.login .mid .form .input-box input:-webkit-autofill,
+.login .mid .form .input-box input:-webkit-autofill:hover, 
+.login .mid .form .input-box input:-webkit-autofill:focus, 
+.login .mid .form .input-box input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    background-color: transparent !important;
+}
+
+.login .mid .form .input-box:nth-child(odd) input {
+  border-bottom: 1px solid #b95a9d;
+}
+
+.login .mid .form .input-box:nth-child(even) input {
+  border-bottom: 1px solid #00afd3;
+}
+
+.login .mid .form .input-box:nth-child(even) input:focus {
+  border-bottom: 1px solid #00afd3;
+}
+
+.login .mid .form .input-box:nth-child(odd) input:focus {
+  border-bottom: 1px solid #b95a9d;
+}
+
+.login .mid .form .input-box label {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  transition: 0.5s;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.login .mid .form .input-box:nth-child(odd) label {
+  color: #b95a9d;
+}
+
+.login .mid .form .input-box:nth-child(even) label {
+  color: #00afd3;
+}
+
+.login .mid .form .input-box input:focus ~ label,
+.login .mid .form .input-box input:valid ~ label {
+  top: -5px;
+  font-size: 13px;
+}
+
+.login .mid .form .input-box input:-webkit-autofill ~ label,
+.login .mid .form .input-box input:-webkit-autofill:hover ~ label,
+.login .mid .form .input-box input:-webkit-autofill:focus ~ label,
+.login .mid .form .input-box input:-webkit-autofill:active ~ label {
+  top: -5px;
+  font-size: 13px;
+}
+
+.login .mid .form .input-box svg {
+  position: absolute;
+  left: 0%;
+  top: 25%;
+  transform: translateY(-50%);
+  transition: 0.5s;
+}
+
+.login .mid .form .input-box:nth-child(odd) svg {
+  color: #b95a9d;
+}
+
+.login .mid .form .input-box:nth-child(even) svg {
+  color: #00afd3;
+}
+
+.login .mid .form .input-box input:focus ~ svg,
+.login .mid .form .input-box input:valid ~ svg {
+  display: none;
+}
+
+.login .mid button {
+  position: absolute;
+  width: 50%;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #00afd3, #b95a9d);
+  color: var(--color-heading);
+  border: none;
+  margin-right: 25%;
+  border-radius: 12px;
+  box-shadow: 0 0 5px #ffffff98;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  animation: invis .5s 2s alternate;
+}
+
+.login .mid .super-mario {
+  position: absolute;
+  bottom: 0;
+  margin-right: 210px;
+  margin-top: 10px;
+  width: 120px;
+  height: 80px;
+  background-image: url(/public/assets/images/login/super-mario.png);
+  background-size: cover;
+  transform: translateY(100px);
+  animation: marioCome .5s 2s alternate;
+}
+
+.login  .change-form {
+  cursor: pointer;
+  color: #00afd3;
+}
+
+.login  .change-form:hover {
+  color:  #b95a9d;
+}
+
+.login .left {
+  position: absolute;
+  left: 200px;
+  background-image: url(/public/assets/images/login/l-switch.png);
+  width: 30%;
+  height: 690px;
+  background-size: cover;
+  animation: left 2s alternate;
+  z-index: 100;
+}
+
+.login .change-form {
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.login.minimal .mid .form {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px; 
+}
+
+.login.minimal .mid .form .input-box {
+  width: 90% !important;
+  margin-bottom:50px;
+}
+
+.login.minimal .mid .form:nth-child(1) .input-box label {
+  right: 10px;
+}
+
+
+.login.minimal .mid button {
+  width: 60% !important;
+  margin-right: 100px;
+  margin-top: 7px;
+}
+
+.login.minimal .mid .super-mario {
+  bottom: 10px;
+}
+
+
+
 
 /*
 |------------------------------------------------------|
