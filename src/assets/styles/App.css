@@ -141,6 +141,10 @@ button {
   color: #000;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 .main {
   user-select: none;
 }
@@ -340,7 +344,7 @@ button {
   content: "";
   height: 170px;
   width: 350px;
-  background: linear-gradient(90deg, transparent, #131225af, #131225 70%);
+  background: linear-gradient(90deg, transparent, rgba(11, 12, 26, 0.7), #0b0c1a 70%);
   position: absolute;
   bottom: 0;
   right: -5px;
@@ -351,7 +355,7 @@ button {
   content: "";
   height: 170px;
   width: 350px;
-  background: linear-gradient(90deg, #131225 30%, #131225af, transparent);
+  background: linear-gradient(90deg, #0b0c1a 30%, rgba(11, 12, 26, 0.7), transparent);
   position: absolute;
   bottom: 0;
   left: -5px;
@@ -359,7 +363,7 @@ button {
 }
 
 .main .home-page .last-pays .title {
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
   z-index: 2;
 }
@@ -395,19 +399,19 @@ button {
 
 @keyframes rail {
   0% {
-    transform: translateX(0) scale(1) skewX(0deg);
+    transform: translateX(0);
   }
   20% {
-    transform: translateX(800px) scale(1.05) skewX(2deg);
+    transform: translateX(800px);
   }
   50% {
-    transform: translateX(-200px) scale(0.98) skewX(-2deg);
+    transform: translateX(-200px);
   }
   80% {
-    transform: translateX(1200px) scale(1.04) skewX(1deg);
+    transform: translateX(1200px);
   }
   100% {
-    transform: translateX(0) scale(1) skewX(0deg);
+    transform: translateX(0);
   }
 }
 
@@ -504,18 +508,22 @@ button {
   margin-bottom: 30px;
 }
 
+.main .home-page .categories .container {
+  max-width: 90%;
+}
+
 .main .home-page .categories .category {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main .home-page .categories .category .box {
   text-align: center;
   width: fit-content;
-  margin: 20px auto 0;
+  margin: 20px 40px 0;
   border-radius: 20px 20px 0 0;
   border: none;
   padding: 20px;
@@ -574,33 +582,6 @@ button {
   animation: none;
 }
 
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 30px #00ffff, 0 0 10px #c400ff;
-    filter: brightness(1.1);
-  }
-  20% {
-    text-shadow: 0 0 40px #c400ff, 0 0 20px #00ffff;
-    filter: brightness(1.2);
-  }
-  40% {
-    text-shadow: 0 0 30px #ffea00, 0 0 10px #00ffea;
-    filter: brightness(1.1);
-  }
-  60% {
-    text-shadow: 0 0 40px #00ffea, 0 0 20px #ffea00;
-    filter: brightness(1.2);
-  }
-  80% {
-    text-shadow: 0 0 30px #c400ff, 0 0 10px #00ffff;
-    filter: brightness(1.1);
-  }
-  100% {
-    text-shadow: 0 0 30px #00ffff, 0 0 10px #c400ff;
-    filter: brightness(1.1);
-  }
-}
-
 /*
 |------------------------------------------------------|
 |======================| ROOMS  |======================|
@@ -650,35 +631,35 @@ button {
   margin-bottom: 10px;
 }
 
-.main .home-page .categories .card .img::after {
-  content: "";
-  width: 20px;
-  height: 20px;
+.main .home-page .categories .card .img .brsquad {
+  width: 100%;
+  height: 180px;
   position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-left: 2px solid var(--color-primary);
-  border-radius: 10px 0 0 0;
-  top: -1.5%;
-  left: -0.5%;
+  bottom: 0;
+  overflow: hidden;
 }
 
-.main .home-page .categories .card .img::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-right: 2px solid var(--color-primary);
-  border-radius: 0 10px 0 0;
-  top: -1.5%;
-  right: -0.7%;
-  z-index: 1;
-}
-
-.main .home-page .categories .card .img img {
+.main .home-page .categories .card .img .brsquad img {
   width: 100%;
   position: absolute;
   bottom: 0;
+  transition: all 0.2s ease;
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(2) {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(3) {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(4) {
+  transform: scale(1.1);
+}
+
+.main .home-page .categories .card:hover .img .brsquad img:nth-child(5) {
+  transform: scale(1.1);
 }
 
 .main .home-page .categories .card .img h1 {
@@ -893,6 +874,10 @@ button {
 
 .main .home-page .streamers-box {
   width: 100%;
+}
+
+.main .home-page .streamers-box .container {
+  max-width: 90%;
 }
 
 .main .home-page .streamers-box h1 {
@@ -1155,7 +1140,7 @@ button {
     width: 100%;
   }
   .main .home-page .last-pays {
-    width: 95%;
+    width: 100%;
   }
   .main .home-page .last-pays .pays-row {
     width: 100%;
@@ -1167,7 +1152,17 @@ button {
   }
   .main .home-page .last-pays .title {
     width: 100%;
+    margin-bottom: 20px;
   }
+
+  .main .home-page .last-pays::before {
+    width: 80px;
+  }
+
+  .main .home-page .last-pays::after {
+    width: 80px;
+  }
+
   .main .home-page .last-pays .title h2 {
     margin-right: 10px;
   }
@@ -1410,6 +1405,10 @@ button {
 |------------------------------------------------------|
 */
 
+.main .tournaments-page .container {
+  max-width: 95%;
+}
+
 .main .tournaments-page .classification-of-rooms {
   margin: 90px 0;
   position: relative;
@@ -1425,7 +1424,7 @@ button {
   display: flex;
   flex-direction: row;
   border: 2px solid var(--color-secondary);
-  padding: 55px 0 30px 0;
+  padding: 80px 0 30px 0;
   border-radius: 15px;
 }
 
@@ -1441,8 +1440,19 @@ button {
   padding: 0 15px;
   background-color: var(--color-background);
 }
+
+.main .tournaments-page .classification-of-rooms .title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+  position: absolute;
+  border-radius: 10px;
+}
+
 .main .tournaments-page .classification-of-rooms .title h1 {
   margin: 0;
+  margin-bottom: 5px;
 }
 
 .main .tournaments-page .card {
@@ -1492,35 +1502,34 @@ button {
   margin-bottom: 10px;
 }
 
-.main .tournaments-page .card .img::after {
-  content: "";
-  width: 20px;
-  height: 20px;
+.main .tournaments-page .card .img .banner {
+  width: 100%;
+  height: 180px;
   position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-left: 2px solid var(--color-primary);
-  border-radius: 10px 0 0 0;
-  top: -1.5%;
-  left: -0.5%;
-}
-
-.main .tournaments-page .card .img::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-top: 2px solid var(--color-primary);
-  border-right: 2px solid var(--color-primary);
-  border-radius: 0 10px 0 0;
-  top: -1.5%;
-  right: -0.7%;
-  z-index: 1;
+  bottom: 0;
+  overflow: hidden;
 }
 
 .main .tournaments-page .card .img img {
   width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(2) {
+  animation: floatleftcard 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(3) {
+  animation: floatrightcard 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(4) {
+  animation: floatmidcard 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .brsquad img:nth-child(5) {
+  animation: floatmidcard 2s infinite;
 }
 
 .main .tournaments-page .card .img h1 {
@@ -1763,7 +1772,7 @@ button {
 
 .main .leaderboard-page .title {
   width: 100%;
-  margin: 20px 0 40px;
+  margin: 10px 0 20px;
 }
 
 .main .leaderboard-page ul {
@@ -2026,6 +2035,7 @@ button {
 .main .learning-page .box .learning-video {
   width: 55%;
   margin-right: auto;
+  animation: showpop 0.5s ease;
 }
 
 .main .learning-page .box:nth-child(even) .learning-video {
@@ -2052,6 +2062,7 @@ button {
   margin-bottom: 100px;
   margin-right: 80px;
   box-shadow: 0 0 10px var(--color-accent);
+  animation: faderight 0.5s ease;
 }
 
 .main .learning-page .box:nth-child(even) .details {
@@ -2535,9 +2546,6 @@ button {
 .login.minimal .mid .super-mario {
   bottom: 10px;
 }
-
-
-
 
 /*
 |------------------------------------------------------|
@@ -6918,9 +6926,3 @@ button {
     height: 550px;
   }
 }
-
-/*
-|------------------------------------------------------|
-|=================|  SITE RESPONSIVE  |================|
-|------------------------------------------------------|
-*/
