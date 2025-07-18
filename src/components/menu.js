@@ -33,7 +33,7 @@ function Menu() {
         </div>
       )}
 
-      <Link to="/login" className="logo">
+      <Link to="/" className="logo">
         <img src="/assets/images/logo.png" alt="logo" />
       </Link>
       <nav>
@@ -45,7 +45,7 @@ function Menu() {
         <div className="line"></div>
       </nav>
       <div className="profile">
-        <img src="https://openclipart.org/image/2000px/247319" alt="شیس" />
+        <a href="/login">ورود / ثبت نام</a>
       </div>
     </div>
   );

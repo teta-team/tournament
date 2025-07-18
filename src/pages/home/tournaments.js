@@ -33,6 +33,46 @@ function Tournaments() {
       <div className="container">
         <div className="classification-of-rooms">
           <div className="title">
+            <h1>روم های رایگان</h1>
+          </div>
+          <div className="matchs-box">
+            <ul>
+              <RoomBox
+                mode={3}
+                name="روم بتل رویال"
+                players="50"
+                prize="2,000,000"
+                winners="3"
+                time="22:00"
+                date="3روز بعد"
+                price="20,000"
+              />
+              <RoomBox
+                mode={3}
+                name="روم بتل رویال"
+                players="50"
+                prize="2,000,000"
+                winners="3"
+                time="22:00"
+                date="3روز بعد"
+                price="20,000"
+              />
+              <RoomBox
+                mode={3}
+                name="روم بتل رویال"
+                players="50"
+                prize="2,000,000"
+                winners="3"
+                time="22:00"
+                date="3روز بعد"
+                price="20,000"
+              />
+            </ul>
+          </div>
+        </div>
+
+        <div className="classification-of-rooms">
+          <div className="title">
             <h1>روم های بتل رویال</h1>
           </div>
           <div
@@ -136,46 +176,6 @@ function Tournaments() {
                 price="20,000"
               />
             </ul>
-          </div>
-
-          <div className="classification-of-rooms">
-            <div className="title">
-              <h1>روم های رایگان</h1>
-            </div>
-            <div className="matchs-box">
-              <ul>
-                <RoomBox
-                  mode={3}
-                  name="روم بتل رویال"
-                  players="50"
-                  prize="2,000,000"
-                  winners="3"
-                  time="22:00"
-                  date="3روز بعد"
-                  price="20,000"
-                />
-                <RoomBox
-                  mode={3}
-                  name="روم بتل رویال"
-                  players="50"
-                  prize="2,000,000"
-                  winners="3"
-                  time="22:00"
-                  date="3روز بعد"
-                  price="20,000"
-                />
-                <RoomBox
-                  mode={3}
-                  name="روم بتل رویال"
-                  players="50"
-                  prize="2,000,000"
-                  winners="3"
-                  time="22:00"
-                  date="3روز بعد"
-                  price="20,000"
-                />
-              </ul>
-            </div>
           </div>
         </div>
       </div>

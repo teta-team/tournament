@@ -1,10 +1,10 @@
 function Streamer() {
   return (
-    <div class="streamer">
-      <div class="poster">
-        <img src="" alt="streamer-poster" />
+    <div className="streamer">
+      <div className="poster">
+        <img src="#" alt="streamer-poster" />
       </div>
-      <div class="streamer-name">
+      <div className="streamer-name">
         <h2>Amir Hossein</h2>
       </div>
       <div className="streamer-imge">

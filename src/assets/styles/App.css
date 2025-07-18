@@ -51,15 +51,15 @@
 }
 
 :root {
-  --color-accent: #00ffff;
-  --color-primary: #f128ff;
+  --color-accent: #00bafe;
+  --color-primary: #88d9ff;
   --color-danger: #ff00a6;
 }
 
 :root {
   --color-heading: #e0e0e0;
   --color-default: #a0a0a0;
-  --color-background: #0b0c1a;
+  --color-background: #13151d;
 }
 
 /*
@@ -147,6 +147,7 @@ img {
 
 .main {
   user-select: none;
+  padding-top: 120px;
 }
 
 /*
@@ -155,15 +156,27 @@ img {
 |------------------------------------------------------|
 */
 .main header {
-  background-image: linear-gradient(90deg, transparent, #232242, transparent);
+  position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100%;
+    z-index: 49;
+    transition: .3s cubic-bezier(.075,.82,.165,1);
+    border-bottom: 1px solid transparent;
 }
 
 .main .menu {
-  height: 60px;
+  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  backdrop-filter: blur(10px);
+  background: rgb(24, 27, 36, 0.5);
+  border-radius: 12px;
+  padding: 0 30px;
+  height: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(41, 45, 57);
 }
 
 #burger-btn {
@@ -275,11 +288,22 @@ img {
   justify-content: center;
 }
 
-.main .profile img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  object-position: center;
+.main .profile a {
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 10px;
+  color: var(--color-background);
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 4px 40px rgba(0, 186, 254, 0.5);
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.main .profile a:hover {
+  box-shadow: none;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 480px) {
@@ -344,7 +368,12 @@ img {
   content: "";
   height: 170px;
   width: 350px;
-  background: linear-gradient(90deg, transparent, rgba(11, 12, 26, 0.7), #0b0c1a 70%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(19, 21, 29, .7),
+    #13151d 70%
+  );
   position: absolute;
   bottom: 0;
   right: -5px;
@@ -355,7 +384,12 @@ img {
   content: "";
   height: 170px;
   width: 350px;
-  background: linear-gradient(90deg, #0b0c1a 30%, rgba(11, 12, 26, 0.7), transparent);
+  background: linear-gradient(
+    90deg,
+    var(--color-background) 30%,
+    rgba(19, 21, 29, .7),
+    transparent
+  );
   position: absolute;
   bottom: 0;
   left: -5px;
@@ -572,7 +606,7 @@ img {
 }
 
 .main .home-page .categories .category .box.active {
-  background-color: #201e3e;
+  background-color: #212432;
   animation: glow 3s ease-in-out infinite alternate;
 }
 
@@ -592,7 +626,7 @@ img {
   width: 100%;
   overflow-x: auto;
   scrollbar-width: thin;
-  background-color: #201e3e;
+  background-color: #212432;
   border-radius: 20px;
 }
 
@@ -768,7 +802,7 @@ img {
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #00ffff, #c400ff);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
   border: none;
   width: 130px;
   color: #000;
@@ -958,7 +992,7 @@ img {
 */
 .main footer {
   width: 100%;
-  background-color: #1b1931;
+  background-color: #181a25;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1001,7 +1035,7 @@ img {
 }
 
 .main footer .footer-menu .title h5 {
-  background-color: #1b1931;
+  background-color: #181a25;
   font-size: 24px;
   position: absolute;
   top: 50%;
@@ -1037,7 +1071,7 @@ img {
 }
 
 .main footer .footer-details .title h5 {
-  background-color: #1b1931;
+  background-color: #181a25;
   font-size: 24px;
   position: absolute;
   top: 50%;
@@ -1514,22 +1548,59 @@ img {
   width: 100%;
   position: absolute;
   bottom: 0;
+  transition: all .2s ease;
 }
 
 .main .tournaments-page .card:hover .img .brsquad img:nth-child(2) {
-  animation: floatleftcard 2s infinite;
+  transform: scale(1.1) rotate(-5deg);
 }
 
 .main .tournaments-page .card:hover .img .brsquad img:nth-child(3) {
-  animation: floatrightcard 2s infinite;
+  transform: scale(1.2) rotate(5deg);
 }
 
 .main .tournaments-page .card:hover .img .brsquad img:nth-child(4) {
-  animation: floatmidcard 2s infinite;
+  transform: scale(1.1);
 }
 
 .main .tournaments-page .card:hover .img .brsquad img:nth-child(5) {
-  animation: floatmidcard 2s infinite;
+  transform: scale(1.1);
+}
+
+.main .tournaments-page .card:hover .img .brduo img:nth-child(2) {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.main .tournaments-page .card:hover .img .brduo img:nth-child(3) {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.main .tournaments-page .card:hover .img .duel img:nth-child(2) {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.main .tournaments-page .card:hover .img .duel img:nth-child(3) {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.main .tournaments-page .card:hover .img .free img:nth-child(2) {
+  animation: float 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .free img:nth-child(3) {
+  animation: float 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .free img:nth-child(4) {
+  animation: float 2s infinite;
+}
+
+.main .tournaments-page .card:hover .img .free img:nth-child(5) {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.main .tournaments-page .card:hover .img .free img:nth-child(6) {
+  transform: scale(1.1) rotate(-5deg);
 }
 
 .main .tournaments-page .card .img h1 {
@@ -1645,7 +1716,7 @@ img {
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #00ffff, #c400ff);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
   border: none;
   width: 130px;
   color: #000;
@@ -2098,9 +2169,6 @@ img {
   position: relative;
   margin: 15px;
 }
-.main .streamers .streamer:nth-child(even) button {
-  background: linear-gradient(100deg, #00ffff, #c400ff);
-}
 
 .main .streamers .streamer .poster {
   height: 50%;
@@ -2154,7 +2222,7 @@ img {
 }
 
 .main .streamers .streamer button {
-  background: linear-gradient(200deg, #00ffff, #c400ff);
+  background: linear-gradient(200deg, var(--color-accent), var(--color-primary));
   border-radius: 9px;
   font-weight: 600;
   position: absolute;
@@ -2386,12 +2454,12 @@ img {
 }
 
 .login .mid .form .input-box input:-webkit-autofill,
-.login .mid .form .input-box input:-webkit-autofill:hover, 
-.login .mid .form .input-box input:-webkit-autofill:focus, 
+.login .mid .form .input-box input:-webkit-autofill:hover,
+.login .mid .form .input-box input:-webkit-autofill:focus,
 .login .mid .form .input-box input:-webkit-autofill:active {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #ffffff;
-    background-color: transparent !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  background-color: transparent !important;
 }
 
 .login .mid .form .input-box:nth-child(odd) input {
@@ -2477,7 +2545,7 @@ img {
   font-size: 16px;
   cursor: pointer;
   opacity: 0;
-  animation: invis .5s 2s alternate;
+  animation: invis 0.5s 2s alternate;
 }
 
 .login .mid .super-mario {
@@ -2490,16 +2558,16 @@ img {
   background-image: url(/public/assets/images/login/super-mario.png);
   background-size: cover;
   transform: translateY(100px);
-  animation: marioCome .5s 2s alternate;
+  animation: marioCome 0.5s 2s alternate;
 }
 
-.login  .change-form {
+.login .change-form {
   cursor: pointer;
   color: #00afd3;
 }
 
-.login  .change-form:hover {
-  color:  #b95a9d;
+.login .change-form:hover {
+  color: #b95a9d;
 }
 
 .login .left {
@@ -2520,22 +2588,20 @@ img {
   transform: translateX(-50%);
 }
 
-
 .login.minimal .mid .form {
   flex-direction: column;
   align-items: center;
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 .login.minimal .mid .form .input-box {
   width: 90% !important;
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .login.minimal .mid .form:nth-child(1) .input-box label {
   right: 10px;
 }
-
 
 .login.minimal .mid button {
   width: 60% !important;
